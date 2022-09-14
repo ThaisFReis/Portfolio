@@ -1,0 +1,9 @@
+Body{
+    background-color: #212121;
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dosis', sans-serif;
+}
