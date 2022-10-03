@@ -1,4 +1,39 @@
-.Menu{
+.Header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+    width: 100%;
+    height: 8vh;
+}
+
+.Header .TFR{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+
+    width: 20%;
+    height: 5vh;
+    left: 20px;
+}
+
+.Header .TFR p{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    
+    color: hotpink;
+}
+
+.Header .Menu{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -7,16 +42,16 @@
     text-align: center;
     gap: 10px;
 
-    width: 100%;
+    width: 80%;
     height: 5vh;
     right: 20px;
 }
 
-.Menu a{ 
+.Header .Menu a{ 
     font-family: 'Dosis';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -25,17 +60,17 @@
     color: #FFFFFF;
 }
 
-.Menu div{
+.Header .Menu div{
     width: 1px;
     height: 20px;
     background-color: #FFFFFF;
 }
 
-a:hover{ 
-    color: hotpink;
+.Header a:hover{ 
+    color: hotpink !important;;
     text-decoration: none;
 }
 
-a:active{
-    color: hotpink;
+.Header a:active{
+    color: hotpink !important;
 }

@@ -8,7 +8,7 @@ export default function Projects() {
         <Menu />
             <div className="Projects">
                 <div>
-                    <h1>Contato</h1>
+                    <h1>Projetos</h1>
                 </div>
                 
                 {/*

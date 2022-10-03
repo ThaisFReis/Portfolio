@@ -1,0 +1,244 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+
+    font-family: 'Dosis';
+    font-style: normal;
+}
+
+.Contact h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: hotpink;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* EMAIL */
+.Contact .Contact-Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Contact .Contact-Container .email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 60vh;
+}
+
+.Contact .Contact-Container .email h1{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 0;
+    top: 0;
+}
+
+.Contact .Contact-Container .email h2{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.Contact .Contact-Container.email .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact .Contact-Container .email .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 50vh;
+}
+
+.Contact .Contact-Container .email .form form .input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 80%;
+}
+
+.Contact .Contact-Container .email .form form .input-group label{
+    color: hotpink;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.Contact .Contact-Container .email .form form .input-group input{
+    width: 99%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+}
+
+.Contact .Contact-Container .email .form form .input-group input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.Contact .Contact-Container .email .form form .input-group input:focus::placeholder{
+    color: hotpink;
+    opacity: 0.8;
+}
+
+.Contact .Contact-Container .email .form form .input-group input:focus{
+    outline: 1px solid hotpink;
+    border: #fff;
+    background: rgba(255, 255, 255, 1);
+}
+
+
+/* TEXTAREA */
+.Contact .Contact-Container .email .form form .input-group textarea{
+    width: 99%;
+    height: 15vh;
+    background: rgba(255, 255, 255, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+}
+
+.Contact .Contact-Container .email .form form .input-group textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.Contact .Contact-Container .email .form form .input-group textarea:focus::placeholder {
+    color: hotpink;
+    opacity: 0.8;
+}
+
+.Contact .Contact-Container .email .form form .input-group textarea:focus {
+    outline: 1px solid hotpink;
+    border: #fff;
+    background: rgba(255, 255, 255, 1);
+}
+
+.Contact .Contact-Container .email .form form button{
+    width: 40%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: hotpink;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+.Contact .Contact-Container .email .form form button:hover{
+    color: #fff;
+    background-color: hotpink;
+}
+
+/*------------------------------------------------------*/
+.Contact .Contact-Container .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    height: 40vh;
+}
+
+.Contact .Contact-Container .contacts a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+}
+
+/* TELEFONE */
+.Contact .Contact-Container .phone{
+    width: 20vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Contact .Contact-Container .phone h1{
+    color: hotpink;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.Contact .Contact-Container .phone h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.Contact .Contact-Container .phone:hover{
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/* LINKEDIN */
+
+.Contact .Contact-Container .linkedin{
+    width: 20vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Contact .Contact-Container .linkedin h1{
+    color: hotpink;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.Contact .Contact-Container .linkedin h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.Contact .Contact-Container .linkedin:hover{
+    border: 1px solid #fff;
+    border-radius: 5px;
+}

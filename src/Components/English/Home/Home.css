@@ -1,4 +1,4 @@
-.Home{
+.Inicio{
     width: 100%;
     height: 85vh;
     display: flex;
@@ -10,12 +10,12 @@
 
 }
 
-.Home div{
-    position: fixed;
-
+.principal{
+    width: 70%;
+    height: 30vh;
 }
 
-.Home h1{
+.Inicio h1{
     font-family: 'Dosis';
     font-style: normal;
     font-weight: 300;
@@ -25,61 +25,95 @@
     color: #FFFFFF;  
 }
 
-.Home h2{
+.Inicio h2{
     font-family: 'Dosis';
     font-style: normal;
     font-weight: 300;
-    font-size: 95px;
+    font-size: 103px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     
-    color: #FFFFFF;
+    color: #EF5DA8;
 
-    width: 800px;
-    height: 90px;
     left: calc(50% - 1004px/2 - 2px);
     top: calc(50% - 70px/2 + 30px);
-
-    background: #EF5DA8;
-    mix-blend-mode: normal;
     
 }
 
-.Home .Footer {
+.Inicio .buttons{
+    width: 50%;
+    height: 8vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Inicio .buttons .button{
+    width: 300px;
+    height: 6vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #EF5DA8;
+    border-radius: 5px;
+    gap: 10px
+}
+
+.Inicio .buttons .button img{
+    width: 37px;
+}
+
+.Inicio  .buttons .button p{
+    color: #FFFFFF;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Inicio .footer{
     position: fixed;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 50px;
+    height: 10vh;
 
-    bottom: 50px;
+    bottom: 0px;
     align-items: center;
     text-align: center;
-    justify-content: center;
-
+    justify-content: right;
+    margin-right: 50px;
     gap: 10px;
 }
 
-.Home .Footer h3{
-    position: relative;
+.Inicio .footer p{
+    color: #FFFFFF;
     font-family: 'Dosis';
     font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    
-    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.Home .Footer .dot{
-    position: relative;
-    width: 5px;
-    height: 5px;
+.Inicio .footer p:hover{
+    color: #EF5DA8;
+}
 
-    background: #EF5DA8;
-    border-radius: 100%;
-    align-items: center;
-    text-align: center;
-    
+.Inicio .footer .p:active::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.Inicio .footer img{
+    width: 30px;
 }

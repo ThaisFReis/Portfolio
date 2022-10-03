@@ -53,7 +53,7 @@ export default function AboutMe() {
                 </div>
 
                 <div className="SoftwareSkills">
-                    <h1>SoftwareSkills</h1>
+                    <h1>SOFTWARE SKILLS</h1>
                     <div className="skills">
                         <div className="skill">
                             <img src={Scroll} alt="HTML5"/>
