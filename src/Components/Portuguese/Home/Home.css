@@ -1,45 +1,49 @@
 .Inicio{
-    width: 100%;
+    width: 100vw;
     height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Inicio .background{
+    width: 190vw;
+    height: 205vh;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    rotate: -10deg;
+}
+
+.Inicio .background .blob{
+    width: 120vw;
+    height: 90vh;
+    z-index: -1;
+}
+
+.principal{
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    gap: 10px;
-
 }
 
-.principal{
-    width: 70%;
-    height: 30vh;
-}
-
-.Inicio h1{
-    font-family: 'Dosis';
+.Inicio .principal h1{
     font-style: normal;
     font-weight: 300;
     font-size: 70px;
-    text-align: center;
     
     color: #FFFFFF;  
+    font-family: Abstract;
 }
 
-.Inicio h2{
-    font-family: 'Dosis';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 103px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+.Inicio .principal h2{
+    font-family: Abstract;
+    font-size: 100px;
     
-    color: #EF5DA8;
-
-    left: calc(50% - 1004px/2 - 2px);
-    top: calc(50% - 70px/2 + 30px);
-    
+    color: #ccf919;
 }
 
 .Inicio .buttons{
@@ -61,13 +65,13 @@
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #EF5DA8;
+    border: 1px solid #f0379a;
     border-radius: 5px;
     gap: 10px
 }
 
 .Inicio .buttons .button:hover{
-    background-color: #EF5DA8;
+    background-color: #f0379a;
 }
 
 .Inicio .buttons .button img{
@@ -110,7 +114,7 @@
 }
 
 .Inicio .footer p:hover{
-    color: #EF5DA8;
+    color: #f0379a;
 }
 
 .Inicio .footer .p:active::after{

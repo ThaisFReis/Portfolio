@@ -5,20 +5,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Dosis', sans-serif;
 }
 
 .ChooseLanguage .welcome{
-    width: 35%;
+    width: 55%;
     height: 30vh;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    text-align: center;
     color: #ccf919;
     font-size: 100px;
+    font-family: Abstract;
+    text-align: center;
 }
+
 
 .ChooseLanguage .text-choose-language{
     width: 69%;
@@ -27,10 +29,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
+
+}
+
+.ChooseLanguage .text-choose-language p{
     color: #FFFFFF;
     font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
 }
 
 .ChooseLanguage .buttons{
@@ -44,32 +51,66 @@
     gap: 100px;
 }
 
-.ChooseLanguage .buttons .button{
+.ChooseLanguage .buttons .btn{
+    background-color: transparent;
     width: 300px;
     height: 6vh;
 
-    display: flex;
+    display:flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
     border: 1px solid #f0379a;
     border-radius: 5px;
-    gap: 10px;
     cursor: pointer;
+    transition: 400ms;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
 }
 
-.ChooseLanguage .buttons .button:hover{
+.ChooseLanguage .buttons .btn:hover{
     background-color: #f0379a;
 }
 
-.ChooseLanguage  .buttons .button a{
-    padding: 12px 85px;
-    color: #FFFFFF;
-    font-family: 'Dosis';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
+.ChooseLanguage .buttons .btn .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChooseLanguage .buttons .btn ion-icon{
+    position: absolute;
+    margin-left: 10px;
+    color: #fff;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.ChooseLanguage .buttons .btn:hover ion-icon{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ChooseLanguage .buttons .btn:hover{
+    gap: 20px;
+}
+
+.ChooseLanguage .buttons .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    transform: scaleX(0);
+    transition: 100ms ease-in-out transform;
+}
+
+.ChooseLanguage .buttons .btn:active::before{
+    transform: scaleX(1);
 }

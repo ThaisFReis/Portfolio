@@ -5,7 +5,6 @@ Body{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    font-family: 'Dosis', sans-serif;
 }
 
 *{
@@ -39,3 +38,43 @@ div::selection{
     background-color: hotpink;
     color: #fff;
 }
+
+@font-face {
+    font-family: Abstract;
+    src: url(../Assets/Fonts/abstractgroovy-k7zdy-webfont.woff);
+}
+
+@font-face {
+    font-family: AquaFont;
+    src: url(../Assets/Fonts/aqua-webfont.woff);
+}
+
+@font-face {
+    font-family: Galilei;
+    src: url(../Assets/Fonts/galileiscript-webfont.woff);
+}
+
+@font-face {
+    font-family: Galileo;
+    src: url(../Assets/Fonts/galileo-regular-webfont.woff);
+}
+
+@font-face {
+    font-family: Hello;
+    src: url(../Assets/Fonts/hello_autumn-webfont.woff);
+}
+
+@font-face {
+    font-family: Orlande;
+    src: url(../Assets/Fonts/orlande-webfont.woff);
+}
+
+@font-face {
+    font-family: Thorin;
+    src: url(../Assets/Fonts/thorin-webfont.woff);
+}
+
+/*
+Verde -> #ccf919
+Rosa -> #f0379a
+*/

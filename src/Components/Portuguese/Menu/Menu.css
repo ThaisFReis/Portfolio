@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     
-    color: hotpink;
+    color: #ccf919;
 }
 
 .Header .Menu{
@@ -67,6 +67,6 @@
 }
 
 .Header p:hover{ 
-    color: hotpink !important;;
+    color: #ccf919 !important;;
     text-decoration: none;
 }
