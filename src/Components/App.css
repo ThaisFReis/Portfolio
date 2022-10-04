@@ -11,3 +11,31 @@ Body{
 *{
     font-family: 'Dosis', sans-serif;
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        to bottom,
+        #ee70ff,
+        #ff0077
+    );
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #474747;
+}
+
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
+    background-color: hotpink;
+    color: #fff;
+}
+
+div::selection{
+    background-color: hotpink;
+    color: #fff;
+}

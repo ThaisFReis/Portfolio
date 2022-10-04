@@ -1,8 +1,10 @@
 import Menu from "../Menu/Menu"
+import Skills from "./skills"
 import  "./AboutMe.css"
 import Scroll from "../../../Assets/scrolldown.png"
 
 export default function AboutMe() {
+
     return (
         <>
         <Menu />
@@ -54,35 +56,13 @@ export default function AboutMe() {
 
                 <div className="SoftwareSkills">
                     <h1>SOFTWARE SKILLS</h1>
-                    <div className="skills">
-                        <div className="skill">
-                            <img src={Scroll} alt="HTML5"/>
-                            <p>HTML5</p>
-                        </div>
-                        <div className="skill">
-                            <img src={Scroll} alt="REACT"/>
-                            <p>REACT</p>
-                        </div>
-                        <div className="skill">
-                            <img src={Scroll} alt="CSS3"/>
-                            <p>CSS3</p>
-                        </div>
-                        <div className="skill">
-                            <img src={Scroll} alt="UBUNTU"/>
-                            <p>UBUNTU</p>
-                        </div>
-                        <div className="skill">
-                            <img src={Scroll} alt="JAVASCRIPT"/>
-                            <p>JAVASCRIPT</p>
-                        </div>
-                        <div className="skill">
-                            <img src={Scroll} alt="GIT"/>
-                            <p>GIT</p>
-                        </div>
-                        <div className="skill">
-                            <img src={Scroll} alt="FIGMA"/>
-                            <p>FIGMA</p>
-                        </div>
+                    <div className="skills-group">
+                        {Skills.map((skill, index) => (
+                            <div className="skill" key={index}>
+                                <img src={skill.image} alt={skill.name} />
+                                <p>{skill.name}</p>
+                            </div>
+                    ))}
                     </div>
                 </div>
 

@@ -5,21 +5,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Dosis', sans-serif;
 }
 
 .ChooseLanguage .welcome{
-    width: 69%;
-    height: 20vh;
+    width: 35%;
+    height: 30vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     text-align: center;
-    color: #EF5DA8;
-    font-size: 70px;
+    color: #ccf919;
+    font-size: 100px;
 }
 
 .ChooseLanguage .text-choose-language{
@@ -55,10 +53,14 @@
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #EF5DA8;
+    border: 1px solid #f0379a;
     border-radius: 5px;
     gap: 10px;
     cursor: pointer;
+}
+
+.ChooseLanguage .buttons .button:hover{
+    background-color: #f0379a;
 }
 
 .ChooseLanguage  .buttons .button a{

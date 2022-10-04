@@ -1,4 +1,5 @@
 import Menu from "../Menu/Menu"
+import arrayProjects from "./arrayProjects"
 import  "./Projects.css"
 import Scroll from "../../../Assets/scrolldown.png"
 
@@ -7,8 +8,17 @@ export default function Projects() {
         <>
         <Menu />
             <div className="Projects">
-                <div>
-                    <h1>Projetos</h1>
+                <h1>PROJETOS</h1>
+                <div className="projects-group">
+                    {arrayProjects.map((project, index) => (
+                        <a href={project.link} target="_blank" key={index}>
+                            <div className="project-box">
+                                <h2>{project.title}</h2>
+                                <p>{project.description}</p>
+                                    <img src={project.image} alt="project" />
+                            </div>
+                        </a>
+                    ))}
                 </div>
                 
                 {/*

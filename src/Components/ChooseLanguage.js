@@ -11,7 +11,7 @@ export default function ChooseLanguage(){
                 <div className="welcome">
                     <Typewriter
                     options={{
-                        strings: ["WELCOME TO MY PORTFOLIO", "BEM-VINDES AO MEU PORTFÓLIO"],
+                        strings: ["WELCOME TO MY PORTFOLIO", "BEM-VINDO AO MEU PORTFÓLIO"],
                         autoStart: true,
                         loop: true,
                     }}

@@ -66,6 +66,10 @@
     gap: 10px
 }
 
+.Inicio .buttons .button:hover{
+    background-color: #EF5DA8;
+}
+
 .Inicio .buttons .button img{
     width: 37px;
 }

@@ -5,15 +5,14 @@ import "./Menu.css";
 export default function Menu() {
     return (
         <div className="Header">
-            <div className="TFR"><p>{"<TFR/>"}</p></div>
-                <div className="Menu">
-                    <Link to="/home" className="home"><p>HOME</p></Link>
+            <Link to="/" className="TFR"><p>{"<TFR/>"}</p></Link>                <div className="Menu">
+                    <Link to="/home" id="home" className="link"><p>HOME</p></Link>
                     <div></div>
-                    <Link to="/aboutme" className="aboutme"><p>ABOUT ME</p></Link>
+                    <Link to="/aboutme" id="aboutme" className="link"><p>ABOUT ME</p></Link>
                     <div></div>
-                    <Link to="/projects" className="projects"><p>PROJECTS</p></Link>
+                    <Link to="/projects" id="projects" className="link"><p>PROJECTS</p></Link>
                     <div></div>
-                    <Link to="/contact" className="contact"><p>CONTACT</p></Link>
+                    <Link to="/contact" id="contact" className="link"><p>CONTACT</p></Link>
                 </div>
         </div>
         )
