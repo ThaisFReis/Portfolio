@@ -10,14 +10,6 @@ export default function ChooseLanguage(){
         <>
             
             <div className="ChooseLanguage">
-                        {/*
-            
-            <h1>WELCOME TO MY PORTFOLIO</h1>
-            <h2>WELCOME TO MY PORTFOLIO</h2>
-            <h4>WELCOME TO MY PORTFOLIO</h4>
-            <h6>WELCOME TO MY PORTFOLIO</h6>
-            <p>WELCOME TO MY PORTFOLIO</p>
-        */}
                 <div className="welcome">
                     <Typewriter
                     options={{

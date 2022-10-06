@@ -1,10 +1,12 @@
 Body{
-    background-color: #212121;
-
+    background-image: linear-gradient(to left bottom, #010101, #020202, #030303, #030303, #040404, #050505, #060606, #070707, #090909, #0a0a0a, #0c0c0c, #0d0d0d);
+    backdrop-filter: blur(100vw);
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 *{
@@ -50,28 +52,18 @@ div::selection{
 }
 
 @font-face {
-    font-family: Galilei;
-    src: url(../Assets/Fonts/galileiscript-webfont.woff);
-}
-
-@font-face {
-    font-family: Galileo;
-    src: url(../Assets/Fonts/galileo-regular-webfont.woff);
-}
-
-@font-face {
-    font-family: Hello;
-    src: url(../Assets/Fonts/hello_autumn-webfont.woff);
-}
-
-@font-face {
     font-family: Orlande;
     src: url(../Assets/Fonts/orlande-webfont.woff);
 }
 
 @font-face {
-    font-family: Thorin;
-    src: url(../Assets/Fonts/thorin-webfont.woff);
+    font-family: HoneyBunney;
+    src: url(../Assets/Fonts/Honey\ Bunney-1063.woff), url(../Assets/Fonts/HoneyBunney\ Sans-5349.woff);
+  }
+
+@font-face {
+    font-family: Galilei;
+    src: url(../Assets/Fonts/galileiscript-webfont.woff);
 }
 
 /*

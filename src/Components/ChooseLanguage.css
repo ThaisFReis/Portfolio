@@ -1,5 +1,5 @@
 .ChooseLanguage{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .ChooseLanguage .welcome{
-    width: 55%;
+    width: 50wv;
     height: 30vh;
 
     display: flex;
@@ -23,7 +23,7 @@
 
 
 .ChooseLanguage .text-choose-language{
-    width: 69%;
+    width: 69vw;
     height: 7vh;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
 }
 
 .ChooseLanguage .buttons{
-    width: 69%;
+    width: 69vw;
     height: 10vh;
 
     display: flex;

@@ -5,7 +5,9 @@ import "./Menu.css";
 export default function Menu() {
     return (
         <div className="Header">
-            <Link to="/" className="TFR"><p>{"<TFR/>"}</p></Link>
+            <div className="TFR">
+                <Link to="/" className="link"><p>{"<TFR/>"}</p></Link>
+            </div>
             <div className="Menu">
                 <Link to="/inicio"> <p>INÍCIO</p></Link>
                 <div></div>

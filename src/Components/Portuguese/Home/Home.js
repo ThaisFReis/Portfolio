@@ -1,48 +1,72 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 import Menu from "../Menu/Menu"
 import  "./Home.css"
 
 import Linkedin from "../../../Assets/linkedin.png"
 import Github from "../../../Assets/github.png"
-import Blob from "../../../Assets/blob.svg"
-import BlobPink from "../../../Assets/blob-pink.svg"
-import BlobPink2 from "../../../Assets/blob-pink-2.svg"
-import BlobPink3 from "../../../Assets/blob-pink-3.svg"
+import Heart from "../../../Assets/heart.png"
 
 
 export default function Home() {
     return (
-        <>
-        <Menu />
-            <div className="Inicio">
-                
-                <div className="principal">
-                    <h1>EU SOU</h1>
-                    <h2>THAIS FERREIRA REIS</h2>
-                    <h1>DESENVOLVEDORA FRONT-END</h1>
-                </div>
+        <div className="background">
+            <Menu />
+                <div className="Inicio">
 
-                <div className="background">
-                    <img className="blob" src={BlobPink3}/>
-                </div>
+                    {/* NAME */}
+                    <div className="principal">
+                        <h2>EU SOU</h2>
+                        <h1>THAIS FERREIRA REIS</h1>
+                        <h2>DESENVOLVEDORA FRONT-END</h2>
 
-                <div className="buttons">
-                    <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank">
-                        <div className="button" >
-                            <img src={Linkedin} alt="Linkedin" />
-                            <p>LINKEDIN</p>
+
+                    {/* BUTTONS */}
+                    <div className="buttons">
+                        <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank">
+                            <div className="button" >
+                                <img src={Linkedin} alt="Linkedin" />
+                                <p>LINKEDIN</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/ThaisFReis" target="_blank">
+                            <div className="button">
+                                <img src={Github} alt="Github" />
+                                <p>GITHUB</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    </div>
+
+                    {/* FOOTER */}
+                    <footer>
+                        {/* BUTTONS SOCIAL MEDIA */}
+                        <div className="social">
+                            <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank">
+                                    <img src={Linkedin} alt="Linkedin" />
+                            </a>
+                            <a href="https://github.com/ThaisFReis" target="_blank">
+                                    <img src={Github} alt="Github" />
+                            </a>
                         </div>
-                    </a>
 
-                    <a href="https://github.com/ThaisFReis" target="_blank">
-                        <div className="button">
-                            <img src={Github} alt="Github" />
-                            <p>GITHUB</p>
+                        {/* MADE WITH */}
+                        <div className="made">
+                            <p>made with <img src={Heart} className="icon" /> by Thais F. Reis</p>
                         </div>
-                    </a>
+
+                        {/* BUTTONS */}
+                            <div className="change-language">
+                                <div className="language">
+                                    <Link to="/home"><p>EN</p></Link>
+                                    <Link to="/inicio"><p>PT</p></Link>
+                                </div>
+                            </div>
+                    </footer>
                 </div>
-            </div>
-        </>
+        </div>
       )
   }
