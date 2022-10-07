@@ -1,5 +1,5 @@
 import Menu from "../Menu/Menu"
-import Skills from "./skills"
+import Skills from "./Array/skills"
 import  "./AboutMe.css"
 import Scroll from "../../../Assets/scrolldown.png"
 
@@ -65,18 +65,6 @@ export default function AboutMe() {
                     ))}
                     </div>
                 </div>
-
-
-                
-                {/*
-                    <div className="footer">
-                    <h3>scroll down</h3>
-                    <div className="scroll">
-                        <img src={Scroll} alt="Scroll" />
-                        <img src={Scroll} alt="Scroll" />
-                    </div>
-                </div>
-    */}
             </div>
         </>
       )

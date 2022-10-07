@@ -1,11 +1,160 @@
-.background{
+/* Menu */
+.Header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+    width: 100vw;
+    height: 9vh;
+    z-index: 9999;
+    top: 0;
+    margin-top: 0px;
+    margin-bottom: auto;
+    bottom: auto;
+}
+
+.Header .TFR{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+
+    width: 20vw;
+    height: 5vh;
+
+    display: flex;
+    align-items: center;
+    color: #FFC571;
+}
+
+.Header .TFR .link p{
+    color: #FFC571;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.Header .Menu{
+    background-color: transparent !important;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+
+    width: 80vw;
+    height: 5vh;
+    right: 20px;
+}
+
+.Header .Menu .onclick{
+    background-color: transparent !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+
+    width: 5vw;
+    height: 5vh;
+}
+
+.Header .Menu p{ 
+    font-family: 'Dosis';
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none!important;
+    
+    color: #FFFFFF;
+}
+
+.Header .Menu .div{
+    width: 1px;
+    height: 20px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+}
+
+Body .Header p:hover{ 
+    color: #FFC571 !important;;
+    text-decoration: none;
+}
+
+
+/* Principal Div */
+
+.page{
+    backdrop-filter: blur(100vw);
+    width: 100vw;
+    height: 350vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page .welcome-page{
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .welcome-page .welcome{
+    width: 1080px;
+    height: 30vh;
+    margin-top: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    font-size: 100px;
+    font-family: Abstract;
+    text-align: center;
+}
+
+.page .welcome-page .scrolldown{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.page .welcome-page .scrolldown ion-icon{
+    color: #FFC571;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.page .welcome-page .scrolldown ion-icon:hover{
+    color: #6e65ac;
+    font-size: 2rem;
+}
+
+
+.page .background-page-home-aboutme{
+    width: 100vw;
+    height: 250vh;
     background-image: url(../../../Assets/BlobGroup1.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100vw 50vh;
+    background-position: center left ;
+    background-size: 25vw 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +162,7 @@
     text-align: center;
 }
 
-.Inicio{
+.page .background-page-home-aboutme .Inicio{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -22,13 +171,13 @@
     height: 100vh;
 }
 
-.Inicio .background img{
+.page .background-page-home-aboutme .Inicio .background img{
     bottom: 0;
     margin-bottom: 0px;
     margin-top: auto;
 }
 
-.Inicio .principal{
+.page .background-page-home-aboutme .Inicio .principal{
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -36,24 +185,30 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
+    gap: 20px;
 }
 
-.Inicio .principal h2{
+.page .background-page-home-aboutme .Inicio .principal h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-style: normal;
     font-weight: 300;
-    font-size: 70px;
+    font-size: 4rem;
     
     color: #FFFFFF;  
     font-family: Abstract;
 }
 
-.Inicio .principal h1{
+.page .background-page-home-aboutme .Inicio .principal h1{
     font-family: Abstract;
-    font-size: 90px;
-    color: #ccf919;
+    font-size: 5.43rem;
+    color: #6e65ac;
 }
 
-.Inicio .buttons{
+.page .background-page-home-aboutme .Inicio .buttons{
     width: 50%;
     height: 8vh;
 
@@ -62,9 +217,10 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
+    margin-top: 50px;
 }
 
-.Inicio .buttons .button{
+.page .background-page-home-aboutme .Inicio .buttons button{
     width: 300px;
     height: 6vh;
 
@@ -73,20 +229,21 @@
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #f0379a;
+    background-color: transparent;
+    border: 1px solid #6e65ac;
     border-radius: 5px;
     gap: 10px
 }
 
-.Inicio .buttons .button:hover{
-    background-color: #f0379a;
+.page .background-page-home-aboutme .Inicio .buttons button:hover{
+    background-color: #6e65ac;
 }
 
-.Inicio .buttons .button img{
+.page .background-page-home-aboutme .Inicio .buttons button img{
     width: 37px;
 }
 
-.Inicio  .buttons .button p{
+.page .background-page-home-aboutme .Inicio  .buttons button p{
     color: #FFFFFF;
     font-family: 'Dosis';
     font-style: normal;
@@ -96,7 +253,7 @@
     text-decoration: none;
 }
 
-.Inicio footer{
+.page .background-page-home-aboutme .Inicio footer{
     width: 100vw;
     height: 5vh;
     bottom: 0;
@@ -111,7 +268,7 @@
     justify-content: space-between;
 }
 
-.Inicio footer .made{
+.page .background-page-home-aboutme .Inicio footer .made{
     width: 33vw;
     height: 5vh;
     display: flex;
@@ -120,7 +277,7 @@
     justify-content: center;
 }
 
-.Inicio footer .made p{
+.page .background-page-home-aboutme .Inicio footer .made p{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -135,20 +292,21 @@
     letter-spacing: 0.1em;
 }
 
-.Inicio footer .made p:hover{
+.page .background-page-home-aboutme .Inicio footer .made p:hover{
     color: #fff;
 }
 
-.Inicio footer .made .icon{
+.page .background-page-home-aboutme .Inicio footer .made ion-icon{
     width: 10px;
     margin: 0 10px;
+    color: #FFC571;
 }
 
-.Inicio footer p:hover{
-    color: #f0379a;
+.page .background-page-home-aboutme .Inicio footer p:hover{
+    color: #6e65ac;
 }
 
-.Inicio footer .social{
+.page .background-page-home-aboutme .Inicio footer .social{
     width: 33vw;
     height: 5vh;
     display: flex;
@@ -157,21 +315,21 @@
     gap: 10px;
 }
 
-.Inicio footer .social img{
+.page .background-page-home-aboutme .Inicio footer .social img{
     position: relative;
     width: 30px;
     left: 7vw;
     right: auto;
 }
 
-.Inicio footer .social img:hover{
+.page .background-page-home-aboutme .Inicio footer .social img:hover{
     width: 31px;
     height: 31px;
     background-color: #000;
     border-radius: 50%;
 }
 
-.Inicio footer .change-language{
+.page .background-page-home-aboutme .Inicio footer .change-language{
     width: 33vw;
     height: 5vh;
     display: flex;
@@ -180,7 +338,7 @@
     align-items: center;
 }
 
-.Inicio footer .change-language .language{
+.page .background-page-home-aboutme .Inicio footer .change-language .language{
     width: 4vw;
     display: flex;
     flex-direction: row;
@@ -190,13 +348,172 @@
     gap: 5px;
 }
 
-.Inicio footer .change-language .language p{
+.page .background-page-home-aboutme .Inicio footer .change-language .language p{
     font-size: 1.5rem;
     font-weight: 800;
     color: #FFFFFF;
     font-family: 'Dosis', sans-serif;
 }
 
-.Inicio footer .change-language .language p:hover{
+.page .background-page-home-aboutme .Inicio footer .change-language .language p:hover{
     color: #000;
+}
+
+*/
+
+/*  PAGE ABOUT ME    */
+.page .background-page-home-aboutme .AboutMe{
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*  DIV ABOUT ME    */
+.page .background-page-home-aboutme .AboutMe .aboutme{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.page .background-page-home-aboutme .AboutMe .aboutme h1{
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .aboutme p{
+    width: 50vw;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.page .background-page-home-aboutme .AboutMe .aboutme ion-icon{
+    width: 1vw;
+    height: 1vh;
+}
+
+/*  DIV EDUCATION   */
+.page .background-page-home-aboutme .AboutMe .education{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .education h1{
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #FFFFFF;
+}
+
+.page .background-page-home-aboutme .AboutMe .education p{
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.page .background-page-home-aboutme .AboutMe .education .university{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.page .background-page-home-aboutme .AboutMe .education .bootcamp{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/*  DIV SKILLS  */
+
+.page .background-page-home-aboutme .AboutMe .skills{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.page .background-page-home-aboutme .AboutMe .skills h1{
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #FFFFFF;
+}
+
+.page .background-page-home-aboutme .AboutMe .skills .skills-box{
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.page .background-page-home-aboutme .AboutMe .skills .skills-content{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.page .background-page-home-aboutme .AboutMe .skills .skills-content p{
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+.page .background-page-home-aboutme .skills .skills-content img{
+    width: 100px;
+    height: 100px;
 }

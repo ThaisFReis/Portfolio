@@ -8,7 +8,7 @@
 }
 
 .ChooseLanguage .welcome{
-    width: 50wv;
+    width: 1000px;
     height: 30vh;
 
     display: flex;
@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-
+/*
 .ChooseLanguage .text-choose-language{
     width: 69vw;
     height: 7vh;
@@ -114,3 +114,4 @@
 .ChooseLanguage .buttons .btn:active::before{
     transform: scaleX(1);
 }
+*/

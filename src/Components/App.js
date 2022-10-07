@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import React from "react"
 
-import ChooseLanguage from "./ChooseLanguage.js";
-
 import Inicio from "./Portuguese/Home/Home.js";
 import Sobremim from "./Portuguese/AboutMe/AboutMe.js";
 import Projetos from "./Portuguese/Projects/Projects.js";
@@ -20,8 +18,7 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ChooseLanguage />} />
-          <Route path="/inicio" element={<Inicio />} />
+          <Route path="/" element={<Inicio />} />
           <Route path="/sobremim" element={<Sobremim />} />
           <Route path="/projetos" element={<Projetos />} />
           <Route path="/contatos" element={<Contatos />} />

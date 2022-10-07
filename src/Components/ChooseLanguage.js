@@ -1,9 +1,7 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
 import "./ChooseLanguage.css";
-import seta from "../Assets/seta.png";
 
 export default function ChooseLanguage(){
         return(
@@ -19,7 +17,8 @@ export default function ChooseLanguage(){
                     }}
                     />
                 </div>
-                <div className="text-choose-language">
+
+                {/*<div className="text-choose-language">
                     <p>Choose a language:</p>
                 </div>
                 <div className="buttons">
@@ -39,7 +38,8 @@ export default function ChooseLanguage(){
                             </div>
                         </div>
                     </Link>
-                </div>
+                </div>*/}
+
             </div>
            
         </>

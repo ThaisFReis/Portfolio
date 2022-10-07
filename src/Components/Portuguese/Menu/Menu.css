@@ -27,11 +27,11 @@
 
     display: flex;
     align-items: center;
-    color: #f0379a;
+    color: #FFC571;
 }
 
 .Header .TFR .link p{
-    color: #f0379a;
+    color: #FFC571;
     font-family: 'Dosis', sans-serif;
     font-style: normal;
     font-size: 1.5rem;
@@ -45,7 +45,6 @@
     align-items: center;
     justify-content: right;
     text-align: center;
-    gap: 10px;
 
     width: 80%;
     height: 5vh;
@@ -55,8 +54,8 @@
 .Header .Menu p{ 
     font-family: 'Dosis';
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
     display: flex;
     align-items: center;
     text-align: center;
@@ -72,6 +71,6 @@
 }
 
 Body .Header p:hover{ 
-    color: #ccf919 !important;;
+    color: #FFC571 !important;;
     text-decoration: none;
 }
