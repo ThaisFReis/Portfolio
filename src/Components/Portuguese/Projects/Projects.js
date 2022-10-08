@@ -1,12 +1,9 @@
-import Menu from "../Menu/Menu"
 import arrayProjects from "./arrayProjects"
 import  "./Projects.css"
-import Scroll from "../../../Assets/scrolldown.png"
 
 export default function Projects() {
     return (
         <>
-        <Menu />
             <div className="Projects">
                 <h1>PROJETOS</h1>
                 <div className="projects-group">

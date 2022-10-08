@@ -1,6 +1,6 @@
 const Education = [
     {
-        title: "EDUCAÇÃO",
+        title: "Educação",
         university: "UNIVERSIDADE",
         universityDate: "2019 - 2023",
         universityText: "BACHARELADO EM CIÊNCIAS MATEMÁTICAS E DA TERRA",

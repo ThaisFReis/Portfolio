@@ -1,9 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-import Menu from "../Menu/Menu"
 import "./Contact.css"
-import Scroll from "../../../Assets/scrolldown.png"
 
 export default function Contact() {
 
@@ -24,7 +22,6 @@ export default function Contact() {
 
     return (
         <>        
-        <Menu />
             <div className="Contact">
                 <h1>OBRIGADO PELA ATENÇÃO!</h1>
                 <div className="Contact-Container">

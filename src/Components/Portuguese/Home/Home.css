@@ -7,7 +7,7 @@
     justify-content: right;
     text-align: center;
     width: 100vw;
-    height: 9vh;
+    height: 10vh;
     z-index: 9999;
     top: 0;
     margin-top: 0px;
@@ -37,6 +37,7 @@
     font-style: normal;
     font-size: 1.5rem;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .Header .Menu{
@@ -63,6 +64,7 @@
 
     width: 5vw;
     height: 5vh;
+    cursor: pointer;
 }
 
 .Header .Menu p{ 
@@ -91,17 +93,20 @@ Body .Header p:hover{
 }
 
 
-/* Principal Div */
+/*------------------------------    Principal Div   ------------------------------*/
 
 .page{
-    backdrop-filter: blur(100vw);
+    backdrop-filter: blur(100px);
     width: 100vw;
-    height: 350vh;
+    height: 650vh;
+    /*height: 600vh;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+/*------------------------------    WELCOME PAGE    ------------------------------*/
 
 .page .welcome-page{
     width: 100vw;
@@ -115,7 +120,7 @@ Body .Header p:hover{
 .page .welcome-page .welcome{
     width: 1080px;
     height: 30vh;
-    margin-top: 30vh;
+    margin-top: 35vh;
 
     display: flex;
     flex-direction: column;
@@ -133,7 +138,7 @@ Body .Header p:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35vh;
+    margin-top: 30vh;
 }
 
 .page .welcome-page .scrolldown ion-icon{
@@ -147,20 +152,19 @@ Body .Header p:hover{
     font-size: 2rem;
 }
 
+/*------------------------------    BACKGROUND: PAGE HOME  AND PAGE ABOUT ME    ------------------------------*/
 
 .page .background-page-home-aboutme{
     width: 100vw;
-    height: 250vh;
-    background-image: url(../../../Assets/BlobGroup1.png);
-    background-repeat: no-repeat;
-    background-position: center left ;
-    background-size: 25vw 95vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+/*------------------------------    PAGE HOME    ------------------------------*/
 
 .page .background-page-home-aboutme .Inicio{
     display: flex;
@@ -184,7 +188,6 @@ Body .Header p:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10vh;
     gap: 20px;
 }
 
@@ -196,19 +199,20 @@ Body .Header p:hover{
     text-align: center;
     font-style: normal;
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 5rem;
     
     color: #FFFFFF;  
-    font-family: Abstract;
+    font-family: 'Galileo', sans-serif;
 }
 
 .page .background-page-home-aboutme .Inicio .principal h1{
-    font-family: Abstract;
-    font-size: 5.43rem;
+    font-family: 'HoneyBunney', sans-serif;
+    font-size: 15rem;
+    margin-bottom: -60px;
     color: #6e65ac;
 }
 
-.page .background-page-home-aboutme .Inicio .buttons{
+.page .background-page-home-aboutme .Inicio .principal .buttons{
     width: 50%;
     height: 8vh;
 
@@ -220,7 +224,7 @@ Body .Header p:hover{
     margin-top: 50px;
 }
 
-.page .background-page-home-aboutme .Inicio .buttons button{
+.page .background-page-home-aboutme .Inicio .principal .buttons button{
     width: 300px;
     height: 6vh;
 
@@ -232,18 +236,20 @@ Body .Header p:hover{
     background-color: transparent;
     border: 1px solid #6e65ac;
     border-radius: 5px;
-    gap: 10px
+    gap: 10px;
+    cursor: pointer;
 }
 
-.page .background-page-home-aboutme .Inicio .buttons button:hover{
+.page .background-page-home-aboutme .Inicio .principal .buttons button:hover{
     background-color: #6e65ac;
 }
 
-.page .background-page-home-aboutme .Inicio .buttons button img{
-    width: 37px;
+.page .background-page-home-aboutme .Inicio .principal .buttons button ion-icon{
+    font-size: 37px;
+    color: #fff;
 }
 
-.page .background-page-home-aboutme .Inicio  .buttons button p{
+.page .background-page-home-aboutme .Inicio .principal  .buttons button p{
     color: #FFFFFF;
     font-family: 'Dosis';
     font-style: normal;
@@ -252,6 +258,8 @@ Body .Header p:hover{
     text-align: center;
     text-decoration: none;
 }
+
+/*------------------------------    FOOTER  ------------------------------*/
 
 .page .background-page-home-aboutme .Inicio footer{
     width: 100vw;
@@ -359,161 +367,16 @@ Body .Header p:hover{
     color: #000;
 }
 
-*/
+/*------------------------------    BACKGROUND: PAGE PROJECTS    ------------------------------*/
 
-/*  PAGE ABOUT ME    */
-.page .background-page-home-aboutme .AboutMe{
+.background-page-projects{
     width: 100vw;
     height: 150vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-/*  DIV ABOUT ME    */
-.page .background-page-home-aboutme .AboutMe .aboutme{
+/*------------------------------    BACKGROUND: PAGE CONTACT    ------------------------------*/
+
+.background-page-contact{
     width: 100vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-}
-
-.page .background-page-home-aboutme .AboutMe .aboutme h1{
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 3.5rem;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.page .background-page-home-aboutme .AboutMe .aboutme p{
-    width: 50vw;
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2rem;
-    color: #FFFFFF;
-}
-
-.page .background-page-home-aboutme .AboutMe .aboutme ion-icon{
-    width: 1vw;
-    height: 1vh;
-}
-
-/*  DIV EDUCATION   */
-.page .background-page-home-aboutme .AboutMe .education{
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.page .background-page-home-aboutme .AboutMe .education h1{
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 3.5rem;
-    color: #FFFFFF;
-}
-
-.page .background-page-home-aboutme .AboutMe .education p{
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #FFFFFF;
-}
-
-.page .background-page-home-aboutme .AboutMe .education .university{
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-}
-
-.page .background-page-home-aboutme .AboutMe .education .bootcamp{
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-}
-
-/*  DIV SKILLS  */
-
-.page .background-page-home-aboutme .AboutMe .skills{
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-}
-
-.page .background-page-home-aboutme .AboutMe .skills h1{
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 3.5rem;
-    color: #FFFFFF;
-}
-
-.page .background-page-home-aboutme .AboutMe .skills .skills-box{
-    width: 70vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-
-.page .background-page-home-aboutme .AboutMe .skills .skills-content{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-}
-
-.page .background-page-home-aboutme .AboutMe .skills .skills-content p{
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3rem;
-    color: #FFFFFF;
-}
-
-.page .background-page-home-aboutme .skills .skills-content img{
-    width: 100px;
-    height: 100px;
+    height: 100vh;
 }
