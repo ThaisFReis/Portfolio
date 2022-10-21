@@ -1,6 +1,26 @@
-/* Menu */
-.Header{
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 700vh;
+}
+
+/*------------------------------    MENU-FOOTER     ------------------------------*/
+.menu-footer{
     position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+/*------------------------------    MENU    ------------------------------*/
+.Header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,11 +28,12 @@
     text-align: center;
     width: 100vw;
     height: 10vh;
-    z-index: 9999;
     top: 0;
-    margin-top: 0px;
-    margin-bottom: auto;
+    margin-top: 0;
     bottom: auto;
+    margin-bottom: auto;
+    background-color: #161616d5;
+    z-index: 1;
 }
 
 .Header .TFR{
@@ -28,20 +49,17 @@
 
     display: flex;
     align-items: center;
-    color: #FFC571;
 }
 
 .Header .TFR .link p{
-    color: #FFC571;
-    font-family: 'Dosis', sans-serif;
-    font-style: normal;
+    color: #FFE45B;
     font-size: 1.5rem;
     font-weight: 800;
     cursor: pointer;
 }
 
 .Header .Menu{
-    background-color: transparent !important;
+    background-color: transparent;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -51,55 +69,155 @@
 
     width: 80vw;
     height: 5vh;
-    right: 20px;
 }
 
 .Header .Menu .onclick{
-    background-color: transparent !important;
-    display: flex;
+    background-color: transparent;
+    display: flex !important;
     flex-direction: row;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     text-align: center;
 
-    width: 5vw;
+    width: 7vw;
     height: 5vh;
     cursor: pointer;
 }
 
 .Header .Menu p{ 
-    font-family: 'Dosis';
-    font-style: normal;
     font-size: 1.5rem;
     font-weight: 800;
     display: flex;
     align-items: center;
     text-align: center;
     text-decoration: none!important;
-    
-    color: #FFFFFF;
+    margin: 0px 10px;
 }
 
 .Header .Menu .div{
     width: 1px;
     height: 20px;
-    margin-left: 20px;
-    background-color: #FFFFFF;
 }
 
 Body .Header p:hover{ 
-    color: #FFC571 !important;;
+    color: #FCB24C !important;
     text-decoration: none;
 }
 
+/*------------------------------    NONE  ------------------------------*/
+.none{
+    width: 100vh;
+    height: 85vh;
+}
+/*------------------------------    FOOTER  ------------------------------*/
+
+footer{
+    width: 100vw;
+    height: 5vh;
+    
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    background-color: #161616d5;
+    z-index: 1;
+}
+
+footer .made{
+    width: 33vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .made p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Galilei', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+
+footer .made p:hover{
+    color: #fff;
+    z-index: 1;
+}
+
+footer .made ion-icon{
+    width: 15px;
+    margin: 0 10px;
+    color: #FA904E;
+}
+
+footer p:hover{
+    color: #FA904E;
+    z-index: 1;
+}
+
+footer .social{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1vw;
+}
+
+footer .social ion-icon{
+    width: 30px;
+    font-size: 2rem;
+    color: #F1EFD6;
+}
+
+footer .social ion-icon:hover{
+    color:#FA904E;
+    z-index: 1;
+}
+
+footer .change-language{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+footer .change-language .language{
+    width: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+footer .change-language .language p{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+footer .change-language .language p:hover{
+    z-index: 1;
+    color: #FA904E;
+}
 
 /*------------------------------    Principal Div   ------------------------------*/
 
 .page{
-    backdrop-filter: blur(100px);
     width: 100vw;
-    height: 650vh;
-    /*height: 600vh;*/
+    height: 700vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,44 +237,23 @@ Body .Header p:hover{
 
 .page .welcome-page .welcome{
     width: 1080px;
-    height: 30vh;
+    height: 85vh;
     margin-top: 35vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    color: #fff;
     font-size: 100px;
     font-family: Abstract;
     text-align: center;
-}
-
-.page .welcome-page .scrolldown{
-    width: 100vw;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30vh;
-}
-
-.page .welcome-page .scrolldown ion-icon{
-    color: #FFC571;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.page .welcome-page .scrolldown ion-icon:hover{
-    color: #6e65ac;
-    font-size: 2rem;
 }
 
 /*------------------------------    BACKGROUND: PAGE HOME  AND PAGE ABOUT ME    ------------------------------*/
 
 .page .background-page-home-aboutme{
     width: 100vw;
-    height: 300vh;
+    height: 400vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,21 +266,15 @@ Body .Header p:hover{
 .page .background-page-home-aboutme .Inicio{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
 
-.page .background-page-home-aboutme .Inicio .background img{
-    bottom: 0;
-    margin-bottom: 0px;
-    margin-top: auto;
-}
-
 .page .background-page-home-aboutme .Inicio .principal{
-    width: fit-content;
-    height: fit-content;
+    width: 90vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,16 +291,15 @@ Body .Header p:hover{
     font-style: normal;
     font-weight: 300;
     font-size: 5rem;
-    
-    color: #FFFFFF;  
     font-family: 'Galileo', sans-serif;
+    color: #F1EFD6;
 }
 
 .page .background-page-home-aboutme .Inicio .principal h1{
     font-family: 'HoneyBunney', sans-serif;
     font-size: 15rem;
     margin-bottom: -60px;
-    color: #6e65ac;
+    color: #FFE45B;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons{
@@ -222,6 +312,7 @@ Body .Header p:hover{
     align-items: center;
     gap: 100px;
     margin-top: 50px;
+    z-index: 1;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button{
@@ -234,23 +325,23 @@ Body .Header p:hover{
     justify-content: center;
 
     background-color: transparent;
-    border: 1px solid #6e65ac;
+    border: 1px solid #FFC571;
     border-radius: 5px;
     gap: 10px;
     cursor: pointer;
+    z-index: 99999999999999999999999999999999999;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button:hover{
-    background-color: #6e65ac;
+    z-index: 99999999999999999999999999999999999;
+    background-color: #FFC571;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button ion-icon{
     font-size: 37px;
-    color: #fff;
 }
 
 .page .background-page-home-aboutme .Inicio .principal  .buttons button p{
-    color: #FFFFFF;
     font-family: 'Dosis';
     font-style: normal;
     font-weight: 500;
@@ -259,119 +350,16 @@ Body .Header p:hover{
     text-decoration: none;
 }
 
-/*------------------------------    FOOTER  ------------------------------*/
 
-.page .background-page-home-aboutme .Inicio footer{
-    width: 100vw;
-    height: 5vh;
-    bottom: 0;
-    margin-bottom: 0px;
-    margin-top: auto;
-    top: auto;
-    position: absolute;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.page .background-page-home-aboutme .Inicio footer .made{
-    width: 33vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.page .background-page-home-aboutme .Inicio footer .made p{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    font-family: 'Galilei', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.5rem;
-    text-align: center;
-    font-style: normal;
-    letter-spacing: 0.1em;
-}
-
-.page .background-page-home-aboutme .Inicio footer .made p:hover{
-    color: #fff;
-}
-
-.page .background-page-home-aboutme .Inicio footer .made ion-icon{
-    width: 10px;
-    margin: 0 10px;
-    color: #FFC571;
-}
-
-.page .background-page-home-aboutme .Inicio footer p:hover{
-    color: #6e65ac;
-}
-
-.page .background-page-home-aboutme .Inicio footer .social{
-    width: 33vw;
-    height: 5vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 10px;
-}
-
-.page .background-page-home-aboutme .Inicio footer .social img{
-    position: relative;
-    width: 30px;
-    left: 7vw;
-    right: auto;
-}
-
-.page .background-page-home-aboutme .Inicio footer .social img:hover{
-    width: 31px;
-    height: 31px;
-    background-color: #000;
-    border-radius: 50%;
-}
-
-.page .background-page-home-aboutme .Inicio footer .change-language{
-    width: 33vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-}
-
-.page .background-page-home-aboutme .Inicio footer .change-language .language{
-    width: 4vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.page .background-page-home-aboutme .Inicio footer .change-language .language p{
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #FFFFFF;
-    font-family: 'Dosis', sans-serif;
-}
-
-.page .background-page-home-aboutme .Inicio footer .change-language .language p:hover{
-    color: #000;
-}
 
 /*------------------------------    BACKGROUND: PAGE PROJECTS    ------------------------------*/
 
 .background-page-projects{
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*------------------------------    BACKGROUND: PAGE CONTACT    ------------------------------*/
@@ -379,4 +367,7 @@ Body .Header p:hover{
 .background-page-contact{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

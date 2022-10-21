@@ -44,14 +44,14 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="contacts">
-                        <a href="https://wa.me/5521985712371" target="_blank">
+                        <a href="https://wa.me/5521985712371" target="_blank" rel="noreferrer">
                             <div className="phone">
                                 <h1>NÚMERO DO CELULAR</h1>
                                 <h2>+55 (21) 98571-2371</h2>
                             </div>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank">
+                        <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank" rel="noreferrer">
                             <div className="linkedin">
                                 <h1>LINKEDIN:</h1>
                                 <h2>linkedin.com/in/thaisfreis</h2>

@@ -1,38 +1,84 @@
 /*------------------------------    PAGE ABOUT ME   ------------------------------*/
 .page .background-page-home-aboutme .AboutMe{
     width: 100vw;
-    height: 200vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10vh;
 }
 
-/*------------------------------    DIV ABOUT ME    ------------------------------*/
-.page .background-page-home-aboutme .AboutMe .aboutme{
+/*------------------------------    DIV PERFIL   ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .perfil{
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 5vh;
+}
+/*------------------------------    DIV ME    ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .perfil .me{
+    width: 25vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F1EFD6;
+    border: #000 1px solid;
+    border-radius: 5px;
 }
 
-.page .background-page-home-aboutme .AboutMe .aboutme .background{
-    width: 30vw;
-    height: 50vh;
-    background-image: url("../../../Assets/Me0.png");
-    background-repeat: no-repeat;
-    background-size: 40vw;
-    background-position: center;
+.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents img{
+    width: 40vh;
+    height: 40vh;
+    border: 2px solid #161616;
+    border-radius: 5px;
 }
 
-.page .background-page-home-aboutme .AboutMe .aboutme .aboutme-text{
-    width: 50vw;
-    height: 50vh;
+.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info{
+    width: 40vh;
+    height: 25vh;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: left;
+    gap: 3vh;
+    z-index: 1;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info ion-icon{
+    font-size: 2vh!important;
+    color:#FEBB35!important;
+    margin-right: 0.5vw;
+    align-items: center;
+    z-index: 1;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #161616;
+    font-family: 'Thorin', sans-serif;
+    font-style: normal;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+/*------------------------------    DIV ABOUT ME    ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .perfil .aboutme{
+    width: 60vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,33 +86,35 @@
     text-align: center;
 }
 
+.page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    align-items: center;
+    text-align: center;
+}
 
-.page .background-page-home-aboutme .AboutMe .aboutme .aboutme-text h1{
+
+.page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text h1{
     width: 50vw;
     height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
     font-size: 5rem;
     color: #FFC571;
     text-align: center;
+    top: 1vh;
 }
 
-.page .background-page-home-aboutme .AboutMe .aboutme .aboutme-text{
+.page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text p{
     width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.page .background-page-home-aboutme .AboutMe .aboutme .aboutme-text p{
-    width: 50vw;
-    height: 15vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +129,7 @@
     color: #FFFFFF;
 }
 
-.page .background-page-home-aboutme .AboutMe .aboutme ion-icon{
+.page .background-page-home-aboutme .AboutMe .perfil .aboutme ion-icon{
     width: 1vw;
     height: 1vh;
 }
@@ -89,7 +137,7 @@
 /*------------------------------    DIV EDUCATION ------------------------------*/
 .page .background-page-home-aboutme .AboutMe .education{
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,8 +146,8 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .education h1{
-    width: 100vw;
-    height: 10vh;
+    width: 90vw;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +160,7 @@
 
 .page .background-page-home-aboutme .AboutMe .education .education-description{
     width: 90vw;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -126,7 +174,7 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .education .education-description .type{
-    width: 20vw;
+    width: 25vw;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -164,7 +212,7 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .education .education-description .description{
-    width: 55vw;
+    width: 50vw;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -177,6 +225,27 @@
     font-weight: 400;
     font-size: 2rem;
     color: #FFFFFF;
+    z-index: 1;
+}
+
+.university{
+    cursor: pointer;
+    z-index: 1;
+}
+
+.university  p:hover{
+    color: #FEBB35;
+    z-index: 1;
+}
+
+.bootcamp{
+    cursor: pointer;
+    z-index: 1;
+}
+
+.bootcamp p:hover{
+    color: #FEBB35;
+    z-index: 1;
 }
 
 /*------------------------------ DIV SKILLS ------------------------------*/
@@ -216,15 +285,27 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .skills .skills-content{
-    width: fit-content;
-    height: fit-content;
+    width: 20vw;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 10px;
-    margin: 50px;
+    margin: 20px;
+    cursor: pointer;
+    border: #161616 1px solid;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.page .background-page-home-aboutme .AboutMe .skills .skills-content:hover{
+    transform: scale(1.1);
+    border: #FFC571 1px solid;
+    border-radius: 5px;
+    z-index: 1;
+
 }
 
 .page .background-page-home-aboutme .AboutMe .skills .skills-content p{

@@ -4,14 +4,13 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 150vh;
-    font-family: 'Dosis', sans-serif;
+    height: 100vh;
 }
 
 .Projects h1{
-    width: 100vw;
-    height: 15vh;
-    color: #fff;
+    width: 90vw;
+    height: 10vh;
+    margin-top: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,59 +18,79 @@
 }
 
 .Projects .projects-group{
-    width: 100%;
-    height: fit-content;
+    width: 90vw;
+    height: 70vh;
     
-    display: grid;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-template-columns: repeat(2, 30%);
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    gap: 100px;
 }
 
 .Projects .projects-group a .project-box{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 5vw;
+    height: 65vh;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 30vw;
-    height: 70vh;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    opacity: 0.3;
-}
-
-.Projects .projects-group a .project-box h2{
-    width: 25vw;
-    height: 5vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 40px;
+    margin: 0 1vh 0 1vh;
+    box-shadow: inset 0 -120px 120px -120px black,
+    inset 0 -120px 120px -100px black;
 }
-
 
 .Projects .projects-group a .project-box p{
+    rotate: -90deg;
+    font-size: 3rem;
+}
+
+/* .project-box.hover */
+
+.Projects .projects-group a .project-box.hover{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(112, 112, 112, 0.534);
+    width: 30vw;
+    height: 65vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 1vh 0 1vh;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.1s ease-out;
+}
+
+.Projects .projects-group a .project-box.hover h2{
+    font-size: 3rem;
+
     width: 25vw;
-    height: 20vh;
-    color: #fff;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
 }
 
-.Projects .projects-group a .project-box img{
+.Projects .projects-group a .project-box.hover p{
+    rotate: 0deg;
+    font-size: 1.3rem;
+
     width: 25vw;
-    height: 30vh;
-    border-radius: 5px;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.Projects .projects-group a .project-box:hover{
-    background-color: rgba(255, 255, 255, 0.397);
-    opacity: 1;
+.Projects .projects-group a .project-box.hover img{
+    width: 30vw;
+    height: 22vh;
+    margin-bottom: 0;
+    transition-delay: 0.1s;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
 }
