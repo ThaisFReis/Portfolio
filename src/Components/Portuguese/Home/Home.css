@@ -45,17 +45,19 @@
     text-align: center;
 
     width: 20vw;
-    height: 5vh;
+    height: 10vh;
 
     display: flex;
     align-items: center;
 }
 
 .Header .TFR .link p{
-    color: #FFE45B;
-    font-size: 1.5rem;
-    font-weight: 800;
+    color: #F1EFD6;
+    font-size: 1.3rem;
     cursor: pointer;
+    text-decoration: none!important;
+    font-family: 'TrinidadNeue', sans-serif !important;
+    letter-spacing: 0.1rem;
 }
 
 .Header .Menu{
@@ -63,12 +65,12 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: right !important;
     align-items: center;
-    justify-content: right;
     text-align: center;
 
     width: 80vw;
-    height: 5vh;
+    height: 10vh;
 }
 
 .Header .Menu .onclick{
@@ -79,28 +81,31 @@
     justify-content: center;
     text-align: center;
 
-    width: 7vw;
-    height: 5vh;
+    width: fit-content;
+    height: 10vh;
     cursor: pointer;
 }
 
 .Header .Menu p{ 
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.3rem !important;
     display: flex;
     align-items: center;
     text-align: center;
     text-decoration: none!important;
-    margin: 0px 10px;
+    font-family: 'TrinidadNeue', sans-serif !important;
+    letter-spacing: 0.1rem;
+    color: #F1EFD6;
+    margin: none !important;
 }
 
 .Header .Menu .div{
     width: 1px;
     height: 20px;
+    margin: 0px 5px !important;
 }
 
 Body .Header p:hover{ 
-    color: #FCB24C !important;
+    color: #fe2908 !important;
     text-decoration: none;
 }
 
@@ -156,11 +161,11 @@ footer .made p:hover{
 footer .made ion-icon{
     width: 15px;
     margin: 0 10px;
-    color: #FA904E;
+    color: #fe2908;
 }
 
 footer p:hover{
-    color: #FA904E;
+    color: #fe2908;
     z-index: 1;
 }
 
@@ -180,7 +185,7 @@ footer .social ion-icon{
 }
 
 footer .social ion-icon:hover{
-    color:#FA904E;
+    color:#fe2908;
     z-index: 1;
 }
 
@@ -200,17 +205,17 @@ footer .change-language .language{
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    gap: 5px;
+    gap: 7px;
 }
 
 footer .change-language .language p{
     font-size: 1.5rem;
-    font-weight: 800;
+    font-family: 'TrinidadNeue', sans-serif;
 }
 
 footer .change-language .language p:hover{
     z-index: 1;
-    color: #FA904E;
+    color: #fe2908;
 }
 
 /*------------------------------    Principal Div   ------------------------------*/
@@ -245,7 +250,7 @@ footer .change-language .language p:hover{
     align-items: center;
 
     font-size: 100px;
-    font-family: Abstract;
+    font-family: 'TrinidadNeue', sans-serif;
     text-align: center;
 }
 
@@ -279,6 +284,7 @@ footer .change-language .language p:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 20px;
 }
 
@@ -290,16 +296,25 @@ footer .change-language .language p:hover{
     text-align: center;
     font-style: normal;
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-family: 'Galileo', sans-serif;
+    font-family: 'TrinidadNeue', sans-serif;
     color: #F1EFD6;
+    letter-spacing:  -0.2rem;
 }
 
 .page .background-page-home-aboutme .Inicio .principal h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
     font-family: 'HoneyBunney', sans-serif;
     font-size: 15rem;
     margin-bottom: -60px;
-    color: #FFE45B;
+    color: #fe2a04;
+    letter-spacing: 0rem;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons{
@@ -325,7 +340,7 @@ footer .change-language .language p:hover{
     justify-content: center;
 
     background-color: transparent;
-    border: 1px solid #FFC571;
+    border: 1px solid #fe2908;
     border-radius: 5px;
     gap: 10px;
     cursor: pointer;
@@ -334,7 +349,7 @@ footer .change-language .language p:hover{
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button:hover{
     z-index: 99999999999999999999999999999999999;
-    background-color: #FFC571;
+    background-color: #fe2908;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button ion-icon{
@@ -342,10 +357,10 @@ footer .change-language .language p:hover{
 }
 
 .page .background-page-home-aboutme .Inicio .principal  .buttons button p{
-    font-family: 'Dosis';
-    font-style: normal;
-    font-weight: 500;
     font-size: 30px;
+    font-family: 'Thorin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
 }

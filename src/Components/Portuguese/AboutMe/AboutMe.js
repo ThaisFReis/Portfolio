@@ -81,7 +81,7 @@ const AboutMe = () => {
                             )}
                         </div>
                         <div className="skills">
-                            <h1>Software Skills</h1>
+                            <h1>SOFTWARE SKILLS</h1>
                             <div className="skills-box">
                                 {Skills.map((item, index) => {
                                     return (

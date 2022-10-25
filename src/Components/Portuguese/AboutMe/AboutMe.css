@@ -55,24 +55,28 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info ion-icon{
-    font-size: 2vh!important;
-    color:#FEBB35!important;
+    font-size: 1.3rem!important;
+    color:#fe2908!important;
     margin-right: 0.5vw;
     align-items: center;
     z-index: 1;
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info p{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.3rem;
     color: #161616;
-    font-family: 'Thorin', sans-serif;
-    font-style: normal;
+    font-family: 'Dosis', sans-serif !important;
+    font-weight: 600;
     margin-left: 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     z-index: 1;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info ion-icon:hover{
+    color: #fe2908;
+    transition: 0.5s;
 }
 
 /*------------------------------    DIV ABOUT ME    ------------------------------*/
@@ -88,7 +92,7 @@
 
 .page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text{
     width: 50vw;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content:  space-around;
@@ -107,19 +111,14 @@
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
     font-size: 5rem;
-    color: #FFC571;
+    color: #fe2908;
     text-align: center;
-    top: 1vh;
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text p{
     width: 50vw;
-    height: 60vh;
+    height: 45vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
     margin-bottom: 0;
     margin-top: auto;
     font-family: 'Thorin', sans-serif;
@@ -127,11 +126,6 @@
     font-weight: 600;
     font-size: 2rem;
     color: #FFFFFF;
-}
-
-.page .background-page-home-aboutme .AboutMe .perfil .aboutme ion-icon{
-    width: 1vw;
-    height: 1vh;
 }
 
 /*------------------------------    DIV EDUCATION ------------------------------*/
@@ -154,7 +148,7 @@
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
     font-size: 5rem;
-    color: #FFC571;
+    color: #fe2908;
     text-align: center;
 }
 
@@ -166,35 +160,32 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Thorin', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2rem;
-    color: #FFFFFF;
 }
 
 .page .background-page-home-aboutme .AboutMe .education .education-description .type{
     width: 25vw;
-    height: 40vh;
+    height: 48vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     gap: 10vh;
     text-align: left;
 }
 
-.page .background-page-home-aboutme .AboutMe .education .education-description .type{
-    font-family: 'Thorin', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+.page .background-page-home-aboutme .AboutMe .education .education-description .type h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  left;
+    height: 60px;
+    font-family: 'TrinidadNeue', sans-serif;
     font-size: 3rem;
-    color: #FFC571;
+    color: #fe2908;
 }
 
 .page .background-page-home-aboutme .AboutMe .education .education-description .date{
     width: 15vw;
-    height: 40vh;
+    height: 48vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,11 +195,16 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .education .education-description .date p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
     font-family: 'Thorin', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 2.5rem;
 }
 
 .page .background-page-home-aboutme .AboutMe .education .education-description .description{
@@ -224,8 +220,18 @@
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
-    color: #FFFFFF;
     z-index: 1;
+}
+
+.page .background-page-home-aboutme .AboutMe .education .education-description .description p{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Thorin', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 .university{
@@ -234,7 +240,7 @@
 }
 
 .university  p:hover{
-    color: #FEBB35;
+    color: #fe2908;
     z-index: 1;
 }
 
@@ -244,7 +250,7 @@
 }
 
 .bootcamp p:hover{
-    color: #FEBB35;
+    color: #fe2908;
     z-index: 1;
 }
 
@@ -269,7 +275,7 @@
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
     font-size: 5rem;
-    color: #FFC571;
+    color: #fe2908;
     text-align: center;
 }
 
@@ -302,7 +308,7 @@
 
 .page .background-page-home-aboutme .AboutMe .skills .skills-content:hover{
     transform: scale(1.1);
-    border: #FFC571 1px solid;
+    border: #fe2908 1px solid;
     border-radius: 5px;
     z-index: 1;
 

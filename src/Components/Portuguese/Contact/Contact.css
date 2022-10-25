@@ -16,7 +16,7 @@
     justify-content: center;
     font-size: 50px;
     font-weight: 600;
-    color: #FCB24C !important;
+    color: #fe2908 !important;
 }
 
 /* EMAIL */
@@ -80,7 +80,7 @@
 }
 
 .Contact .Contact-Container .email .form form .input-group label{
-    color: #FCB24C !important;
+    color: #fe2908 !important;
     font-size: 25px;
     margin-bottom: 5px;
     z-index: 1;
@@ -115,7 +115,7 @@
 }
 
 .Contact .Contact-Container .email .form form .input-group input:focus{
-    outline: 1px solid #FCB24C !important;
+    outline: 1px solid #fe2908 !important;
     border: #F1EFD6;
     background: rgba(255, 255, 255, 1);
     z-index: 1;
@@ -152,7 +152,7 @@
 }
 
 .Contact .Contact-Container .email .form form .input-group textarea:focus {
-    outline: 1px solid #FCB24C !important;
+    outline: 1px solid #fe2908 !important;
     border: #F1EFD6;
     background: rgba(255, 255, 255, 1);
     z-index: 1;
@@ -164,7 +164,7 @@
     background-color: rgba(255, 255, 255, 0.219);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    color: #FCB24C !important;
+    color: #fe2908 !important;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.8px;
@@ -174,7 +174,7 @@
 
 .Contact .Contact-Container .email .form form button:hover{
     color: #F1EFD6 !important;
-    background-color: #FCB24C !important;
+    background-color: #fe2908 !important;
     z-index: 1;
 }
 
@@ -214,7 +214,7 @@
 }
 
 .Contact .Contact-Container .phone h1{
-    color: #FCB24C;
+    color: #fe2908;
     font-size: 40px;
     margin-top: 0;
     z-index: 1;
@@ -240,7 +240,7 @@
 }
 
 .Contact .Contact-Container .linkedin h1{
-    color: #FCB24C;
+    color: #fe2908;
     font-size: 40px;
     margin-top: 0;
     z-index: 1;

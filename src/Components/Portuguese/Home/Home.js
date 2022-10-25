@@ -24,6 +24,16 @@ export default function Home() {
     const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
     const executeScroll5 = () => welcomePage.current.scrollIntoView({ behavior: 'smooth' })
 
+    const [hover, setHover] = React.useState('')
+
+    function handleMouseEnter() {
+        setHover('hover')
+    }
+    
+    function handleMouseLeave() {
+        setHover('')
+    }
+
     return (
         <div className="body">
             <div className="menu-footer">
@@ -58,8 +68,12 @@ export default function Home() {
                     </div>
 
                     {/* MADE WITH */}
-                    <div className="made">
-                        <p>made with <ion-icon name="heart-outline"></ion-icon> by Thais F. Reis</p>
+                    <div className={`made ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                        { hover === 'hover' ?
+                            <p>made with <ion-icon name="heart"></ion-icon> by Thais F. Reis</p>
+                            :
+                            <p>made with <ion-icon name="heart-outline"></ion-icon> by Thais F. Reis</p>
+                        }
                     </div>
 
                     {/* BUTTONS */}

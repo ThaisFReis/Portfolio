@@ -9,12 +9,15 @@
 
 .Projects h1{
     width: 90vw;
-    height: 10vh;
-    margin-top: 5vh;
+    height: 20vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 55px;
+    align-items: center;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+    color: #fe2908;
+    text-align: center;
 }
 
 .Projects .projects-group{
