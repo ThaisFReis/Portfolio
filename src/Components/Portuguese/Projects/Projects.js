@@ -1,17 +1,31 @@
-import React, { useState } from "react"
+import React from "react"
 
 import arrayProjects from "./arrayProjects"
 import  "./Projects.css"
 
 const Projects = () => {
+    function slideLeft() {
+        const projects = document.querySelector('.projects')
+        projects.scrollLeft -= 500
+    }
+
+    function slideRight() {
+        const projects = document.querySelector('.projects')
+        projects.scrollLeft += 500
+    }
+
     return (
         <>
             <div className="Projects">
                 <h1>PROJETOS</h1>
                 <div className="projects-group">
-                    {arrayProjects.map((project, index) => (
+                    <ion-icon name="arrow-back-circle-outline" id="slideLeft" onClick={slideLeft}></ion-icon>
+                    <div className="projects">
+                        {arrayProjects.map((project, index) => (
                         <ProjectBox key={index} title={project.title} link={project.link} description={project.description} image={project.image}/>
-                    ))}     
+                    ))}
+                </div>
+                <ion-icon name="arrow-forward-circle-outline" id="slideRight" onClick={slideRight} ></ion-icon>
                 </div>
             </div>
         </>
@@ -30,17 +44,24 @@ const ProjectBox = ({title, link, description, image}) => {
     }
 
     return (
-        <a href={link} target="_blank" rel="noreferrer">
-            <div className={`project-box ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                { hover === 'hover' ? 
-                <>
+        <>
+            <a href={link} target="_blank" rel="noreferrer">
+                <div className={`project-box ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    { hover === 'hover' ? 
+                    <div className="box">
+                        <h2>{title}</h2>
+                        <p>{description}</p>
+                        <div className="box-img" style={{backgroundImage: `url(${image})`}}> </div>
+                    </div>
+                : 
+                <div className="box-close">
                     <h2>{title}</h2>
-                    <p>{description}</p>
-                    <img src={image} alt={title}/> 
-                </>
-                : <p>{title}</p>}
-            </div>
-        </a>
+                    <p className="">{description}</p>
+                </div>
+                }
+                </div>
+            </a>
+        </>
     )
 }
 

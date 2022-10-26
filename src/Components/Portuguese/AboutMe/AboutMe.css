@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.AboutMe > h1, h2, p{
+    z-index: 1;
+}
+
 /*------------------------------    DIV PERFIL   ------------------------------*/
 .page .background-page-home-aboutme .AboutMe .perfil{
     width: 100vw;
@@ -51,7 +55,6 @@
     text-align: left;
     align-items: left;
     gap: 3vh;
-    z-index: 1;
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info ion-icon{
@@ -59,7 +62,6 @@
     color:#fe2908!important;
     margin-right: 0.5vw;
     align-items: center;
-    z-index: 1;
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info p{
@@ -71,7 +73,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    z-index: 1;
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info ion-icon:hover{
@@ -220,7 +221,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
-    z-index: 1;
 }
 
 .page .background-page-home-aboutme .AboutMe .education .education-description .description p{
@@ -236,22 +236,18 @@
 
 .university{
     cursor: pointer;
-    z-index: 1;
 }
 
 .university  p:hover{
     color: #fe2908;
-    z-index: 1;
 }
 
 .bootcamp{
     cursor: pointer;
-    z-index: 1;
 }
 
 .bootcamp p:hover{
     color: #fe2908;
-    z-index: 1;
 }
 
 /*------------------------------ DIV SKILLS ------------------------------*/
@@ -303,14 +299,12 @@
     cursor: pointer;
     border: #161616 1px solid;
     border-radius: 5px;
-    z-index: 1;
 }
 
 .page .background-page-home-aboutme .AboutMe .skills .skills-content:hover{
     transform: scale(1.1);
     border: #fe2908 1px solid;
     border-radius: 5px;
-    z-index: 1;
 
 }
 

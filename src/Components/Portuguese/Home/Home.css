@@ -33,7 +33,11 @@
     bottom: auto;
     margin-bottom: auto;
     background-color: #161616d5;
-    z-index: 1;
+    z-index: 10!important;
+}
+
+.Header > div, p{
+    z-index: 9999!important;
 }
 
 .Header .TFR{
@@ -126,7 +130,11 @@ footer{
     justify-content: space-around;
     bottom: 0;
     background-color: #161616d5;
-    z-index: 1;
+    z-index: 10!important;
+}
+
+.footer > div, p, ion-icon{
+    z-index: 9999;
 }
 
 footer .made{
@@ -155,7 +163,6 @@ footer .made p{
 
 footer .made p:hover{
     color: #fff;
-    z-index: 1;
 }
 
 footer .made ion-icon{
@@ -166,7 +173,6 @@ footer .made ion-icon{
 
 footer p:hover{
     color: #fe2908;
-    z-index: 1;
 }
 
 footer .social{
@@ -186,7 +192,6 @@ footer .social ion-icon{
 
 footer .social ion-icon:hover{
     color:#fe2908;
-    z-index: 1;
 }
 
 footer .change-language{
@@ -214,7 +219,6 @@ footer .change-language .language p{
 }
 
 footer .change-language .language p:hover{
-    z-index: 1;
     color: #fe2908;
 }
 
@@ -297,7 +301,6 @@ footer .change-language .language p:hover{
     font-style: normal;
     font-weight: 300;
     font-size: 4.8rem;
-    font-family: 'Galileo', sans-serif;
     font-family: 'TrinidadNeue', sans-serif;
     color: #F1EFD6;
     letter-spacing:  -0.2rem;
@@ -327,7 +330,6 @@ footer .change-language .language p:hover{
     align-items: center;
     gap: 100px;
     margin-top: 50px;
-    z-index: 1;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button{
@@ -344,11 +346,9 @@ footer .change-language .language p:hover{
     border-radius: 5px;
     gap: 10px;
     cursor: pointer;
-    z-index: 99999999999999999999999999999999999;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button:hover{
-    z-index: 99999999999999999999999999999999999;
     background-color: #fe2908;
 }
 

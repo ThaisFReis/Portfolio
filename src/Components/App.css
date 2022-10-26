@@ -35,6 +35,15 @@ Body{
   color: #F1EFD6;
 }
 
+* > h2, h3, h4, h5, h6, p, button{
+  z-index: 3;
+}
+
+*::selection{
+  background-color: #fe2908;
+  color: #F1EFD6;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
     height: 10px;

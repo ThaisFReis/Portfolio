@@ -9,7 +9,6 @@ import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import  "./Home.css"
 
-
 export default function Home() {
 
     const homePage = useRef(null);
@@ -32,7 +31,8 @@ export default function Home() {
     
     function handleMouseLeave() {
         setHover('')
-    }
+    }   
+
 
     return (
         <div className="body">

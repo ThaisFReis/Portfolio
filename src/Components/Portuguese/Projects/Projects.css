@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    animation: animation1 0.6s ease 0.6s 0 normal none;
 }
 
 .Projects h1{
@@ -18,6 +19,12 @@
     font-size: 5rem;
     color: #fe2908;
     text-align: center;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .Projects .projects-group{
@@ -26,37 +33,37 @@
     
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    text-align: justify;
 }
 
-.Projects .projects-group a .project-box{
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 5vw;
-    height: 65vh;
-    cursor: pointer;
+.Projects .projects-group ion-icon{
+    font-size: 2rem;
+    color: #fe2908;
+}
+
+.Projects .projects-group ion-icon:hover{
+    color: #fff;
+}
+
+.Projects .projects-group .projects{
+    width: 80vw;
+    height: 70vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
-    justify-content: center;
-    margin: 0 1vh 0 1vh;
-    box-shadow: inset 0 -120px 120px -120px black,
-    inset 0 -120px 120px -100px black;
+    overflow-x: scroll;
+    gap: 2rem;
+
+    scroll-behavior: smooth;
+    scrollbar-color: #fe2908 #2e2e2e;
+    z-index: 9;
 }
 
-.Projects .projects-group a .project-box p{
-    rotate: -90deg;
-    font-size: 3rem;
-}
-
-/* .project-box.hover */
-
-.Projects .projects-group a .project-box.hover{
+.Projects .projects-group .projects .project-box{
     border: 1px solid #fff;
     border-radius: 5px;
-    background-color: rgba(112, 112, 112, 0.534);
     width: 30vw;
     height: 65vh;
     cursor: pointer;
@@ -64,14 +71,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: justify;
-    margin: 0 1vh 0 1vh;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.1s ease-out;
 }
 
-.Projects .projects-group a .project-box.hover h2{
-    font-size: 3rem;
-
+.Projects .projects-group .projects .project-box .box-close h2{
+    font-family: 'TrinidadNeue', sans-serif;
+    font-size: 2.5rem;
+    color: #fe2908;
     width: 25vw;
     height: 8vh;
     display: flex;
@@ -79,21 +84,147 @@
     justify-content: center;
 }
 
-.Projects .projects-group a .project-box.hover p{
-    rotate: 0deg;
-    font-size: 1.3rem;
+.Projects .projects-group .projects .project-box .box-close p{
+    font-size: 1.5rem;
 
     width: 25vw;
-    height: 35vh;
+    height: calc(9 * 1.5rem);
+    font-family: 'Thorin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+}
+
+.Projects .projects-group .projects .project-box .box-close p::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 1.5rem;
+    background: linear-gradient(90deg, transparent, #161616);
+}
+
+/* .projects .Projects .projects-group .projects .project-box.hover */
+
+.Projects .projects-group .projects .project-box.hover{
+    border: 1px solid #fe290896;
+    border-radius: 5px;
+    width: 30vw;
+    height: 65vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    -webkit-transition: width 0.6s 0s linear;
+    -moz-transition: width 0.6s 0s linear;
+    -o-transition: width 0.6s 0s linear;
+    transition: width 0.6s 0s linear;
+}
+
+.Projects .projects-group .projects .project-box.hover .box{
+    width: 25vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    
+    -webkit-transition: width 0.6s 0s linear;
+    -moz-transition: width 0.6s 0s linear;
+    -o-transition: width 0.6s 0s linear;
+    transition: width 0.6s 0s linear;
+}
+
+.Projects .projects-group .projects .project-box.hover .box h2{
+    font-family: 'TrinidadNeue', sans-serif;
+    font-size: 2.5rem;
+    color: #fe2908;
+    width: 25vw;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
-.Projects .projects-group a .project-box.hover img{
-    width: 30vw;
+.Projects .projects-group .projects .project-box.hover .box p{
+    rotate: 0deg;
+    font-size: 1.5rem;
+
+    width: 25vw;
+    height: 30vh;
+    margin: 2.5vh 0vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Thorin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    overflow-y: scroll;
+    text-align: justify;
+
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.Projects .projects-group .projects .project-box.hover .box .box-img{
+    width: 25vw;
     height: 22vh;
     margin-bottom: 0;
-    transition-delay: 0.1s;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+    background-position: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 0px 0px;
+
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
+
+@-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+    }
+    50%{
+    opacity: 0.2;
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+    }
+    50%{
+        opacity: 0.2;
+        }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
