@@ -7,19 +7,6 @@
     height: 100vh;
 }
 
-.Contact h1{
-    width: fit-content;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'TrinidadNeue', sans-serif;
-    font-style: normal;
-    font-size: 5rem;
-    color: #fe2908!important;
-}
-
 /* NOTIFICATION */
 .Contact .notification{
     position: absolute;
@@ -86,32 +73,30 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 50vh;
+    height: 80vh !important;
 }
 
 .Contact .Contact-Container .email{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 60vh;
+    justify-content: space-around;
+    width: 50vw!important;
+    height: 80vh!important;
 }
 
 .Contact .Contact-Container .email h1{
-    color: #F1EFD6;
-    font-size: 40px;
-    margin-top: 0;
-    top: 0;
+    width: 30vw;
+    height: 10vh;
+    margin-top: 5vh!important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'TrinidadNeue', sans-serif;
+    color: #F1EFD6!important;
+    font-size: 3rem;
 }
-
-.Contact .Contact-Container .email h2{
-    color: #F1EFD6;
-    font-size: 20px;
-}
-
-
-
 .Contact .Contact-Container.email .form{
     display: flex;
     flex-direction: column;
@@ -125,9 +110,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40vw;
-    height: 50vh;
+    width: 30vw;
+    height: 40vh!important;
     z-index: 3;
+    font-family: 'TrinidadNeue', sans-serif!important;
 }
 
 .Contact .Contact-Container .email .form form .input-group{
@@ -135,7 +121,8 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    width: 80%;
+    width: 30vw;
+    height: 35vh;
     z-index: 1;
 }
 
@@ -169,10 +156,10 @@
 .Contact .Contact-Container .email .form form .input-group .input input{
     width: 99%;
     height: 40px;
-    background: rgba(255, 255, 255, 0.219);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: none;
+    border: gr;
     border-radius: 5px;
-    color: rgb(0, 0, 0) !important;
+    color: #F1EFD6 !important;
     margin-bottom: 15px;
     font-weight: 500;
     font-size: 18px;
@@ -186,158 +173,137 @@
     font-family: 'TrinidadNeue', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
     z-index: 1;
 }
 
 .Contact .Contact-Container .email .form form .input-group .input input:focus::placeholder{
     font-family: 'TrinidadNeue', sans-serif;
-    color: #161616 !important;
+    color: #F1EFD6 !important;
     opacity: 0.8;
     z-index: 1;
 }
 
 .Contact .Contact-Container .email .form form .input-group .input input:focus{
+    background-color: transparent;
     font-family: 'TrinidadNeue', sans-serif;
-    outline: 1px solid #fe2908 !important;
+    outline: 1px solid #ff6347 !important;
     border: #F1EFD6;
-    background: rgba(255, 255, 255, 1);
     z-index: 1;
 }
 
-
 /* TEXTAREA */
-.Contact .Contact-Container .email .form form .input-group .input textarea{
+.Contact .Contact-Container .email .form form .input-group .textarea textarea{
+    background-color: transparent;
     width: 99%;
     height: 15vh;
-    background: rgba(255, 255, 255, 0.219);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    color: rgb(0, 0, 0);
+    color: #F1EFD6;
     margin-bottom: 15px;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.8px;
     transition: 0.3s ease-in-out;
     z-index: 1;
-    font-family: 'TrinidadNeue', sans-serif;
+    font-family: 'TrinidadNeue', sans-serif !important;
 }
 
-.Contact .Contact-Container .email .form form .input-group .input textarea::placeholder {
-    font-family: 'TrinidadNeue', sans-serif!important;
+.Contact .Contact-Container .email .form form .input-group .textarea textarea::placeholder {
+    font-family: 'TrinidadNeue', sans-serif !important;
     font-size: 16px;
     font-weight: 400;
     color: #F1EFD6;
     z-index: 1;
 }
 
-.Contact .Contact-Container .email .form form .input-group .input textarea:focus::placeholder {
-    font-family: 'TrinidadNeue', sans-serif!important;
+.Contact .Contact-Container .email .form form .input-group .textarea textarea:focus::placeholder {
+    font-family: 'TrinidadNeue', sans-serif !important;
     color: #161616 !important;
     opacity: 0.8;
     z-index: 1;
 }
 
-.Contact .Contact-Container .email .form form .input-group .input textarea:focus {
-    font-family: 'TrinidadNeue', sans-serif!important;
+.Contact .Contact-Container .email .form form .input-group .textarea textarea:focus {
+    background-color: transparent;
+    font-family: 'TrinidadNeue', sans-serif !important;
     outline: 1px solid #fe2908 !important;
     border: #F1EFD6;
-    background: rgba(255, 255, 255, 1);
     z-index: 1;
 }
 
 .Contact .Contact-Container .email .form form button{
     width: 40%;
     height: 5vh;
-    background-color: rgba(255, 255, 255, 0.219);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.11)!important;
+    border: 1px solid #161616!important;
     border-radius: 5px;
-    color: #fe2908 !important;
+    color: #F1EFD6!important;
     font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    font-size: 1.6rem!important;
     cursor: pointer;
     z-index: 1;
+    font-family: 'TrinidadNeue', sans-serif!important;
 }
 
 .Contact .Contact-Container .email .form form button:hover{
     color: #F1EFD6 !important;
     background-color: #fe2908 !important;
+    border: 1px solid #fe2908 !important;
     z-index: 1;
 }
 
 /*------------------------------------------------------*/
-.Contact .Contact-Container .contacts{
+.Contact .Contact-Container .others{
+    border-radius: 5px;
+    width: 9vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+}
+
+.Contact .Contact-Container .others p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #F1EFD6;
+    z-index: 1;
+    font-family: 'TrinidadNeue', sans-serif!important;
+}
+
+.Contact .Contact-Container .others ion-icon{
+    color: #F1EFD6;
+    font-size: 2.5rem;
+}
+
+.Contact .Contact-Container .others ion-icon:hover{
+    color: #fe2908;
+}
+
+/*------------------------------------------------------*/
+
+.Contact .Contact-Container .thanks{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    width: 40%;
-    height: 55vh!important;
-    z-index: 1;
-    gap: 1vh;
+    width: 50vw!important;
+    height: 80vh!important;
+    text-align: left;
+    
 }
 
-.Contact .Contact-Container .contacts a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 20vw !important;
-    height: 20vh !important;
-    z-index: 1;
-    border: 1px solid transparent;
-}
-
-/* TELEFONE */
-.Contact .Contact-Container .phone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.Contact .Contact-Container .phone h1{
+.Contact .Contact-Container .thanks h1{
+    font-family: 'TrinidadNeue', sans-serif;
     color: #fe2908;
-    font-size: 40px;
-    margin-top: 0;
+    font-size: 7rem;
+    font-weight: 500;
     z-index: 1;
 }
 
-.Contact .Contact-Container .phone h2{
-    font-size: 30px;
-    z-index: 1;
-}
-/* LINKEDIN */
-
-.Contact .Contact-Container .linkedin{
-    width: 20vw;
-    height: 15vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    cursor: pointer;
-    z-index:2;
-}
-
-.Contact .Contact-Container .linkedin h1{
-    color: #fe2908;
-    font-size: 40px;
-    margin-top: 0;
-    z-index: 1;
-}
-
-.Contact .Contact-Container .linkedin h2{
-    font-size: 30px;
-    z-index: 1;
-}
+/*------------------------------------------------------*/
 
 @keyframes slideInFromTop {
     5%{

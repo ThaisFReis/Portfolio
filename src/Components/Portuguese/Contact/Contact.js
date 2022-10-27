@@ -46,45 +46,41 @@ export default function Contact() {
                         </div>
                     }
                 </>
-                <h1>OBRIGADO PELA ATENÇÃO!</h1>
                 <div className="Contact-Container">
+                    <div className="thanks">
+                        <h1>OBRIGADA <br/> PELA <br/> ATENÇÃO!</h1>
+                    </div>
                     <div className="email">
-                        <h1>ENTRE EM CONTATO:</h1>
-                        <div className="form">
-                            <form ref={form} onSubmit={sendEmail}>
-                                <div className="input-group">
-                                    <div className="input">
-                                        <label><ion-icon name="person-outline"></ion-icon></label>
-                                        <input type="text" name="user_name" placeholder='Nome' required/>
+                        <h1>CONTATO:</h1>
+                            <div className="form">
+                                <form ref={form} onSubmit={sendEmail}>
+                                    <div className="input-group">
+                                        <div className="input">
+                                            <label><ion-icon name="person-outline"></ion-icon></label>
+                                            <input type="text" name="user_name" placeholder='Nome' required/>
+                                        </div>
+                                        <div className="input">
+                                            <label><ion-icon name="at"></ion-icon></label>
+                                            <input type="email" name="user_email" placeholder='Email' required/>
+                                        </div>
+                                        <div className="textarea">
+                                            <label><ion-icon name="mail-outline"></ion-icon></label>
+                                            <textarea name="message" placeholder='Escreva sua mensagem'/>
+                                        </div>
                                     </div>
-                                    <div className="input">
-                                        <label><ion-icon name="at"></ion-icon></label>
-                                        <input type="email" name="user_email" placeholder='Email' required/>
-                                    </div>
-                                    <div className="textarea">
-                                        <label><ion-icon name="mail-outline"></ion-icon></label>
-                                        <textarea name="message" placeholder='Escreva sua mensagem'/>
-                                    </div>
-                                </div>
-                                <button className="button" type="submit" value="Send" required>Enviar</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div className="contacts">
-                        <a href="https://wa.me/5521985712371" target="_blank" rel="noreferrer">
-                            <div className="phone">
-                                <h1>NÚMERO DO CELULAR</h1>
-                                <h2>+55 (21) 98571-2371</h2>
+                                    <button className="button" type="submit" value="Send" required>Enviar</button>
+                                </form>
                             </div>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank" rel="noreferrer">
-                            <div className="linkedin">
-                                <h1>LINKEDIN:</h1>
-                                <h2>linkedin.com/in/thaisfreis</h2>
-                            </div>   
-                        </a>      
-                    </div>
+                            <div className="others">
+                                <p> OUTROS MEIOS: </p>
+                                <a href="https://wa.me/5521985712371" target="_blank" rel="noreferrer">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                                <a href="https://www.linkedin.com/in/thaisfreis/" target="_blank" rel="noreferrer">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </>
