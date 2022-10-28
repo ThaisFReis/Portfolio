@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Aboutme from "./Array/aboutme"
 import Skills from "./Array/skills"
 import Education from "./Array/education"
-import Me from "../../../Assets/me.jpeg"
+import Me3 from "../../../Assets/Me3.png"
+import Paper from "../../../Assets/paper.png"
 import  "./AboutMe.css"
 
 const data = [    
@@ -14,35 +15,69 @@ const data = [
     { info: "Estudante"}
 ]
 
+const languages = [
+    { language: "PORTUGUÊS",
+      level: "PRIMEIRA LÍNGUA"},
+    { language: "INGLÊS",
+        level: "B1"}
+]
+
+const interests = [
+    { interest: "VIOLINO",
+      description: "Comecei a tocar violino em 2021 por causa da pandemia e estudo praticamente todos os dias."},
+    { interest: "ASTRONOMIA",
+        description: "Desde criança sempre fui fascinada pelo universo e sempre quis saber mais sobre ele. Uma das minhas metas é viajar para o Chile para ver o céu estrelado e se possível, conhecer os telescópios do Atacama."},
+    { interest: "LEITURA",
+    description: "Desde criança sempre tive interesse em ler pois aprendi a ler mais tarde que a maioria das crianças. Gosto de ler livros de ficção científica, fantasia e romance."},
+    { interest: "JOGOS",
+    description: "Desde criança sempre gostei de jogar videogame, principalmente jogos de RPG e simulação. Atualmente jogo muito The Sims e Stardew Valley."},
+    { interest: "FILMES E SÉRIES",
+    description: "Desde adolescente sempre gostei de assistir filmes e séries, ainda mais quando eram legendados pois assim eu aprendia mais sobre a língua inglesa. Atualmente gosto de assistir filmes de ficção científica, fantasia e romance."},
+]
+
+
 const AboutMe = () => {
 
         return (
         <>
             <div className="AboutMe">
                     <div className="perfil">
-                                {Aboutme.map((item, index) => {
-                                    return (
-                                        <div className="aboutme" key={index}>
-                                                <div className="background"> </div>
-                                                <div className="aboutme-text">
-                                                    <h1>{item.title}</h1>
-                                                    <p>{item.description}</p>
-                                                </div>
-                                        </div>
-                                    )
-                                })}
-
-                        <div className="me">
-                            <div className="me-contents">
-                                <div className="me-info">
-                                    <img src={Me} alt="Foto de Thais Ferreira Reis"/>
-                                    {data.map((item, index) => {
-                                        return (
-                                            <CardMe info={item.info} key={index}/>
-                                        )
-                                    })}
-                                </div>
+                    
+                        <div className="perfil-text">
+                            <div className="perfil-text-description">
+                                <h1>Olá, eu sou a Thais!</h1>
+                                <p>Estudante de Ciência da Computação na Universidade Federal do Rio de Janeiro.
+                                Atualmente estou cursando o 4º período e estou em busca de uma oportunidade de estágio na área de desenvolvimento de software.
+                                Meu objetivo é me tornar uma desenvolvedora Full Stack, mas atualmente estou focando em Front-End.
+                                Além de programar, gosto de ler, assistir séries e filmes, ouvir música e jogar videogame.
+                                Se quiser saber mais sobre mim, continue lendo!</p>
                             </div>
+
+                            <div className="perfil-text-info">
+                                <div className="perfil-text-info-languages">
+                                    <div className="perfil-text-info-languages-title">
+                                        <ion-icon name="language-outline"></ion-icon>
+                                        <h1>Idiomas:</h1>
+                                    </div>
+                                    <div className="perfil-text-info-languages-list">
+                                        {
+                                            languages.map((language, index) => (
+                                                <Language key={index} language={language.language} level={language.level}/>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                                <div className="perfil-text-info-interests">
+                                    <h1>Interesses:</h1>
+                                    <div className="interests-list">
+                                        {
+                                            interests.map((interest, index) => (
+                                                <Interest key={index} interest={interest.interest}  description={interest.description}/>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
                 </div>
 
@@ -99,33 +134,35 @@ const AboutMe = () => {
       )
 }
 
-const CardMe = ({info}) => {
-    const [hover, setHover] = React.useState('')
-
-    function handleMouseEnter() {
-        setHover('hover')
-    }
-    
-    function handleMouseLeave() {
-        setHover('')
-    }
-
+const Language = ({language, level}) => {
+    const [toogle, setToogle] = useState(false)
     return (
-        <p className={`cardMe ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            { hover === 'hover' ?
-            <>
-             <ion-icon name="radio-button-on"></ion-icon>
-                {info}
-            </>
-            : 
-            <>
-                <ion-icon name="radio-button-off"></ion-icon>
-                    {info}
-            </>}
-        </p>
+        <div className="language" onClick={() => setToogle(!toogle)}>
+            {
+                toogle ?
+                <p>{level}</p>
+                :
+                <p>{language}</p>
+            }
+        </div>
     )
 }
-        
 
+const Interest = ({interest, description}) => {
+    const [toogle, setToogle] = useState(false)
+
+    return (
+        <div className="interest-item" onClick={() => setToogle(!toogle)}>
+            {
+                toogle ?
+                <div className="interest-description">
+                    <p>{description}</p>
+                </div>
+                :
+                <p>{interest}</p>
+            }
+        </div>
+    )
+}
 
 export default AboutMe;

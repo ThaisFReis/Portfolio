@@ -5,30 +5,24 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    animation: animation1 0.6s ease 0.6s 0 normal none;
 }
 
 .Projects h1{
     width: 90vw;
-    height: 20vh;
+    height: 9vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: #fe2908;
     text-align: center;
-    -webkit-animation-name: slideInLeft;
-    animation-name: slideInLeft;
-    -webkit-animation-duration: 0.6s;
-    animation-duration: 0.6s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    margin-bottom: 1rem;
 }
 
 .Projects .projects-group{
-    width: 90vw;
+    width: 100vw;
     height: 70vh;
     
     display: flex;
@@ -38,16 +32,19 @@
 }
 
 .Projects .projects-group ion-icon{
+    width: 2vw;
+    height: 70vh;
     font-size: 2rem;
     color: #fe2908;
+    margin: auto;
 }
 
 .Projects .projects-group ion-icon:hover{
-    color: #fff;
+    color: #F1EFD6;
 }
 
 .Projects .projects-group .projects{
-    width: 80vw;
+    width: 75vw;
     height: 70vh;
     display: flex;
     flex-direction: row;
@@ -62,7 +59,7 @@
 }
 
 .Projects .projects-group .projects .project-box{
-    border: 1px solid #fff;
+    border: 1px solid #F1EFD6;
     border-radius: 5px;
     width: 30vw;
     height: 65vh;
@@ -71,6 +68,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: #000 5px 5px 10px;
+}
+
+.Projects .projects-group .projects .project-box .box-close{
+    width: 25vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .Projects .projects-group .projects .project-box .box-close h2{
@@ -82,6 +90,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto 0;
 }
 
 .Projects .projects-group .projects .project-box .box-close p{
@@ -106,6 +115,38 @@
     background: linear-gradient(90deg, transparent, #161616);
 }
 
+.Projects .projects-group .projects .project-box .box-close .tags{
+    width: 25vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+
+    top: auto;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.Projects .projects-group .projects .project-box .box-close .tags p{
+    width: fit-content;
+    height: fit-content;
+    border: #f1efd646 1px solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+
+    font-size: 1rem;
+    color: #F1EFD6;
+}
+
+.Projects .projects-group .projects .project-box .box-close .tags p::after{
+    background: none;
+}
+
+
+
 /* .projects .Projects .projects-group .projects .project-box.hover */
 
 .Projects .projects-group .projects .project-box.hover{
@@ -119,10 +160,6 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-    -webkit-transition: width 0.6s 0s linear;
-    -moz-transition: width 0.6s 0s linear;
-    -o-transition: width 0.6s 0s linear;
-    transition: width 0.6s 0s linear;
 }
 
 .Projects .projects-group .projects .project-box.hover .box{
@@ -133,11 +170,6 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-    
-    -webkit-transition: width 0.6s 0s linear;
-    -moz-transition: width 0.6s 0s linear;
-    -o-transition: width 0.6s 0s linear;
-    transition: width 0.6s 0s linear;
 }
 
 .Projects .projects-group .projects .project-box.hover .box h2{

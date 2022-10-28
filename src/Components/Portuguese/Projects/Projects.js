@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import arrayProjects from "./arrayProjects"
 import  "./Projects.css"
@@ -22,7 +22,7 @@ const Projects = () => {
                     <ion-icon name="arrow-back-circle-outline" id="slideLeft" onClick={slideLeft}></ion-icon>
                     <div className="projects">
                         {arrayProjects.map((project, index) => (
-                        <ProjectBox key={index} title={project.title} link={project.link} description={project.description} image={project.image}/>
+                        <ProjectBox key={index} title={project.title} link={project.link} description={project.description} image={project.image} tag={project.tags}/>
                     ))}
                 </div>
                 <ion-icon name="arrow-forward-circle-outline" id="slideRight" onClick={slideRight} ></ion-icon>
@@ -32,7 +32,7 @@ const Projects = () => {
       )
   }
 
-const ProjectBox = ({title, link, description, image}) => {
+const ProjectBox = ({title, link, description, image, tag}) => {
     const [hover, setHover] = React.useState('')
 
     function handleMouseEnter() {
@@ -56,7 +56,12 @@ const ProjectBox = ({title, link, description, image}) => {
                 : 
                 <div className="box-close">
                     <h2>{title}</h2>
-                    <p className="">{description}</p>
+                    <p>{description}</p>
+                    <div className="tags">
+                        {tag.map((tag, index) => (
+                            <p key={index}>{tag}</p>
+                        ))}
+                    </div>
                 </div>
                 }
                 </div>

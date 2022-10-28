@@ -9,10 +9,6 @@
     text-align: center;
 }
 
-.AboutMe > h1, h2, p{
-    z-index: 1;
-}
-
 /*------------------------------    DIV PERFIL   ------------------------------*/
 .page .background-page-home-aboutme .AboutMe .perfil{
     width: 100vw;
@@ -21,114 +17,276 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
-}
-/*------------------------------    DIV ME    ------------------------------*/
-.page .background-page-home-aboutme .AboutMe .perfil .me{
-    width: 25vw;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F1EFD6;
-    border: #000 1px solid;
-    border-radius: 5px;
 }
 
-.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents img{
-    width: 40vh;
-    height: 40vh;
-    border: 2px solid #161616;
-    border-radius: 5px;
-}
-
-.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info{
-    width: 40vh;
-    height: 25vh;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    align-items: left;
-    gap: 3vh;
-}
-
-.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info ion-icon{
-    font-size: 1.3rem!important;
-    color:#fe2908!important;
-    margin-right: 0.5vw;
-    align-items: center;
-}
-
-.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info p{
-    font-size: 1.3rem;
-    color: #161616;
-    font-family: 'Dosis', sans-serif !important;
-    font-weight: 600;
-    margin-left: 2vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.page .background-page-home-aboutme .AboutMe .perfil .me .me-contents .me-info ion-icon:hover{
-    color: #fe2908;
-    transition: 0.5s;
-}
-
-/*------------------------------    DIV ABOUT ME    ------------------------------*/
-.page .background-page-home-aboutme .AboutMe .perfil .aboutme{
-    width: 60vw;
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text{
+    width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
+    text-align: justify;
+    gap: 10vw;
 }
 
-.page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text{
-    width: 50vw;
-    height: 75vh;
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-description{
+    width: 40vw;
+    height: 35vh;
     display: flex;
     flex-direction: column;
-    justify-content:  space-around;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    margin: auto 0;
 }
 
-
-.page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text h1{
-    width: 50vw;
-    height: 20vh;
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-description h1{
+    width: 40vw;
+    height: 10vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
-    font-size: 5rem;
-    color: #fe2908;
-    text-align: center;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #F1EFD6;
 }
 
-.page .background-page-home-aboutme .AboutMe .perfil .aboutme .aboutme-text p{
-    width: 50vw;
-    height: 45vh;
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-description p{
+    width: 40vw;
+    height: 25vh;
     display: flex;
-    margin-bottom: 0;
-    margin-top: auto;
+    justify-content: left;
+    align-items: center;
     font-family: 'Thorin', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 2rem;
-    color: #FFFFFF;
+    font-size: 1.5rem;
+    color: #F1EFD6;
+    letter-spacing: 0.1rem;
+    text-shadow: rgb(112, 112, 112) 0px 0px 1px;
+
+    text-align: justify;
+    
 }
 
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-description .perfil-text-info{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*------------------------------    DIV LANGUAGES   ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages{
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-title{
+    width: 40vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-title h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem!important;
+    color: #F1EFD6;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-title ion-icon{
+    font-size: 3rem!important;
+    color: #F1EFD6;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-list{
+    width: 40vw;
+    height: 23vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-list .language{
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-list .language p{
+    width: 10vw!important;
+    height: 10vh!important;
+    padding: 0.8rem!important;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center!important;
+    align-items: center!important;
+    text-align: center!important;
+
+    font-family: 'TrinidadNeue', sans-serif!important;
+    font-weight: 600!important;
+    font-size: 1.5rem!important;
+    color: #F1EFD6!important;
+    letter-spacing: 0.2rem;
+
+    background-color: #f1efd607;
+    border: #F1EFD6 1px solid;
+    border-radius: 5px;
+    box-shadow: #000 5px 5px 10px;
+
+    cursor: pointer;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-list .language p:hover{
+    background-color: #fe2908;
+    border: #fe2908 1px solid;
+}
+
+/*------------------------------    DIV INTERESTS   ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests h1{
+    width: fit-content!important;
+    height: 8vh!important;
+    display: flex;
+    align-items: center;
+    justify-content: center!important;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem!important;
+    color: #F1EFD6;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests .interests-list{
+    width: 35vw;
+    height: 16vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests .interests-list .interest-item{
+    width: 8vw;
+    height: 5vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests .interests-list .interest-item p{
+    position: relative;
+    width: 8vw;
+    height: 5vh;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: #F1EFD6 1px solid;
+    border-radius: 5px;
+
+    font-family: 'TrinidadNeue', sans-serif;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests .interests-list .interest-item p:hover{
+    background-color: #fe2908;
+    border: #fe2908 1px solid;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests .interests-list .interest-item .interest-description{
+    background-color: tomato;
+    width: 10vw;
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: #F1EFD6 1px solid;
+    border-radius: 5px;
+
+    font-family: 'TrinidadNeue', sans-serif;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.page .background-page-home-aboutme .AboutMe .perfil .perfil-text .perfil-text-info .perfil-text-info-interests .interests-list .interest-item .interest-description p{
+    position: absolute;
+    width: 25vw;
+    height: 20vh;
+    padding: 1rem;
+
+    font-family: 'Thorin', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #F1EFD6;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-shadow: rgb(112, 112, 112) 0px 0px 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    
+    background-color: #131313f5;
+    border: 1px solid #F1EFD6;
+    border-radius: 5px;
+    box-shadow: #000 0px 0px 10px;
+
+    z-index: 99999999999999!important;
+}
 /*------------------------------    DIV EDUCATION ------------------------------*/
 .page .background-page-home-aboutme .AboutMe .education{
     width: 100vw;
@@ -263,16 +421,17 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .skills h1{
-    width: 100vw;
-    height: 10vh;
+    width: 90vw;
+    height: 9vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: #fe2908;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .page .background-page-home-aboutme .AboutMe .skills .skills-box{
@@ -320,3 +479,11 @@
     width: 100px;
     height: 100px;
 }
+
+
+
+
+
+
+
+

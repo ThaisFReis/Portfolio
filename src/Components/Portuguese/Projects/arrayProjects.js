@@ -5,44 +5,30 @@ const Projects = [
         title: "CINEFLEX",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
         image: Image,
-        link: "https://CINEFLEX-ten-kappa.vercel.app/" 
+        link: "https://CINEFLEX-ten-kappa.vercel.app/",
+        tags: ["React", "HTML", "CSS", "Front-end"]
     },
     {
-        title: "CINEFLEX2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
+        title: "TrackIt",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
         image: Image,
-        link: "https://CINEFLEX-ten-kappa.vercel.app/" 
+        link: "https://trackit-ten.vercel.app/",
+        tags: ["React", "HTML", "CSS", "Front-end"]
     },
     {
-        title: "CINEFLEX3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
+        title: "BuzzQuizz",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
         image: Image,
-        link: "https://CINEFLEX-ten-kappa.vercel.app/" 
+        link: "https://github.com/ThaisFReis/Projeto_06_BuzzQuizz",
+        tags: ["Javascript", "HTML", "CSS", "Front-end"]
     },
     {
-        title: "CINEFLEX4",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
+        title: "Driven Eats",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
         image: Image,
-        link: "https://CINEFLEX-ten-kappa.vercel.app/" 
-    },
-    {
-        title: "CINEFLEX5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
-        image: Image,
-        link: "https://CINEFLEX-ten-kappa.vercel.app/" 
-    },
-    {
-        title: "CINEFLEX6",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
-        image: Image,
-        link: "https://CINEFLEX-ten-kappa.vercel.app/" 
-    },
-    {
-        title: "CINEFLEX7",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet at ex quis gravida. Nullam nec nunc lacus. Suspendisse faucibus malesuada arcu, et luctus metus mattis at. Fusce eget maximus ipsum, sed porttitor odio. Integer ut nunc nec erat suscipit pretium ac eu ante. Suspendisse efficitur, tellus at euismod feugiat.",
-        image: Image,
-        link: "https://CINEFLEX-ten-kappa.vercel.app/" 
-    },
+        link: "https://github.com/ThaisFReis/projeto3-driveneats",
+        tags: ["Javascript", "HTML", "CSS", "Front-end"]
+    }
 ]
 
 export default Projects

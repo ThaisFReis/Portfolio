@@ -92,7 +92,7 @@ export default function Home() {
                     <div className="welcome">
                         <Typewriter
                         options={{
-                            strings: ["WELCOME TO MY PORTFOLIO", "BEM-VINDO AO MEU PORTFOLIO"],
+                            strings: ["WELCOME TO MY PORTFOLIO", "BEM-VINDO AO MEU PORTFÓLIO"],
                             autoStart: true,
                             loop: true,
                         }}
