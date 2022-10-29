@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Aboutme from "./Array/aboutme"
 import Skills from "./Array/skills"
 import Education from "./Array/education"
-import Me3 from "../../../Assets/Me3.png"
 import Paper from "../../../Assets/paper.png"
 import  "./AboutMe.css"
 
@@ -24,16 +23,22 @@ const languages = [
 
 const interests = [
     { interest: "VIOLINO",
-      description: "Comecei a tocar violino em 2021 por causa da pandemia e estudo praticamente todos os dias."},
-    { interest: "ASTRONOMIA",
-        description: "Desde criança sempre fui fascinada pelo universo e sempre quis saber mais sobre ele. Uma das minhas metas é viajar para o Chile para ver o céu estrelado e se possível, conhecer os telescópios do Atacama."},
+      description: "Comecei a tocar violino em 2021, e desde então tenho me dedicado a aprender mais sobre o instrumento treinando todas as semanas."},
+      { interest: "ASTRONOMIA",
+      description: "Desde criança sempre fui fascinada pelo universo e sempre quis saber mais sobre ele. Uma das minhas metas é viajar para o Chile para ver o céu estrelado e se possível, conhecer os telescópios do Atacama."},
     { interest: "LEITURA",
-    description: "Desde criança sempre tive interesse em ler pois aprendi a ler mais tarde que a maioria das crianças. Gosto de ler livros de ficção científica, fantasia e romance."},
+      description: "Desde criança sempre tive interesse em ler pois aprendi a ler mais tarde que a maioria das crianças. Gosto de ler livros de ficção científica, fantasia e romance."},
     { interest: "JOGOS",
-    description: "Desde criança sempre gostei de jogar videogame, principalmente jogos de RPG e simulação. Atualmente jogo muito The Sims e Stardew Valley."},
+      description: "Desde criança sempre gostei de jogar videogame, principalmente jogos de RPG e simulação. Atualmente jogo muito The Sims e Stardew Valley."},
     { interest: "FILMES E SÉRIES",
-    description: "Desde adolescente sempre gostei de assistir filmes e séries, ainda mais quando eram legendados pois assim eu aprendia mais sobre a língua inglesa. Atualmente gosto de assistir filmes de ficção científica, fantasia e romance."},
+      description: "Desde adolescente sempre gostei de assistir filmes e séries, ainda mais quando eram legendados pois assim eu aprendia mais sobre a língua inglesa. Atualmente gosto de assistir filmes de ficção científica, fantasia e romance."}
+
 ]
+
+{/*
+
+*/}
+
 
 
 const AboutMe = () => {
@@ -42,43 +47,56 @@ const AboutMe = () => {
         <>
             <div className="AboutMe">
                     <div className="perfil">
-                    
-                        <div className="perfil-text">
-                            <div className="perfil-text-description">
-                                <h1>Olá, eu sou a Thais!</h1>
-                                <p>Estudante de Ciência da Computação na Universidade Federal do Rio de Janeiro.
-                                Atualmente estou cursando o 4º período e estou em busca de uma oportunidade de estágio na área de desenvolvimento de software.
-                                Meu objetivo é me tornar uma desenvolvedora Full Stack, mas atualmente estou focando em Front-End.
-                                Além de programar, gosto de ler, assistir séries e filmes, ouvir música e jogar videogame.
-                                Se quiser saber mais sobre mim, continue lendo!</p>
+                        <div className="perfil-text-description">
+                                <h1>O<div style={{color: "#fe2908"}}>!</div></h1>
+                                <p>, eu sou a Thais, uma estudante de Ciências Matemáticas e da Terra na Universidade Federal do Rio de Janeiro. Atualmente estou no 7º período do curso e estou em busca de uma oportunidade de estágio na área de programação para poder colocar em prática o que aprendi e também aprender mais sobre o mercado de trabalho.
+                                Meu objetivo é me tornar uma desenvolvedora Full Stack, mas atualmente tenho melhor desempenho no Front-End.
+                                <br/>Se quiser saber mais sobre mim, continue lendo!</p>
                             </div>
 
-                            <div className="perfil-text-info">
-                                <div className="perfil-text-info-languages">
-                                    <div className="perfil-text-info-languages-title">
-                                        <ion-icon name="language-outline"></ion-icon>
-                                        <h1>Idiomas:</h1>
+                        <div className="perfil-text-info">
+                               
+                            <div className="perfil-text-info-languages">
+                            <div className="perfil-text-info-languages-title">
+                                    <div className="perfil-p"> 
+                                        <div className="idi">
+                                            <p>IDI</p>
+                                            <ion-icon name="remove-outline"></ion-icon> 
+                                        </div>
+                                        <div className="oma">
+                                            <p>OMA</p>
+                                        </div>
                                     </div>
-                                    <div className="perfil-text-info-languages-list">
-                                        {
-                                            languages.map((language, index) => (
-                                                <Language key={index} language={language.language} level={language.level}/>
-                                            ))
-                                        }
+                                </div>   
+                                <div className="perfil-text-info-languages-list">
+
+                                    {
+                                        languages.map((language, index) => (
+                                            <Language key={index} language={language.language} level={language.level}/>
+                                        ))}
+                                </div>                       
+                            </div>
+
+
+
+                            <div className="perfil-text-info-interests">
+                                <div className="perfil-text-info-interests-title">
+                                    <div className="inte">
+                                        <p>INTE</p>
+                                        <ion-icon name="remove-outline"></ion-icon> 
                                     </div>
+                                    <div className="resses">
+                                        <p>RESSES</p>
+                                    </div>
+                                </div>  
+                                <div className="interests-list">
+                                    {
+                                        interests.map((interest, index) => (
+                                            <Interest key={index} interest={interest.interest}  description={interest.description}/>
+                                        ))}
                                 </div>
-                                <div className="perfil-text-info-interests">
-                                    <h1>Interesses:</h1>
-                                    <div className="interests-list">
-                                        {
-                                            interests.map((interest, index) => (
-                                                <Interest key={index} interest={interest.interest}  description={interest.description}/>
-                                            ))
-                                        }
-                                    </div>
-                                </div>
-                            </div>                            
-                        </div>
+                            </div>
+                        </div>                           
                 </div>
 
                         <div className="education">
@@ -135,33 +153,47 @@ const AboutMe = () => {
 }
 
 const Language = ({language, level}) => {
-    const [toogle, setToogle] = useState(false)
+    const [mouse, setMouse] = useState(false)
+
     return (
-        <div className="language" onClick={() => setToogle(!toogle)}>
+        <>
             {
-                toogle ?
-                <p>{level}</p>
+                mouse === true ?
+                <div className="language" id={language} onMouseEnter={() => setMouse(true)} onMouseLeave={() => setMouse(false)} >
+                    <p>{level}</p>
+                </div>
                 :
-                <p>{language}</p>
+                <div className="language" id={language} onMouseEnter={() => setMouse(true)} onMouseLeave={() => setMouse(false)}>
+                    <p>{language}</p>
+                    <ion-icon name="information-outline"></ion-icon>
+                </div>
             }
-        </div>
+        </>
     )
 }
 
-const Interest = ({interest, description}) => {
-    const [toogle, setToogle] = useState(false)
+const Interest = ({interest, description, key}) => {
+    const [mouse, setMouse] = useState(false)
 
     return (
-        <div className="interest-item" onClick={() => setToogle(!toogle)}>
+        <>
             {
-                toogle ?
-                <div className="interest-description">
-                    <p>{description}</p>
+                mouse === true ?
+                <div className="interest-all"  onMouseEnter={() => setMouse(true)} onMouseLeave={() => setMouse(false)}>
+                    <p key={key}>{interest}</p>
+                    <div className="interest-description">
+                        <p key={key}>{description}</p>
+                    </div>
                 </div>
+
+
                 :
-                <p>{interest}</p>
+                <div className="interest-item"  onMouseEnter={() => setMouse(true)} onMouseLeave={() => setMouse(false)}>
+                    <p key={key}>{interest}</p>
+                    <ion-icon name="information-outline"></ion-icon>
+                </div>
             }
-        </div>
+        </>
     )
 }
 

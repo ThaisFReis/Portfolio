@@ -5,22 +5,14 @@
     height: 700vh;
 }
 
-/*------------------------------    MENU-FOOTER     ------------------------------*/
-.menu-footer{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: none;
+/*------------------------------    MENU    ------------------------------*/
+.Header > div, p{
+    z-index: 10!important;
 }
 
-/*------------------------------    MENU    ------------------------------*/
+
 .Header{
+    position: fixed!important;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,16 +24,13 @@
     margin-top: 0;
     bottom: auto;
     margin-bottom: auto;
-    background-color: #161616d5;
+    background-color: #161616d5!important;
     z-index: 10!important;
 }
 
-.Header > div, p{
-    z-index: 9999!important;
-}
 
 .Header .TFR{
-    position: relative;
+    position: fixed!important;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,14 +102,13 @@ Body .Header p:hover{
     text-decoration: none;
 }
 
-/*------------------------------    NONE  ------------------------------*/
-.none{
-    width: 100vh;
-    height: 85vh;
-}
 /*------------------------------    FOOTER  ------------------------------*/
+.footer > div, p, ion-icon{
+    z-index: 9!important;
+}
 
 footer{
+    position: fixed;
     width: 100vw;
     height: 5vh;
     
@@ -128,13 +116,12 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: 0;
+    top: auto;
     bottom: 0;
     background-color: #161616d5;
-    z-index: 10!important;
-}
-
-.footer > div, p, ion-icon{
-    z-index: 9999;
+    z-index: 9!important;
 }
 
 footer .made{
@@ -233,21 +220,24 @@ footer .change-language .language p:hover{
     justify-content: center;
 }
 
+.page > div, p, h1, h2, h3, h4, h5, h6{
+    z-index:  0!important;
+}
+
 /*------------------------------    WELCOME PAGE    ------------------------------*/
 
 .page .welcome-page{
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .page .welcome-page .welcome{
     width: 1080px;
     height: 85vh;
-    margin-top: 35vh;
+    margin: 25vh 0;
 
     display: flex;
     flex-direction: column;
@@ -304,6 +294,7 @@ footer .change-language .language p:hover{
     font-family: 'TrinidadNeue', sans-serif;
     color: #F1EFD6;
     letter-spacing:  -0.2rem;
+    z-index: 1!important;
 }
 
 .page .background-page-home-aboutme .Inicio .principal h1{
@@ -318,6 +309,7 @@ footer .change-language .language p:hover{
     margin-bottom: -60px;
     color: #fe2a04;
     letter-spacing: 0rem;
+    z-index: -1!important;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons{

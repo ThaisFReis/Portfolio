@@ -36,7 +36,7 @@ export default function Home() {
 
     return (
         <div className="body">
-            <div className="menu-footer">
+            <>
                 {/* MENU */}
                 <div className="Header">
                     <div className="TFR">
@@ -52,8 +52,6 @@ export default function Home() {
                         <div className="onclick" onClick={executeScroll4}><p>CONTATO</p></div>
                     </div>
                 </div>
-
-                                    {/* NONE */}
 
                 {/* FOOTER */}
                 <footer>
@@ -84,7 +82,7 @@ export default function Home() {
                         </div>
                     </div>
                 </footer>
-            </div>
+            </>
             <div className="page">
                 
                 {/* WELCOME PAGE */}
