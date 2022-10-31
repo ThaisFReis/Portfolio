@@ -11,6 +11,7 @@
 .Contact .notification{
     position: absolute;
     background-color: #f1efd611;
+    box-shadow: #000 1px 5px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +158,11 @@
     width: 99%;
     height: 40px;
     background: none;
-    border: gr;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
+    box-shadow: #000 1px 5px 10px;
+
+
     border-radius: 5px;
     color: #F1EFD6 !important;
     margin-bottom: 15px;
@@ -170,9 +175,11 @@
 }
 
 .Contact .Contact-Container .email .form form .input-group .input input::placeholder{
-    font-family: 'TrinidadNeue', sans-serif;
-    font-size: 16px;
+    font-family: 'TrinidadNeue', sans-serif !important;
+    font-size: 1.5rem;
     font-weight: 400;
+    color: #f1efd686;
+
     z-index: 1;
 }
 
@@ -196,28 +203,35 @@
     background-color: transparent;
     width: 99%;
     height: 15vh;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    border: #f1efd610 1px solid;
     border-radius: 5px;
+    box-shadow: #000 1px 5px 10px;
+
+
     color: #F1EFD6;
     margin-bottom: 15px;
-    font-weight: 500;
-    font-size: 18px;
+    font-family: 'ZerafontsAristotelica', sans-serif!important;
+    font-size: 1.5rem;
+    font-weight: bold;
+
     letter-spacing: 0.8px;
+
     transition: 0.3s ease-in-out;
+
     z-index: 1;
-    font-family: 'TrinidadNeue', sans-serif !important;
 }
 
 .Contact .Contact-Container .email .form form .input-group .textarea textarea::placeholder {
     font-family: 'TrinidadNeue', sans-serif !important;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 400;
-    color: #F1EFD6;
+    color: #f1efd686;
     z-index: 1;
 }
 
 .Contact .Contact-Container .email .form form .input-group .textarea textarea:focus::placeholder {
-    font-family: 'TrinidadNeue', sans-serif !important;
+    font-family: 'ZerafontsAristotelica', sans-serif!important;
     color: #161616 !important;
     opacity: 0.8;
     z-index: 1;
@@ -225,7 +239,7 @@
 
 .Contact .Contact-Container .email .form form .input-group .textarea textarea:focus {
     background-color: transparent;
-    font-family: 'TrinidadNeue', sans-serif !important;
+    font-family: 'ZerafontsAristotelica', sans-serif!important;
     outline: 1px solid #fe2908 !important;
     border: #F1EFD6;
     z-index: 1;
@@ -234,13 +248,16 @@
 .Contact .Contact-Container .email .form form button{
     width: 40%;
     height: 5vh;
-    background-color: rgba(255, 255, 255, 0.11)!important;
-    border: 1px solid #161616!important;
+    background-color: rgba(255, 255, 255, 0.062)!important;
+    border: #f1efd610 1px solid!important;
     border-radius: 5px;
+    box-shadow: #000 1px 5px 10px;
+    
     color: #F1EFD6!important;
     font-weight: 500;
     font-size: 1.6rem!important;
     cursor: pointer;
+
     z-index: 1;
     font-family: 'TrinidadNeue', sans-serif!important;
 }

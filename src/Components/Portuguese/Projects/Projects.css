@@ -33,14 +33,15 @@
 
 .Projects .projects-group ion-icon{
     width: 2vw;
-    height: 70vh;
+    height: 5vh;
+    padding: 0.5rem;
     font-size: 2rem;
-    color: #fe2908;
+    color: #f1efd61e;
     margin: auto;
 }
 
 .Projects .projects-group ion-icon:hover{
-    color: #F1EFD6;
+    color: #fe2908;
 }
 
 .Projects .projects-group .projects{
@@ -59,7 +60,6 @@
 }
 
 .Projects .projects-group .projects .project-box{
-    border: 1px solid #F1EFD6;
     border-radius: 5px;
     width: 30vw;
     height: 65vh;
@@ -98,9 +98,10 @@
 
     width: 25vw;
     height: calc(9 * 1.5rem);
-    font-family: 'Thorin', sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-weight: bold;
+    line-height: 2rem;
+
     overflow: hidden;
     position: relative;
 }
@@ -133,11 +134,12 @@
 .Projects .projects-group .projects .project-box .box-close .tags p{
     width: fit-content;
     height: fit-content;
-    border: #f1efd646 1px solid;
+    border: #f1efd61e 1px solid;
     border-radius: 5px;
     padding: 0.5rem;
 
     font-size: 1rem;
+    letter-spacing: 0.2rem;
     color: #F1EFD6;
 }
 
@@ -150,7 +152,7 @@
 /* .projects .Projects .projects-group .projects .project-box.hover */
 
 .Projects .projects-group .projects .project-box.hover{
-    border: 1px solid #fe290896;
+    border: #f1efd610 1px solid;
     border-radius: 5px;
     width: 30vw;
     height: 65vh;
@@ -191,17 +193,18 @@
 }
 
 .Projects .projects-group .projects .project-box.hover .box p{
-    rotate: 0deg;
-    font-size: 1.5rem;
-
     width: 25vw;
     height: 30vh;
     margin: 2.5vh 0vh;
+
     display: flex;
     justify-content: center;
-    font-family: 'Thorin', sans-serif;
-    font-style: normal;
-    font-weight: 600;
+
+    font-size: 1.5rem;
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-weight: bold;
+    line-height: 2rem;
+
     overflow-y: scroll;
     text-align: justify;
 

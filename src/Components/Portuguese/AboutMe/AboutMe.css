@@ -53,7 +53,8 @@
     font-family: 'ZerafontsAristotelica', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 2.1rem;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
     color: #F1EFD6;
 
     text-align: justify;
@@ -181,6 +182,7 @@
 
 .page .background-page-home-aboutme .AboutMe .perfil .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-list .language{
     border: transparent 1px solid;
+    box-shadow: #000 1px 5px 10px;
 
     width: 16.56vw;
     height: 4vh;
@@ -307,6 +309,8 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .perfil-text-info .perfil-text-info-interests .interests-list .interest-item{
+    box-shadow: #000 1px 5px 10px;
+
     width: 11vw;
     height: 2vh;
     padding: 1rem;
@@ -402,7 +406,7 @@
     height: fit-content;
     padding: 1rem;
 
-    border: #F1EFD6 1px solid;
+    border: #f1efd610 1px solid;
     border-radius: 5px;
     box-shadow: #000 1px 5px 10px;
 
@@ -415,30 +419,18 @@
     font-family: 'ZerafontsAristotelica', sans-serif;
     font-size: 1.7rem;
     font-weight: bold;
+    line-height: 3rem;
 
     cursor: pointer;
 
     z-index: 1;
-
 }
 
 
 /********************************************************************************/
-/*------------------------------    DIV EDUCATION ------------------------------*/
-.page .background-page-home-aboutme .AboutMe .education{
-    background-color: darkturquoise;
-    width: 34vw;
-    height: 2vh;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
 
+/*------------------------------    DIV EDUCATION ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -448,22 +440,122 @@
     text-align: center;
 }
 
-.page .background-page-home-aboutme .AboutMe .education h1{
+.page .background-page-home-aboutme .AboutMe .educationPage h1{
     width: 90vw;
-    height: 20vh;
+    height: fit-content;
+    margin-top: 10vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
-    font-size: 5rem;
+    font-size: 7rem;
     color: #fe2908;
     text-align: center;
 }
 
-.page .background-page-home-aboutme .AboutMe .education .education-description{
+.page .background-page-home-aboutme .AboutMe .educationPage .education{
     width: 90vw;
     height: 80vh;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------------ DIV UNIVERSITY ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university{
+
+    width: fit-content;
+    height: fit-content;
+    margin: 10vh auto auto auto;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------------ DIV UNIVERSITY TITLE ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-title{
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'TrinidadNeue', sans-serif;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-title .univer{
+    width: 25vw;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-title .univer h2{
+    font-size: 6rem;
+    color: #F1EFD6;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-title .univer ion-icon{
+    font-size: 6em;
+    color: #fe2908;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-title .sidade{
+    width: 25vw;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-title .sidade h2{
+    font-size: 6.5rem;
+    color: #F1EFD6;
+}
+
+/*------------------------------ DIV UNIVERSITY TEXT ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text{
+    width: 25vw;
+    height: fit-content;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------------ DIV UNIVERSITY TAG - TYPE ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .tag-type{
+    background-color: #f1efd60a;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
+
+    width: fit-content;
+    height: fit-content;
+    margin: 1vh auto auto 0;
+    padding: 0.5rem;
+    gap: 1rem;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -471,91 +563,544 @@
     text-align: center;
 }
 
-.page .background-page-home-aboutme .AboutMe .education .education-description .type{
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .tag-type p{
+    font-family: "ZerafontsAristotelica", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fe2908;
+    letter-spacing: 0.2rem;
+}
+
+/*------------------------------ DIV UNIVERSITY NAME ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-div-name .university-name{
     width: 25vw;
-    height: 48vh;
+    margin: 0 auto auto auto;
+
+    height: fit-content;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 10vh;
-    text-align: left;
+    align-items: center;
+    text-align: justify;
 }
 
-.page .background-page-home-aboutme .AboutMe .education .education-description .type h2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:  left;
-    height: 60px;
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-div-name .university-name h3{
     font-family: 'TrinidadNeue', sans-serif;
-    font-size: 3rem;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV UNIVERSITY NAME - ION-ICON ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-div-name .university-name ion-icon{
+    margin: auto 0 auto auto;
+    font-size: 1.5em;
     color: #fe2908;
 }
 
-.page .background-page-home-aboutme .AboutMe .education .education-description .date{
-    width: 15vw;
-    height: 48vh;
+/*------------------------------ DIV UNIVERSITY DESCRIPTION ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-div-name .university-description{
+    background-color: #f1efd60a;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
+
+    width: 23vw;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1vh auto auto auto;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 12vh;
+    text-align: justify;
 }
 
-.page .background-page-home-aboutme .AboutMe .education .education-description .date p{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 60px;
-    font-family: 'Thorin', sans-serif;
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-div-name .university-description p{
+    font-family: 'ZerafontsAristotelica', sans-serif;
     font-style: normal;
-    font-weight: 800;
-    font-size: 2.5rem;
-}
-
-.page .background-page-home-aboutme .AboutMe .education .education-description .description{
-    width: 50vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10vh;
-    font-family: 'Thorin', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 2rem;
+    color: #F1EFD6;
+    text-align: justify;
 }
 
-.page .background-page-home-aboutme .AboutMe .education .education-description .description p{
+/*------------------------------ DIV UNIVERSITY DATA ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-data{
+    width: 25vw;
+    margin: auto;
+
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-data h4{
+    margin: auto auto auto 0;
+
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV UNIVERSITY LOCAL ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-local{
+    width: 25vw;
+    height: fit-content;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .university .university-text .university-local h5{
+    margin: auto auto auto 0;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV BOOTCAMP ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp{
+    width: fit-content;
+    height: fit-content;
+    margin: 10vh auto auto auto;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------------ DIV BOOTCAMP TITLE ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-title{
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: 'TrinidadNeue', sans-serif;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-title .boot{
+    width: 25vw;
+    height: fit-content;
+    margin: auto auto auto 0;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-title .boot h2{
+    font-size: 6rem;
+    color: #F1EFD6;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-title .boot ion-icon{
+    font-size: 6em;
+    color: #fe2908;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-title .camp{
+    width: 25vw;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-title .camp h2{
+    font-size: 6.5rem;
+    color: #F1EFD6;
+}
+
+/*------------------------------ DIV BOOTCAMP TEXT ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text{
+    width: 25vw;
+    height: fit-content;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    font-family: 'Thorin', sans-serif;
+}
+
+/*------------------------------ DIV BOOTCAMP NAME ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-name{
+    width: 25vw;
+    margin: 5.3vh auto auto auto;
+
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-name h3{
+    font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-size: 1.8rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV BOOTCAMP NAME - ION-ICON ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-name ion-icon{
+    margin: auto 0 auto auto;
+    font-size: 1.5em;
+    color: #fe2908;
+}
+
+/*------------------------------ DIV BOOTCAMP DESCRIPTION ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-description{
+    background-color: #f1efd60a;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
+
+    width: 23vw;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1vh auto auto auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-description p{
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 2rem;
+    color: #F1EFD6;
+    text-align: justify;
 }
 
-.university{
-    cursor: pointer;
+/*------------------------------ DIV BOOTCAMP DATA ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-data{
+    width: 25vw;
+    margin: auto;
+
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    text-align: justify;
 }
 
-.university  p:hover{
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-data h4{
+    margin: auto auto auto 0;
+
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV BOOTCAMP LOCAL ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-local{
+    width: 25vw;
+    height: fit-content;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .bootcamp .bootcamp-text .bootcamp-local h5{
+    margin: auto auto auto 0;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV COURSE ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses{
+    width: fit-content;
+    height: fit-content;
+    margin: 10vh auto auto auto;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------------ DIV COURSE TITLE ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-title{
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'TrinidadNeue', sans-serif;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-title .cur{
+    width: 25vw;
+    height: fit-content;
+    margin: auto auto auto 0;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-title .cur h2{
+    font-size: 6rem;
+    color: #F1EFD6;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-title .cur ion-icon{
+    font-size: 6em;
     color: #fe2908;
 }
 
-.bootcamp{
-    cursor: pointer;
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-title .sos{
+    width: 25vw;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
-.bootcamp p:hover{
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-title .sos h2{
+    font-size: 6.5rem;
+    color: #F1EFD6;
+}
+
+/*------------------------------ DIV COURSE TEXT ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text{
+    width: 25vw;
+    height: fit-content;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------------ DIV COURSE TAG - STATUS ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .tag-status{
+    background-color: #f1efd60a;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
+
+    width: fit-content;
+    height: fit-content;
+    margin: 1vh auto auto 0;
+    padding: 0.5rem;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .tag-status p{
+    font-family: "ZerafontsAristotelica", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
     color: #fe2908;
+    letter-spacing: 0.2rem;
+}
+
+/*------------------------------ DIV COURSE TEXT - NAME ------------------------------*/
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-name{
+    width: 25vw;
+    height: fit-content;
+    margin: 0 auto auto auto;
+
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-name h3{
+    width: 22vw;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV COURSE TEXT - NAME - ION-ICON ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-name ion-icon{
+    margin: auto 0 auto auto;
+    font-size: 1.5em;
+    color: #fe2908;
+}
+
+/*------------------------------ DIV COURSE TEXT - DESCRIPTION ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-description{
+    background-color: #f1efd60a;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
+
+    width: 23vw;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1vh auto auto auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-description p{
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV COURSE TEXT - DESCRIPTION - LINK ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-description .courses-link{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-description .courses-link a{
+    background-color: #f1efd646;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
+
+    width: 5vw;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-description .courses-link p{
+    background-color: none!important;
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-description .courses-link ion-icon{
+    margin: auto;
+    font-size: 2em;
+    color: #fe2908;
+}
+
+/*------------------------------ DIV COURSE TEXT - DURATION ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-duration{
+    width: 25vw;
+    height: fit-content;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-duration h4{
+    margin: auto auto auto 0;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+/*------------------------------ DIV COURSE TEXT - LOCAL ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-local{
+    width: 25vw;
+    height: fit-content;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .AboutMe .educationPage .education .courses .courses-text .courses-local h5{
+    margin: auto auto auto 0;
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #F1EFD6;
+    text-align: justify;
 }
 
 /*------------------------------ DIV SKILLS ------------------------------*/
@@ -565,28 +1110,31 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
 
 .page .background-page-home-aboutme .AboutMe .skills h1{
     width: 90vw;
-    height: 9vh;
+    height: fit-content;
+    margin: 8vh auto auto auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
-    font-size: 3.5rem;
+    font-size: 7rem;
     color: #fe2908;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 .page .background-page-home-aboutme .AboutMe .skills .skills-box{
-    width: 70vw;
-    height: 70vh;
+    width: 80vw;
+    height: 75vh;
+    margin-bottom: 5.5vh;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -595,45 +1143,104 @@
     text-align: center;
 }
 
-.page .background-page-home-aboutme .AboutMe .skills .skills-content{
+.page .background-page-home-aboutme .AboutMe .skills .skills-box .skills-content{
     width: 20vw;
     height: 15vh;
+    padding: 2rem;
+    gap: 10px;
+    margin: 20px;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10px;
-    margin: 20px;
+
     cursor: pointer;
     border: #161616 1px solid;
     border-radius: 5px;
+    box-shadow: #000 1px 5px 10px;
 }
 
-.page .background-page-home-aboutme .AboutMe .skills .skills-content:hover{
-    transform: scale(1.1);
-    border: #fe2908 1px solid;
+.page .background-page-home-aboutme .AboutMe .skills .skills-box .skills-content:hover{
+    border: #f1efd610 1px solid;
     border-radius: 5px;
 
 }
 
-.page .background-page-home-aboutme .AboutMe .skills .skills-content p{
-    font-family: 'Thorin', sans-serif;
+.page .background-page-home-aboutme .AboutMe .skills .skills-box .skills-content p{
+    font-family: 'TrinidadNeue', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 2rem;
     color: #FFFFFF;
 }
 
-.page .background-page-home-aboutme .skills .skills-content img{
+.page .background-page-home-aboutme .skills .skills-box .skills-content img{
     width: 100px;
     height: 100px;
 }
 
+/*------------------------------ DIV SKILLS - EXPERIENCE - DESCIPTION ------------------------------*/
+.page .background-page-home-aboutme .AboutMe .skills .skills-box .skills-content .skills-experience-description{
+    width: 20vw;
+    height: fit-content;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
 
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: #fe2908 #2e2e2e;
+}
 
+/*------------------------------ DIV SKILLS - EXPERIENCE ------------------------------*/
 
+.page .background-page-home-aboutme .skills .skills-box .skills-content .skills-experience-description .skills-experience{
+    background-color: #f1efd60a;
+    border: #f1efd610 1px solid;
+    border-radius: 5px;
 
+    width: fit-content;
+    height: fit-content;
+    margin: 1vh auto auto 1vw;
+    padding: 0.5rem;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+.page .background-page-home-aboutme .skills .skills-box .skills-content .skills-experience-description .skills-experience p{
+    font-family: 'TrinidadNeue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+}
+
+/*------------------------------ DIV SKILLS - DESCRIPTION ------------------------------*/
+
+.page .background-page-home-aboutme .skills .skills-box .skills-content .skills-experience-description .skills-description{
+    width: fit-content;
+    height: fit-content;
+    margin: 1vh 1vw auto 1vw;
+    padding: 00.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.page .background-page-home-aboutme .skills .skills-box .skills-content .skills-experience-description .skills-description p{
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}

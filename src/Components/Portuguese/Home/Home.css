@@ -334,8 +334,9 @@ footer .change-language .language p:hover{
     justify-content: center;
 
     background-color: transparent;
-    border: 1px solid #fe2908;
     border-radius: 5px;
+    border: #f1efd610 1px solid;
+    box-shadow: #000 1px 5px 10px;
     gap: 10px;
     cursor: pointer;
 }
@@ -350,9 +351,9 @@ footer .change-language .language p:hover{
 
 .page .background-page-home-aboutme .Inicio .principal  .buttons button p{
     font-size: 30px;
-    font-family: 'Thorin', sans-serif;
+    font-family: 'ZerafontsAristotelica', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
 }

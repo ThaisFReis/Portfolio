@@ -1,13 +1,14 @@
 const Education = [
     {
-        title: "EDUCAÇÃO",
-        university: "UNIVERSIDADE",
-        universityDate: "2019 - 2023",
-        universityText: "BACHARELADO EM CIÊNCIAS MATEMÁTICAS E DA TERRA",
+        universityDate: "2019 - 2023 (PREVISTO)",
+        university: "BACHARELADO EM CIÊNCIAS MATEMÁTICAS E DA TERRA",
+        universityDescription: "Com enfâse em Suporte a Decisão. Estudo cálculo, álgebra, estatística, programação, física, entre outras disciplinas.",
         universityLocal: "UNIVERSIDADE FEDERAL DO RIO DE JANEIRO",
-        bootcamp: "BOOTCAMP",
+        universityType: "Bacharelado",
+        
         bootcampDate: "2022 - 2023",
-        bootcampText: "DESENVOLVIMENTO WEB FULL-STACK",
+        bootcamp: "DESENVOLVIMENTO WEB FULL-STACK",
+        bootcampDescription: "Estudo HTML, CSS, JavaScript, React, Ajax, Node, MongoDB, SQL, TypeScript, Aws, entre outras tecnologias.",
         bootcampLocal: "DRIVEN EDUCATION"
     }
 ]
