@@ -18,11 +18,13 @@
     justify-content: space-around;
     width: 20vw;
     height: 10vh;
+
+    border: #f1efd610 1px solid;
     border-radius: 10px;
     z-index: 99999;
     visibility: hidden;
     animation: slideInFromTop 3s linear forwards;
-    margin-top: -85vh;
+    margin-top: -60vh;
 }
 
 .Contact .notification p{
@@ -36,9 +38,9 @@
     justify-content: center;
     font-family: 'TrinidadNeue', sans-serif;
     color: #F1EFD6;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 600;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1vw;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -61,7 +63,7 @@
 }
 
 .Contact .notification .progress ion-icon{
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     color: #fe2908;
     margin-right: -1.1vw;
     margin-left: auto;
@@ -84,19 +86,19 @@
     justify-content: space-around;
     width: 50vw!important;
     height: 80vh!important;
+    margin-top: 20vh;
 }
 
 .Contact .Contact-Container .email h1{
     width: 30vw;
     height: 10vh;
-    margin-top: 5vh!important;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     font-family: 'TrinidadNeue', sans-serif;
     color: #F1EFD6!important;
-    font-size: 3rem;
+    font-size: 3vw;
 }
 .Contact .Contact-Container.email .form{
     display: flex;
@@ -135,7 +137,7 @@
 
 .Contact .Contact-Container .email .form form .input-group .input ion-icon{
     color: #fe2908;
-    font-size: 2rem;
+    font-size: 1.5vw;
     margin-right: 1vw;
 }
 
@@ -150,13 +152,13 @@
     bottom: auto;
     margin-bottom: auto;
     color: #fe2908;
-    font-size: 2rem;
+    font-size: 1.5vw;
     margin-right: 1vw;
 }
 
 .Contact .Contact-Container .email .form form .input-group .input input{
     width: 99%;
-    height: 40px;
+    height: 4vh;
     background: none;
     border: #f1efd610 1px solid;
     border-radius: 5px;
@@ -167,8 +169,7 @@
     color: #F1EFD6 !important;
     margin-bottom: 15px;
     font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    font-size: 1vw;
     transition: 0.3s ease-in-out;
     z-index: 1;
     font-family: 'TrinidadNeue', sans-serif!important;
@@ -176,7 +177,7 @@
 
 .Contact .Contact-Container .email .form form .input-group .input input::placeholder{
     font-family: 'TrinidadNeue', sans-serif !important;
-    font-size: 1.5rem;
+    font-size: 1vw;
     font-weight: 400;
     color: #f1efd686;
 
@@ -201,6 +202,7 @@
 /* TEXTAREA */
 .Contact .Contact-Container .email .form form .input-group .textarea textarea{
     background-color: transparent;
+    font-family: 'TrinidadNeue', sans-serif;
     width: 99%;
     height: 15vh;
 
@@ -210,12 +212,9 @@
 
 
     color: #F1EFD6;
-    margin-bottom: 15px;
-    font-family: 'ZerafontsAristotelica', sans-serif!important;
-    font-size: 1.5rem;
+    margin-bottom: 5vh;
+    font-size: 1vw;
     font-weight: bold;
-
-    letter-spacing: 0.8px;
 
     transition: 0.3s ease-in-out;
 
@@ -224,14 +223,14 @@
 
 .Contact .Contact-Container .email .form form .input-group .textarea textarea::placeholder {
     font-family: 'TrinidadNeue', sans-serif !important;
-    font-size: 1.5rem;
+    font-size: 1vw;
     font-weight: 400;
     color: #f1efd686;
     z-index: 1;
 }
 
 .Contact .Contact-Container .email .form form .input-group .textarea textarea:focus::placeholder {
-    font-family: 'ZerafontsAristotelica', sans-serif!important;
+    font-family: 'TrinidadNeue', sans-serif;
     color: #161616 !important;
     opacity: 0.8;
     z-index: 1;
@@ -239,7 +238,6 @@
 
 .Contact .Contact-Container .email .form form .input-group .textarea textarea:focus {
     background-color: transparent;
-    font-family: 'ZerafontsAristotelica', sans-serif!important;
     outline: 1px solid #fe2908 !important;
     border: #F1EFD6;
     z-index: 1;
@@ -255,7 +253,7 @@
     
     color: #F1EFD6!important;
     font-weight: 500;
-    font-size: 1.6rem!important;
+    font-size: 1vw!important;
     cursor: pointer;
 
     z-index: 1;
@@ -283,7 +281,7 @@
 }
 
 .Contact .Contact-Container .others p{
-    font-size: 1.6rem;
+    font-size: 1.1vw;
     font-weight: 500;
     color: #F1EFD6;
     z-index: 1;
@@ -292,7 +290,7 @@
 
 .Contact .Contact-Container .others ion-icon{
     color: #F1EFD6;
-    font-size: 2.5rem;
+    font-size: 2vw;
 }
 
 .Contact .Contact-Container .others ion-icon:hover{
@@ -315,7 +313,7 @@
 .Contact .Contact-Container .thanks h1{
     font-family: 'TrinidadNeue', sans-serif;
     color: #fe2908;
-    font-size: 7rem;
+    font-size: 6vw;
     font-weight: 500;
     z-index: 1;
 }

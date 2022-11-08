@@ -213,7 +213,7 @@
     font-weight: 600!important;
     font-size: 1.5vw;
     color: #F1EFD6!important;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.2vw;
 }
 
 .page .background-page-home-aboutme .AboutMe .perfil .perfil-text-info .perfil-text-info-languages .perfil-text-info-languages-list .language:hover{
@@ -399,7 +399,7 @@
     position: absolute;
     width: 15vw;
     height: fit-content;
-    padding: 1rem;
+    padding: 1vw;
 
     border: #f1efd610 1px solid;
     border-radius: 5px;
@@ -546,8 +546,8 @@
     width: fit-content;
     height: fit-content;
     margin: 1vh auto auto 0;
-    padding: 0.5rem;
-    gap: 1rem;
+    padding: 0.5vw;
+    gap: 1vw;
 
     display: flex;
     flex-direction: row;
@@ -618,7 +618,7 @@
 
     width: 23vw;
     height: fit-content;
-    padding: 1rem;
+    padding: 1vw;
     margin: 1vh auto auto auto;
 
     display: flex;
@@ -791,7 +791,7 @@
     width: fit-content;
     height: fit-content;
     margin: 1vh auto auto 1vw;
-    padding: 0.5rem;
+    padding: 0.5vw;
 
     display: flex;
     flex-direction: row;
@@ -827,7 +827,8 @@
     height: fit-content;
     
     font-family: 'ZerafontsAristotelica', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1vw;
+    line-height: 2.5vh;
     font-weight: bold;
     color: #FFFFFF;
 }

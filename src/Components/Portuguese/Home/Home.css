@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 700vh;
+    height: fit-content;
 }
 
 /*------------------------------    MENU    ------------------------------*/
@@ -245,7 +245,7 @@ footer .change-language .language p:hover{
 
 .page .background-page-home-aboutme{
     width: 100vw;
-    height: 400vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -373,7 +373,7 @@ footer .change-language .language p:hover{
 
 .background-page-projects{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -383,7 +383,7 @@ footer .change-language .language p:hover{
 
 .background-page-contact{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;

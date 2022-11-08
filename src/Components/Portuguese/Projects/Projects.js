@@ -45,13 +45,18 @@ const ProjectBox = ({title, link, description, image, tag}) => {
 
     return (
         <>
-            <a href={link} target="_blank" rel="noreferrer">
-                <div className={`project-box ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    { hover === 'hover' ? 
+            <div className={`project-box ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            
+                { hover === 'hover' ? 
                     <div className="box">
-                        <h2>{title}</h2>
+                        <div className="box-title">
+                            <h2>{title}</h2>
+                            <ion-icon name="logo-github"></ion-icon>
+                        </div>
                         <p>{description}</p>
-                        <div className="box-img" style={{backgroundImage: `url(${image})`}}> </div>
+                        <a href={link} target="_blank" rel="noreferrer">
+                            <div className="box-img" style={{backgroundImage: `url(${image})`}}> </div>
+                        </a>
                     </div>
                 : 
                 <div className="box-close">
@@ -64,8 +69,7 @@ const ProjectBox = ({title, link, description, image, tag}) => {
                     </div>
                 </div>
                 }
-                </div>
-            </a>
+            </div>
         </>
     )
 }
