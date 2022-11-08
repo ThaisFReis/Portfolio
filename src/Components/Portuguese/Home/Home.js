@@ -44,11 +44,8 @@ export default function Home() {
                     </div>
                     <div className="Menu">
                         <div className="onclick" onClick={executeScroll}> <p>INÍCIO</p></div>
-                        <div className="div"></div>
                         <div className="onclick" onClick={executeScroll2}><p>SOBRE MIM</p></div>
-                        <div className="div"></div>
                         <div className="onclick" onClick={executeScroll3}><p>PROJETOS</p></div>
-                        <div className="div"></div>
                         <div className="onclick" onClick={executeScroll4}><p>CONTATO</p></div>
                     </div>
                 </div>

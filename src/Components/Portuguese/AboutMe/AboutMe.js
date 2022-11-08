@@ -50,22 +50,23 @@ const bootcamp = [{
     date: "2022 - 2023",
     name: "DESENVOLVIMENTO WEB FULL-STACK",
     description: "Estudo HTML, CSS, JavaScript, React, Ajax, Node, MongoDB, SQL, TypeScript, Aws, entre outras tecnologias.",
-    local: "DRIVEN EDUCATION"}
+    local: "DRIVEN EDUCATION",
+    status: "EM ANDAMENTO"}
 ]
 
 const courses = [
     { name: "Excel do Básico ao Avançado, Macro e VBA + Power BI",
       description: "Curso de Excel do básico ao avançado, macro e VBA + Power BI. Aprenda a criar planilhas, gráficos, tabelas dinâmicas, macros e muito mais.",
       link: "https://www.udemy.com/share/103rq63@tG22NON0e3vZ8TjmWNLCi30eOxNocPUAIFPuByJTXrF6e396pcpq8nh8Rja4IxIU/",
-      duration: "136.5 horas",
+      duration: "136.5 HORAS",
       local: "Udemy",
-      status: "Incompleto"},
+      status: "INCOMPLETO"},
     { name: "Formação Cientista de Dados: O Curso Completo [2022]",
       description: "Aprenda a ser um Cientista de Dados do zero, com o curso mais completo do mercado. Aprenda Python, R, Estatística, Machine Learning e muito mais.",
       link: "https://www.udemy.com/share/101Xys3@HTGFhnuoOMna9Q8w6avcj0OuNfurqF5TOUtsT1Y7Yo4IoZ1w7EIN8EPV_z7bGv8Q/",
-      duration: "46 horas",
+      duration: "46 HORAS",
       local: "Udemy",
-      status: "Incompleto"},
+      status: "INCOMPLETO"},
 ]
 
 const skills = [
@@ -307,7 +308,7 @@ const University = ({date, name, description, local, type}) => {
     const [mouse, setMouse] = useState(false)
     return(
         <>
-            <div className="tag-type">
+            <div className="tag">
                 <p>{type}</p>
             </div>
             <div className="university-div-name" onMouseEnter={() => setMouse(true)} onMouseLeave={() => setMouse(false)}>
@@ -339,10 +340,13 @@ const University = ({date, name, description, local, type}) => {
 }
 
 /* ----------------------------------------     BOOTCAMP     ----------------------------------------*/
-const Bootcamp = ({date, name, description, local}) => {
+const Bootcamp = ({date, name, description, local, status}) => {
     const [mouse, setMouse] = useState(false)
     return(
         <>
+            <div className="tag">
+                <p>{status}</p>
+            </div>
             <div className="bootcamp-div-name" onMouseEnter={() => setMouse(true)} onMouseLeave={() => setMouse(false)}>
                 <div className="bootcamp-name">
                     <h3>{name}</h3>
@@ -377,7 +381,7 @@ const Courses = ({key, course, description, link, duration, local, status }) => 
     const [mouse, setMouse] = useState(false)
     return(
         <>
-            <div className="tag-status">
+            <div className="tag">
                 <p>{status}</p>
             </div>
             <div className="courses-div-name" key={key} onMouseEnter={() => setMouse(true)} onMouseLeave={() => setMouse(false)}>

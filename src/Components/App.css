@@ -1,22 +1,4 @@
 Body{
-  /*
-    background-image: linear-gradient(
-        to bottom, 
-        #6e65ac, #8d67af, #aa6aaf, 
-        #c46cac, #dc70a6, #ed779a, 
-        #f8818f, #ff8e84, #ffa477, 
-        #ffbe6c, #ffda68, #f9f871);
-    background-image: linear-gradient(
-        to bottom, 
-        #6e65ac, #7e66ae, #8d67af, 
-        #9c68b0, #aa69af, #b66aae, 
-        #c26bac, #cd6daa, #d86fa7, 
-        #e371a3, #ed749f, #f6789a);
-        background-image: linear-gradient(to bottom, #6e65ac, #625d96, #575581, #4d4c6b, #444456, #3d3d4a, #37373e, #303032, #2a2a2b, #242425, #1e1e1e, #181818);
-        background-image: linear-gradient(to bottom, #39393b, #333334, #2c2c2d, #262626, #202020, #1d1d1d, #191919, #161616, #141414, #121212, #101010, #0d0d0d);
-        background-image: linear-gradient(to bottom, #000000, #030302, #050505, #080807, #0a0a0a, #0c0c0c, #0e0e0e, #101010, #121212, #141414, #161616, #181818);
-*/
-
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -31,7 +13,6 @@ Body{
 
 *{
   font-family: 'Thorin', sans-serif;
-  font-style: normal;
   color: #F1EFD6;
 }
 

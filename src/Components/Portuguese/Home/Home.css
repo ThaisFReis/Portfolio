@@ -19,7 +19,7 @@
     justify-content: right;
     text-align: center;
     width: 100vw;
-    height: 10vh;
+    height: 7vh!important;
     top: 0;
     margin-top: 0;
     bottom: auto;
@@ -38,7 +38,6 @@
     text-align: center;
 
     width: 20vw;
-    height: 10vh;
 
     display: flex;
     align-items: center;
@@ -46,11 +45,11 @@
 
 .Header .TFR .link p{
     color: #F1EFD6;
-    font-size: 1.3rem;
+    font-size: 1vw;
     cursor: pointer;
     text-decoration: none!important;
     font-family: 'TrinidadNeue', sans-serif !important;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1vw;
 }
 
 .Header .Menu{
@@ -62,8 +61,7 @@
     align-items: center;
     text-align: center;
 
-    width: 80vw;
-    height: 10vh;
+    width: 30vw!important;
 }
 
 .Header .Menu .onclick{
@@ -75,26 +73,21 @@
     text-align: center;
 
     width: fit-content;
-    height: 10vh;
+    height: fit-content;
+    margin: auto;
     cursor: pointer;
 }
 
 .Header .Menu p{ 
-    font-size: 1.3rem !important;
+    font-size: 1vw !important;
     display: flex;
     align-items: center;
     text-align: center;
     text-decoration: none!important;
     font-family: 'TrinidadNeue', sans-serif !important;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1vw;
     color: #F1EFD6;
-    margin: none !important;
-}
-
-.Header .Menu .div{
-    width: 1px;
-    height: 20px;
-    margin: 0px 5px !important;
+    margin: auto;
 }
 
 Body .Header p:hover{ 
@@ -142,10 +135,10 @@ footer .made p{
     font-family: 'Galilei', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     text-align: center;
     font-style: normal;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1vw;
 }
 
 footer .made p:hover{
@@ -153,8 +146,9 @@ footer .made p:hover{
 }
 
 footer .made ion-icon{
-    width: 15px;
-    margin: 0 10px;
+    width: 1vw;
+    margin: 0 0.5vw;
+    font-size: 1vw;
     color: #fe2908;
 }
 
@@ -172,8 +166,7 @@ footer .social{
 }
 
 footer .social ion-icon{
-    width: 30px;
-    font-size: 2rem;
+    font-size: 1.3vw;
     color: #F1EFD6;
 }
 
@@ -197,11 +190,11 @@ footer .change-language .language{
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    gap: 7px;
+    gap: 1vw;
 }
 
 footer .change-language .language p{
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     font-family: 'TrinidadNeue', sans-serif;
 }
 
@@ -235,7 +228,7 @@ footer .change-language .language p:hover{
 }
 
 .page .welcome-page .welcome{
-    width: 1080px;
+    width: 54.4vw;
     height: 85vh;
     margin: 25vh 0;
 
@@ -243,7 +236,7 @@ footer .change-language .language p:hover{
     flex-direction: column;
     align-items: center;
 
-    font-size: 100px;
+    font-size: 5.2vw;
     font-family: 'TrinidadNeue', sans-serif;
     text-align: center;
 }
@@ -279,7 +272,7 @@ footer .change-language .language p:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 1vh;
 }
 
 .page .background-page-home-aboutme .Inicio .principal h2{
@@ -290,10 +283,10 @@ footer .change-language .language p:hover{
     text-align: center;
     font-style: normal;
     font-weight: 300;
-    font-size: 4.8rem;
+    font-size: 4.8vw;
     font-family: 'TrinidadNeue', sans-serif;
     color: #F1EFD6;
-    letter-spacing:  -0.2rem;
+    letter-spacing:  -0.2vw;
     z-index: 1!important;
 }
 
@@ -305,10 +298,10 @@ footer .change-language .language p:hover{
     text-align: center;
     font-style: normal;
     font-family: 'HoneyBunney', sans-serif;
-    font-size: 15rem;
-    margin-bottom: -60px;
+    font-size: 12vw;
+    margin-bottom: -7vh;
     color: #fe2a04;
-    letter-spacing: 0rem;
+    letter-spacing: 0vw;
     z-index: -1!important;
 }
 
@@ -320,12 +313,12 @@ footer .change-language .language p:hover{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    margin-top: 50px;
+    gap: 5.2vw;
+    margin-top: 5vh;
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button{
-    width: 300px;
+    width: 30vh;
     height: 6vh;
 
     display: flex;
@@ -337,7 +330,7 @@ footer .change-language .language p:hover{
     border-radius: 5px;
     border: #f1efd610 1px solid;
     box-shadow: #000 1px 5px 10px;
-    gap: 10px;
+    gap: 0.5vw;
     cursor: pointer;
 }
 
@@ -346,11 +339,27 @@ footer .change-language .language p:hover{
 }
 
 .page .background-page-home-aboutme .Inicio .principal .buttons button ion-icon{
-    font-size: 37px;
+    width: 1.5vw;
+    height: 6vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5vw;
 }
 
 .page .background-page-home-aboutme .Inicio .principal  .buttons button p{
-    font-size: 30px;
+    width: 6.2vw;
+    height: 6vh;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5vw;
     font-family: 'ZerafontsAristotelica', sans-serif;
     font-style: normal;
     font-weight: bold;
