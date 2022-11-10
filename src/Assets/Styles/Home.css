@@ -1,0 +1,394 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+}
+
+/*------------------------------    MENU    ------------------------------*/
+.Header > div, p{
+    z-index: 10!important;
+}
+
+
+.Header{
+    position: fixed!important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    width: 100vw;
+    height: 7vh;
+    margin-top: 0;
+    margin-bottom: auto;
+
+    background-color: #161616d5!important;
+    z-index: 10!important;
+}
+
+
+.Header .TFR{
+    position: fixed!important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 4vw;
+    height: 7vh;
+    margin-left: 1vw;
+    margin-right: auto;
+}
+
+.Header .TFR .link p{
+    color: #F1EFD6;
+    font-size: 1vw;
+    cursor: pointer;
+    text-decoration: none!important;
+    font-family: 'TrinidadNeue', sans-serif !important;
+    letter-spacing: 0.1vw;
+}
+
+.Header .Menu{
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    width: fit-content;
+    height: 7vh;
+    margin-right: 1vw;
+    margin-left: auto;
+    gap: 1.5vw;
+}
+
+.Header .Menu .onclick{
+    background-color: transparent;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    cursor: pointer;
+}
+
+.Header .Menu p{ 
+    font-size: 1vw !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none!important;
+    font-family: 'TrinidadNeue', sans-serif !important;
+    letter-spacing: 0.1vw;
+    color: #F1EFD6;
+    margin: auto;
+}
+
+Body .Header p:hover{ 
+    color: #fe2908 !important;
+    text-decoration: none;
+}
+
+/*------------------------------    FOOTER  ------------------------------*/
+.footer > div, p, ion-icon{
+    z-index: 9!important;
+}
+
+footer{
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: 0;
+    top: auto;
+    bottom: 0;
+    background-color: #161616d5;
+    z-index: 9!important;
+}
+
+footer .made{
+    width: 33vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .made p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Galilei', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3vw;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.1vw;
+}
+
+footer .made p:hover{
+    color: #fff;
+}
+
+footer .made ion-icon{
+    width: 1vw;
+    margin: 0 0.5vw;
+    font-size: 1vw;
+    color: #fe2908;
+}
+
+footer p:hover{
+    color: #fe2908;
+}
+
+footer .social{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1vw;
+}
+
+footer .social ion-icon{
+    font-size: 1.3vw;
+    color: #F1EFD6;
+}
+
+footer .social ion-icon:hover{
+    color:#fe2908;
+}
+
+footer .change-language{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+footer .change-language .language{
+    width: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    gap: 1vw;
+}
+
+footer .change-language .language p{
+    font-size: 1.3vw;
+    font-family: 'TrinidadNeue', sans-serif;
+}
+
+footer .change-language .language p:hover{
+    color: #fe2908;
+}
+
+/*------------------------------    Principal Div   ------------------------------*/
+
+.page{
+    width: 100vw;
+    height: 700vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page > div, p, h1, h2, h3, h4, h5, h6{
+    z-index:  0!important;
+}
+
+/*------------------------------    WELCOME PAGE    ------------------------------*/
+
+.page .welcome-page{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page .welcome-page .welcome{
+    width: 54.4vw;
+    height: 85vh;
+    margin: 25vh 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 5.2vw;
+    font-family: 'TrinidadNeue', sans-serif;
+    text-align: center;
+}
+
+/*------------------------------    BACKGROUND: PAGE HOME  AND PAGE ABOUT ME    ------------------------------*/
+
+.page .background-page-home-aboutme{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*------------------------------    PAGE HOME    ------------------------------*/
+
+.page .background-page-home-aboutme .Inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page .background-page-home-aboutme .Inicio .principal{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1vh;
+}
+
+.page .background-page-home-aboutme .Inicio .principal h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.8vw;
+    font-family: 'TrinidadNeue', sans-serif;
+    color: #F1EFD6;
+    letter-spacing:  -0.2vw;
+    z-index: 1!important;
+}
+
+.page .background-page-home-aboutme .Inicio .principal h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-family: 'HoneyBunney', sans-serif;
+    font-size: 12vw;
+    margin-bottom: -7vh;
+    color: #fe2a04;
+    letter-spacing: 0vw;
+    z-index: -1!important;
+}
+
+.page .background-page-home-aboutme .Inicio .principal .buttons{
+    width: 50%;
+    height: 8vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5.2vw;
+    margin-top: 5vh;
+}
+
+.page .background-page-home-aboutme .Inicio .principal .buttons button{
+    width: 30vh;
+    height: 6vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border-radius: 5px;
+    border: #f1efd610 1px solid;
+    box-shadow: #000 1px 5px 10px;
+    gap: 0.5vw;
+    cursor: pointer;
+}
+
+.page .background-page-home-aboutme .Inicio .principal .buttons button:hover{
+    background-color: #fe2908;
+}
+
+.page .background-page-home-aboutme .Inicio .principal .buttons button ion-icon{
+    width: 1.5vw;
+    height: 6vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5vw;
+}
+
+.page .background-page-home-aboutme .Inicio .principal  .buttons button p{
+    width: 6.2vw;
+    height: 6vh;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5vw;
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+/*------------------------------    BACKGROUND: PAGE PROJECTS    ------------------------------*/
+
+.background-page-projects{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*------------------------------    BACKGROUND: PAGE CONTACT    ------------------------------*/
+
+.background-page-contact{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

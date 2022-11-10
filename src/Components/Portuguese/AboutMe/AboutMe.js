@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-import  "./AboutMe.css"
+import  "../../../Assets/Styles/AboutMe.css"
 
-import ReactJS from "../../../Assets/react.png"
-import Javascript from "../../../Assets/javascript.png"
-import Css from "../../../Assets/css.png"
-import Html from "../../../Assets/html.png"
-import Ubuntu from "../../../Assets/ubuntu.png"
-import Git from "../../../Assets/git.png"
-import Figma from "../../../Assets/figma.png"
+import ReactJS from "../../../Assets/Img/react.png"
+import Javascript from "../../../Assets/Img/javascript.png"
+import Css from "../../../Assets/Img/css.png"
+import Html from "../../../Assets/Img/html.png"
+import Ubuntu from "../../../Assets/Img/ubuntu.png"
+import Git from "../../../Assets/Img/git.png"
+import Figma from "../../../Assets/Img/figma.png"
 
 const data = [    
     { info: "Thais Ferreira Reis"},
@@ -72,7 +72,7 @@ const courses = [
 const skills = [
     { name: "REACT", 
       image: ReactJS,
-      description: "Hook, Props, States, Components, React Router, Consumo de APIs, ContextAPI, Ternário...",
+      description: "Hook, Props, States, Components, React Router, Context API, Ternário...",
       experience: "Menos de 1 ano"},
     { name: "JAVASCRIPT",
       image: Javascript,

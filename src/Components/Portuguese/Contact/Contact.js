@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import "./Contact.css"
+import "../../../Assets/Styles/Contact.css"
 
 export default function Contact() {
     const [successMessage, setSuccessMessage] = useState("");

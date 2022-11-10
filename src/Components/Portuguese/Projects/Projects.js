@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import arrayProjects from "./arrayProjects"
-import  "./Projects.css"
+import  "../../../Assets/Styles/Projects.css"
 
 const Projects = () => {
     function slideLeft() {

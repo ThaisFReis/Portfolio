@@ -40,82 +40,10 @@ Body{
     background-color: #474747;
 }
 
-
-@font-face {
-    font-family: AbstractGroovy;
-    src: url(../Assets/Abstract/abstractgroovy-k7zdy-webfont.woff) format("woff");
-  }
-  
-  .abstract{
-    font-family: AbstractGroovy;
-  }
-  
-  @font-face {
-    font-family: AnthonyHunter;
-    src: url(../Assets/Anthony/Anthony\ Hunter.woff) format("woff"), url(../Assets/Anthony/Anthony\ Hunter\ Italic.woff) format("woff");
-  }
-  
-  .anthony{
-    font-family: AnthonyHunter;
-  }
-  
-  @font-face {
-    font-family: AquaWebFont;
-    src: url(../Assets/Aqua/aqua-webfont.woff) format("woff");
-  }
-  
-  .aqua{
-    font-family: AquaWebFont;
-  }
-  
-  @font-face {
-    font-family: Auralyess;
-    src: url(../Assets/Auralyess/Auralyess\ Free\ Trial-5cf1.woff) format("woff");
-  }
-  
-  .auralyess{
-    font-family: Auralyess;
-  }
-  
-  @font-face {
-    font-family: Bsrubansomdej;
-    src: url(../Assets/Bsrubansomdej/BSRUBANSOMDEJ-Black.woff) format("woff"), url(../Assets/Bsrubansomdej/BSRUBANSOMDEJ-Bold.woff) format("woff"), url(../Assets/Bsrubansomdej/BSRUBANSOMDEJ-Regular.woff) format("woff"), url(../Assets/Bsrubansomdej/BSRUBANSOMDEJ-SemiBold.woff) format("woff"), url(../Assets/Bsrubansomdej/BSRUBANSOMDEJ-BoldOblique.woff) format("woff"), url(../Assets/Bsrubansomdej/BSRUBANSOMDEJ-Oblique.woff) format("woff");
-  }
-  
-  .bsrubansomdej{
-    font-family: Bsrubansomdej;
-  }
-  
-  @font-face {
-    font-family: Canaro;
-    src: url(../Assets/Canaro/Canaro-LightDEMO.woff) format("woff"), url(../Assets/Canaro/Canaro-LightItalicDEMO.woff) format("woff");
-  }
-  
-  .canaro{
-    font-family: Canaro;
-  }
-  
-  @font-face {
-    font-family: Cansu;
-    src: url(../Assets/Cansu/Cansu-Bold.woff) format("woff"), url(../Assets/Cansu/Cansu-Regular.woff) format("woff"), url(../Assets/Cansu/Cansu-Light.woff) format("woff"), url(../Assets/Cansu/Cansu-Outline.woff) format("woff"), url(../Assets/Cansu/Cansu-Round.woff) format("woff");
-  }
-  
-  .cansu{
-    font-family: Cansu;
-  }
-  
-  @font-face {
-    font-family: Devant;
-    src: url(../Assets/Devant/Devant-Medium.woff) format("woff"), url(../Assets/Devant/Devant\ Horgen.woff) format("woff");
-  }
-  
-  .devant{
-    font-family: Devant;
-  }
-  
+ 
   @font-face {
     font-family: Galilei;
-    src: url(../Assets/Galilei/galileiscript-webfont.woff) format("woff"), url(../Assets/Galilei/GalileiScript.woff) format("woff");
+    src: url(../Assets/Fonts/Galilei/galileiscript-webfont.woff) format("woff"), url(../Assets/Fonts/Galilei/GalileiScript.woff) format("woff");
   }
   
   .galilei{
@@ -124,7 +52,7 @@ Body{
   
   @font-face {
     font-family: Galileo;
-    src: url(../Assets/Galileo/galileo-regular-webfont.woff) format("woff"), url(../Assets/Galileo/Galileo-regular.woff) format("woff");
+    src: url(../Assets/Fonts/Galileo/galileo-regular-webfont.woff) format("woff"), url(../Assets/Fonts/Galileo/Galileo-regular.woff) format("woff");
   }
   
   .galileo{
@@ -132,17 +60,8 @@ Body{
   }
   
   @font-face {
-    font-family: HelloAutumn;
-    src: url(../Assets/Hello_Autumn/hello_autumn-webfont.woff) format("woff");
-  }
-  
-  .helloautumn{
-    font-family: HelloAutumn;
-  }
-  
-  @font-face {
     font-family: HoneyBunney;
-    src: url(../Assets/HoneyBunney/Honey\ Bunney-1063.woff) format("woff"), url(../Assets/HoneyBunney/HoneyBunney\ Sans-5349.woff) format("woff");
+    src: url(../Assets/Fonts/HoneyBunney/Honey\ Bunney-1063.woff) format("woff"), url(../Assets/Fonts/HoneyBunney/HoneyBunney\ Sans-5349.woff) format("woff");
   }
   
   .honeybunney{
@@ -150,80 +69,8 @@ Body{
   }
   
   @font-face {
-    font-family: JacquesPro;
-    src: url(../Assets/JacquesPro/JacquesPro-Bold.woff) format("woff"), url(../Assets/JacquesPro/JacquesPro-ExtraBold.woff) format("woff"), url(../Assets/JacquesPro/JacquesPro-ExtraLight.woff) format("woff"), url(../Assets/JacquesPro/JacquesPro-Light.woff) format("woff"), url(../Assets/JacquesPro/JacquesPro-Medium.woff) format("woff"), url(../Assets/JacquesPro/JacquesPro-Regular.woff) format("woff"), url(../Assets/JacquesPro/JacquesPro-SemiBold.woff) format("woff"), url(../Assets/JacquesPro/JacquesPro-Thin.woff) format("woff");
-  }
-  
-  .jacquespro{
-    font-family: JacquesPro;
-  }
-  
-  @font-face {
-    font-family: Marinfordaf;
-    src: url(../Assets/Marinfordaf/marinfordaf.woff) format("woff");
-  }
-  
-  .marinfordaf{
-    font-family: Marinfordaf;
-  }
-  
-  @font-face {
-    font-family: Northen;
-    src: url(../Assets/Northen/NORTHEN.woff) format("woff");
-  }
-  
-  .northen{
-    font-family: Northen;
-  }
-  
-  @font-face {
-    font-family: Orlande;
-    src: url(../Assets/Orlande/orlande-webfont.woff) format("woff"), url(../Assets/Orlande/Orlande.woff) format("woff");
-  }
-  
-  .orlande{
-    font-family: Orlande;
-  }
-  
-  @font-face {
-    font-family: RoclettePro;
-    src: url(../Assets/RoclettePro/RoclettePro-Bold.woff) format("woff"), url(../Assets/RoclettePro/RoclettePro-ExtraBold.woff) format("woff"), url(../Assets/RoclettePro/RoclettePro-ExtraLight.woff) format("woff"), url(../Assets/RoclettePro/RoclettePro-Light.woff) format("woff"), url(../Assets/RoclettePro/RoclettePro-Medium.woff) format("woff"), url(../Assets/RoclettePro/RoclettePro-Normal.woff) format("woff"), url(../Assets/RoclettePro/RoclettePro-SemiBold.woff) format("woff"), url(../Assets/RoclettePro/RoclettePro-Thin.woff) format("woff");
-  }
-  
-  .roclettepro{
-    font-family: RoclettePro;
-  }
-  
-  @font-face {
-    font-family: RocletteProItalic;
-    src: url(../Assets/RocletteProItalic/RocletteProItalic-BoldItalic.woff) format("woff"), url(../Assets/RocletteProItalic/RocletteProItalic-EBoldItalic.woff) format("woff"), url(../Assets/RocletteProItalic/RocletteProItalic-ELightItalic.woff) format("woff"), url(../Assets/RocletteProItalic/RocletteProItalic-MediumItalic.woff) format("woff"), url(../Assets/RocletteProItalic/RocletteProItalic-NormalItalic.woff) format("woff"), url(../Assets/RocletteProItalic/RocletteProItalic-SBoldItalic.woff) format("woff"), url(../Assets/RocletteProItalic/RocletteProItalic-ThinItalic.woff) format("woff");
-  }
-  
-  .rocletteproitalic{
-    font-family: RocletteProItalic;
-  }
-  
-  @font-face {
-    font-family: RocletteProLine;
-    src: url(../Assets/RocletteProLine/RocletteProLine-Bold.woff) format("woff"), url(../Assets/RocletteProLine/RocletteProLine-EBold.woff) format("woff"), url(../Assets/RocletteProLine/RocletteProLine-ELight.woff) format("woff"), url(../Assets/RocletteProLine/RocletteProLine-Light.woff) format("woff"), url(../Assets/RocletteProLine/RocletteProLine-Medium.woff) format("woff"), url(../Assets/RocletteProLine/RocletteProLine-Normal.woff) format("woff"), url(../Assets/RocletteProLine/RocletteProLine-SBold.woff) format("woff"), url(../Assets/RocletteProLine/RocletteProLine-Thin.woff) format("woff");
-  }
-  
-  .rocletteproline{
-    font-family: RocletteProLine;
-  }
-  
-  @font-face {
-    font-family: RocletteProLineItalic;
-    src: url(../Assets/RocletteProLineItalic/RocletteProLineItalic-Bold.woff) format("woff"), url(../Assets/RocletteProLineItalic/RocletteProLineItalic-EBold.woff) format("woff"), url(../Assets/RocletteProLineItalic/RocletteProLineItalic-ELight.woff) format("woff"), url(../Assets/RocletteProLineItalic/RocletteProLineItalic-Light.woff) format("woff"), url(../Assets/RocletteProLineItalic/RocletteProLineItalic-Medium.woff) format("woff"), url(../Assets/RocletteProLineItalic/RocletteProLineItalic-Normal.woff) format("woff"), url(../Assets/RocletteProLineItalic/RocletteProLineItalic-SBold.woff) format("woff"), url(../Assets/RocletteProLineItalic/RocletteProLineItalic-Thin.woff) format("woff");
-  }
-  
-  .rocletteprolineitalic{
-    font-family: RocletteProLineItalic;
-  }
-  
-  @font-face {
     font-family: Thorin;
-    src: url(../Assets/Thorin/thorin-webfont.woff) format("woff");
+    src: url(../Assets/Fonts/Thorin/thorin-webfont.woff) format("woff");
   }
   
   .thorin{
@@ -232,7 +79,7 @@ Body{
   
   @font-face {
     font-family: TrinidadNeue;
-    src: url(../Assets/TrinidadNeue/trinidad_neue_black-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_black_oblique-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_bold-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_bold_oblique-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_light-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_light_oblique-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_regular-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_regular_oblique-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_semibold-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_semibold_oblique-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_thin-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_thin_oblique-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_ultralight-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_ultlight_oblique-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_ultrabold-webfont.woff) format("woff"), url(../Assets/TrinidadNeue/trinidad_neue_ultrabold_oblique-webfont.woff) format("woff");
+    src: url(../Assets/Fonts/TrinidadNeue/trinidad_neue_black-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_black_oblique-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_bold-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_bold_oblique-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_light-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_light_oblique-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_regular-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_regular_oblique-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_semibold-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_semibold_oblique-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_thin-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_thin_oblique-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_ultralight-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_ultlight_oblique-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_ultrabold-webfont.woff) format("woff"), url(../Assets/Fonts/TrinidadNeue/trinidad_neue_ultrabold_oblique-webfont.woff) format("woff");
   }
   
   .trinidadneue{
@@ -240,73 +87,10 @@ Body{
   }
   
   @font-face {
-    font-family: Truelove;
-    src: url(../Assets/Truelove/truelove-webfont.woff) format("woff");
-  }
-  
-  .truelove{
-    font-family: Truelove;
-  }
-  
-  @font-face {
-    font-family: Typedepot;
-    src: url(../Assets/Typedepot/typedepot_-_corsa_grotesk_regular-webfont.woff) format("woff"), url(../Assets/Typedepot/typedepot_-_corsa_grotesk_thin-webfont.woff) format("woff");
-  }
-  
-  .typedepot{
-    font-family: Typedepot;
-  }
-  
-  @font-face {
-    font-family: Umbasoft;
-    src: url(../Assets/Umbasoft/umbasoft-scbolddemo-webfont.woff) format("woff"), url(../Assets/Umbasoft/umbasoft-sclightdemo-webfont.woff) format("woff"), url(../Assets/Umbasoft/umbasoft-scmediumdemo-webfont.woff) format("woff"), url(../Assets/Umbasoft/umbasoft-scregulardemo-webfont.woff) format("woff"), url(../Assets/Umbasoft/umbasoft-scthindemo-webfont.woff) format("woff");
-  }
-  
-  .umbasoft{
-    font-family: Umbasoft;
-  }
-  
-  @font-face {
-    font-family: Vanilla;
-    src: url(../Assets//Vanilla/vanillaright-webfont.woff) format("woff");
-  }
-  
-  .vanilla{
-    font-family: Vanilla;
-  }
-  
-  @font-face {
-    font-family: Velline;
-    src: url(../Assets/Velline/velline-webfont.woff) format("woff");
-  }
-  
-  .velline{
-    font-family: Velline;
-  }
-  
-  @font-face {
-    font-family: Willson;
-    src: url(../Assets/Willson/willsonpersonaluse-wyq89-webfont.woff) format("woff");
-  }
-  
-  .willson{
-    font-family: Willson;
-  }
-  
-  @font-face {
     font-family: ZerafontsAristotelica;
-    src: url(../Assets/Zerafonts_Aristotelica/zetafonts_-_aristotelica_display_extralight-webfont.woff) format("woff"), url(../Assets/Zerafonts_Aristotelica/zetafonts_-_aristotelica_icons_demibold-webfont.woff) format("woff"), url(../Assets/Zerafonts_Aristotelica/zetafonts_-_aristotelica_small_caps_hairlin-webfont.woff) format("woff"), url(../Assets/Zerafonts_Aristotelica/zetafonts_-_aristotelica_text_extralight-webfont.woff) format("woff");
+    src: url(../Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_display_extralight-webfont.woff) format("woff"), url(../Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_icons_demibold-webfont.woff) format("woff"), url(../Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_small_caps_hairlin-webfont.woff) format("woff"), url(../Assets/Fonts/Zerafonts_Aristotelica/zetafonts_-_aristotelica_text_extralight-webfont.woff) format("woff");
   }
   
   .zerafontsaristotelica{
     font-family: ZerafontsAristotelica;
-  }
-  
-  @font-face {
-    font-family: ZerafontsEastman;
-    src: url(../Assets/Zerafonts_Eastman/zetafonts_-_eastman_alternate_regular_offset-webfont.woff) format("woff"), url(../Assets/Zerafonts_Eastman/zetafonts_-_eastman_alternate_regular_offset_italic-webfont.woff) format("woff"), url(../Assets/Zerafonts_Eastman/zetafonts_-_eastman_regular_offset-webfont.woff) format("woff"), url(../Assets/Zerafonts_Eastman/zetafonts_-_eastman_regular_offset_italic-webfont.woff) format("woff");
-  }
-  
-  .zerafontseastman{
-    font-family: ZerafontsEastman;
   }

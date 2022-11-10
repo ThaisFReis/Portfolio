@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 import AboutMe from "../AboutMe/AboutMe";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
-import  "./Home.css"
+import  "../../../Assets/Styles/Home.css";
 
 export default function Home() {
 
@@ -74,8 +74,8 @@ export default function Home() {
                     {/* BUTTONS */}
                     <div className="change-language">
                         <div className="language">
-                            <Link to="/"><p>EN</p></Link>
-                            <Link to="/"><p>PT</p></Link>
+                            <Link to="/home"><p style={{cursor: "pointer" }}>EN</p></Link>
+                            <p style={{ color: "#fe2a04" }}>PT</p>
                         </div>
                     </div>
                 </footer>

@@ -1,26 +1,77 @@
-import Menu from "../Menu/Menu"
-import  "./Projects.css"
-import Scroll from "../../../Assets/scrolldown.png"
+import React, { useState } from "react"
 
-export default function Projects() {
+import arrayProjects from "./arrayProjects"
+import  "../../../Assets/Styles/Projects.css"
+
+const Projects = () => {
+    function slideLeft() {
+        const projects = document.querySelector('.projects')
+        projects.scrollLeft -= 500
+    }
+
+    function slideRight() {
+        const projects = document.querySelector('.projects')
+        projects.scrollLeft += 500
+    }
+
     return (
         <>
-        <Menu />
             <div className="Projects">
-                <div>
-                    <h1>Projects</h1>
+                <h1>PROJECTS</h1>
+                <div className="projects-group">
+                    <ion-icon name="arrow-back-circle-outline" id="slideLeft" onClick={slideLeft}></ion-icon>
+                    <div className="projects">
+                        {arrayProjects.map((project, index) => (
+                        <ProjectBox key={index} title={project.title} link={project.link} description={project.description} image={project.image} tag={project.tags}/>
+                    ))}
                 </div>
-                
-                {/*
-                    <div className="footer">
-                    <h3>scroll down</h3>
-                    <div className="scroll">
-                        <img src={Scroll} alt="Scroll" />
-                        <img src={Scroll} alt="Scroll" />
-                    </div>
+                <ion-icon name="arrow-forward-circle-outline" id="slideRight" onClick={slideRight} ></ion-icon>
                 </div>
-    */}
             </div>
         </>
       )
   }
+
+const ProjectBox = ({title, link, description, image, tag}) => {
+    const [hover, setHover] = React.useState('')
+
+    function handleMouseEnter() {
+        setHover('hover')
+    }
+    
+    function handleMouseLeave() {
+        setHover('')
+    }
+
+    return (
+        <>
+            <div className={`project-box ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            
+                { hover === 'hover' ? 
+                    <div className="box">
+                        <div className="box-title">
+                            <h2>{title}</h2>
+                            <ion-icon name="logo-github"></ion-icon>
+                        </div>
+                        <p>{description}</p>
+                        <a href={link} target="_blank" rel="noreferrer">
+                            <div className="box-img" style={{backgroundImage: `url(${image})`}}> </div>
+                        </a>
+                    </div>
+                : 
+                <div className="box-close">
+                    <h2>{title}</h2>
+                    <p>{description}</p>
+                    <div className="tags">
+                        {tag.map((tag, index) => (
+                            <p key={index}>{tag}</p>
+                        ))}
+                    </div>
+                </div>
+                }
+            </div>
+        </>
+    )
+}
+
+export default Projects;
