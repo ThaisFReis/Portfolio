@@ -85,8 +85,7 @@
     align-items: center;
     justify-content: space-around;
     width: 50vw!important;
-    height: 80vh!important;
-    margin-top: 20vh;
+    height: 70vh!important;
 }
 
 .Contact .Contact-Container .email h1{
@@ -101,6 +100,9 @@
     font-size: 3vw;
 }
 .Contact .Contact-Container.email .form{
+    width: fit-content;
+    height: fit-content;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,18 +271,20 @@
 
 /*------------------------------------------------------*/
 .Contact .Contact-Container .others{
-    border-radius: 5px;
-    width: 9vw;
-    height: 25vh;
+    width: 11.09vw;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2vw;
+    gap: 1vw;
 }
 
 .Contact .Contact-Container .others p{
+    width: 5vw;
+    height: fit-content;
+
     font-size: 1.1vw;
     font-weight: 500;
     color: #F1EFD6;
@@ -305,7 +309,7 @@
     align-items: center;
     justify-content: center;
     width: 50vw!important;
-    height: 80vh!important;
+    height: 70vh!important;
     text-align: left;
     
 }
@@ -315,6 +319,8 @@
     color: #fe2908;
     font-size: 6vw;
     font-weight: 500;
+
+    margin: auto;
     z-index: 1;
 }
 

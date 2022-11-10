@@ -10,6 +10,7 @@ import Html from "../../../Assets/Img/html.png"
 import Ubuntu from "../../../Assets/Img/ubuntu.png"
 import Git from "../../../Assets/Img/git.png"
 import Figma from "../../../Assets/Img/figma.png"
+import MongoDB from "../../../Assets/Img/mongodb.png"
 
 const data = [    
     { info: "Thais Ferreira Reis"},
@@ -101,6 +102,11 @@ const skills = [
       image: Ubuntu,
       description: "I have basic knowledge of Linux (Ubuntu), such as installing programs, updating the system..., and I know how to use the terminal.",
       experience: "Less than 1 year"},
+    { name: "MONGODB",
+      image: MongoDB,
+      description: "I have basic knowledge of MongoDB, such as creating databases, collections, documents, and more.",
+      experience: "Less than 1 year"
+    }
 ]
 
 

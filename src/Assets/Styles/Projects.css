@@ -8,7 +8,7 @@
 }
 
 .Projects h1{
-    width: 90vw;
+    width: 100vw;
     height: fit-content;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -50,36 +50,40 @@
 }
 
 .Projects .projects-group .projects{
+    box-shadow: inset 0px 0px 0.3vw 0px rgba(0, 0, 0, 0.466);
+    
     width: 75vw;
     height: 75vh;
+    gap: 2vw;
+
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    overflow-x: scroll;
-    gap: 2vw;
 
+    overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-color: #fe2908 #2e2e2e;
 }
 
 .Projects .projects-group .projects .project-box{
-    border-radius: 5px;
     width: 30vw;
     height: 70vh;
     margin-left: 1vw;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: #000 5px 5px 10px;
 
-    background-color: #161616;
+    border: #f1efd604 1px solid;
+    border-radius: 5px;
+    box-shadow: #000 3px 5px 10px;
 }
 
 .Projects .projects-group .projects .project-box .box-close{
     width: 25vw;
-    height: 60vh;
+    height: 65vh;
 
     display: flex;
     flex-direction: column;
@@ -91,12 +95,14 @@
     font-family: 'TrinidadNeue', sans-serif;
     font-size: 2.5vw;
     color: #fe2908;
+
     width: 25vw;
     height: 8vh;
+    margin: 15vh auto auto auto;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto 0;
 }
 
 .Projects .projects-group .projects .project-box .box-close p{
@@ -106,10 +112,12 @@
     line-height: 2rem;
 
     width: 22vw;
-    height: calc(9 * 1.5rem);
+    height: calc(9 * 1.5rem)!important;
     display: flex;
+    align-items:flex-start;
     justify-content: center;
     text-align: justify;
+    margin: auto auto 15vh auto;
 
     overflow: hidden;
     position: relative;
@@ -118,68 +126,36 @@
 .Projects .projects-group .projects .project-box .box-close p::after{
     content: '';
     position: absolute;
+
+    top: auto;
+    margin-top: auto;
     bottom: 0;
+    margin-bottom: 0;
     right: 0;
-    width: 80%;
+    margin-right: 0;
+    left: 0;
+    margin-left: 0;
+
+    width: 22vw;
     height: 1.5rem;
     background: linear-gradient(90deg, transparent, #161616);
 }
 
-.Projects .projects-group .projects .project-box .box-close .tags{
-    width: 25vw;
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    gap: 1vw;
-
-    top: auto;
-    bottom: 0;
-    margin-top: auto;
-    margin-bottom: 0;
-}
-
-.Projects .projects-group .projects .project-box .box-close .tags p{
-    background-color: #f1efd60a;
-    border: #f1efd610 1px solid;
-    border-radius: 5px;
-
-    width: fit-content;
-    height: fit-content;
-    padding: 0.4vw;
-    margin-right: 0.7vw;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    font-family: "ZerafontsAristotelica", sans-serif;
-    font-size: 0.6vw;
-    font-weight: bold!important;
-    color: #fe2908;
-    letter-spacing: 0.15vw;
-}
-
-.Projects .projects-group .projects .project-box .box-close .tags p::after{
-    background: none;
-}
-
-
-
 /* .projects .Projects .projects-group .projects .project-box.hover */
 
 .Projects .projects-group .projects .project-box.hover{
-    border: #f1efd610 1px solid;
-    border-radius: 5px;
     width: 30vw;
-    height: 65vh;
+    height: 70vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
+
+    background-color: #2525254f;
+    border: #2525254f 1px solid;
+    border-radius: 5px;
 
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
@@ -191,7 +167,7 @@
 
 .Projects .projects-group .projects .project-box.hover .box{
     width: 25vw;
-    height: 65vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,6 +179,7 @@
     width: 23vw;
     min-height: 5vh;
     height: fit-content;
+    margin: 5vh auto auto auto;
 
     display: flex;
     align-items: center;
@@ -257,7 +234,9 @@
 .Projects .projects-group .projects .project-box.hover .box .box-img{
     width: 25vw;
     height: 22vh;
+    margin-top: auto;
     margin-bottom: 0;
+
     background-position: start;
     background-size: cover;
     background-repeat: no-repeat;

@@ -9,6 +9,7 @@ import Html from "../../../Assets/Img/html.png"
 import Ubuntu from "../../../Assets/Img/ubuntu.png"
 import Git from "../../../Assets/Img/git.png"
 import Figma from "../../../Assets/Img/figma.png"
+import MongoDB from "../../../Assets/Img/mongodb.png"
 
 const data = [    
     { info: "Thais Ferreira Reis"},
@@ -61,7 +62,7 @@ const courses = [
       duration: "136.5 HORAS",
       local: "Udemy",
       status: "INCOMPLETO"},
-    { name: "Formação Cientista de Dados: O Curso Completo [2022]",
+    { name: "Formação Cientista de Dados: O Curso Completo",
       description: "Aprenda a ser um Cientista de Dados do zero, com o curso mais completo do mercado. Aprenda Python, R, Estatística, Machine Learning e muito mais.",
       link: "https://www.udemy.com/share/101Xys3@HTGFhnuoOMna9Q8w6avcj0OuNfurqF5TOUtsT1Y7Yo4IoZ1w7EIN8EPV_z7bGv8Q/",
       duration: "46 HORAS",
@@ -98,6 +99,11 @@ const skills = [
       image: Ubuntu,
       description: "Tenho conhecimentos básicos em Ubuntu, como instalar programas, atualizar o sistema, criar pastas, mover arquivos, entre outros. E sei lidar com o terminal de comandos de forma básica.",
       experience: "Menos de 1 ano"},
+    { name: "MONGODB",
+      image: MongoDB,
+      description: "Tenho conhecimentos básicos em MongoDB, como criar um banco de dados, criar uma coleção, inserir dados, atualizar dados, deletar dados, entre outros.",
+      experience: "Menos de 1 ano"
+    }
 ]
 
 
@@ -389,9 +395,8 @@ const Courses = ({key, course, description, link, duration, local, status }) => 
                     <h3>{course}</h3>
                     <ion-icon name="information-outline"></ion-icon>
                 </div>
-
-                {
-                    mouse === true ?
+            {
+                mouse === true ?
                     <>
                         <div className="courses-description">
                             <p>{description}</p>
@@ -403,18 +408,18 @@ const Courses = ({key, course, description, link, duration, local, status }) => 
                             </div>
                         </div>
                     </>
-                    :
+                :
                     <>
+                        <div className="courses-duration">
+                            <h4>{duration}</h4>
+                        </div>
+                        <div className="courses-local">
+                            <h5>{local}</h5>
+                        </div>
                     </>
-                }
+            }
             </div>
-            <div className="courses-duration">
-                <h4>{duration}</h4>
-            </div>
-            <div className="courses-local">
-                <h5>{local}</h5>
-            </div>
-        </>
+    </>
     )
 }
 

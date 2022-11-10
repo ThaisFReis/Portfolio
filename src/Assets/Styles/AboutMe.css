@@ -1,7 +1,7 @@
 /*------------------------------    PAGE ABOUT ME   ------------------------------*/
 .page .background-page-home-aboutme .AboutMe{
     width: 100vw;
-    height: 300vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -567,7 +567,7 @@
 }
 
 .education h3{
-    width: 20vw;
+    width: 21vw;
     height: fit-content;
 
     display: flex;
@@ -628,8 +628,7 @@
 /*------------------------------ DIV EDUCATION DATA ------------------------------*/
 
 .university-data,
-.bootcamp-data,
-.courses-duration{
+.bootcamp-data{
     width: 25vw;
     margin: auto;
 
@@ -652,8 +651,7 @@
 /*------------------------------ DIV EDUCATION LOCAL ------------------------------*/
 
 .university-local,
-.bootcamp-local,
-.courses-local{
+.bootcamp-local{
     width: 25vw;
     height: fit-content;
     margin: auto;
@@ -673,6 +671,62 @@
     text-align: justify;
 }
 
+/*------------------------------ DIV COURSES ------------------------------*/
+.courses-duration,
+.courses-local{
+    width: 25vw;
+    height: fit-content;
+    margin: 1vh auto auto auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.courses-description{
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-link a{
+    width: fit-content;
+    height: fit-content;
+    margin: 1vh auto auto auto;
+    gap: 1vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: transparent 1px solid;
+    border-radius: 5px;
+    padding: 0.2vw;
+}
+
+.courses-link a p{
+    font-family: 'ZerafontsAristotelica', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: #F1EFD6;
+    text-align: justify;
+}
+
+.courses-link a ion-icon{
+    font-size: 1vw;
+    color: #fe2908;
+}
+
+.courses-link a:hover{
+    border: #fe2908 1px solid;
+    border-radius: 5px;
+    padding: 0.2vw;
+}
 
 /*------------------------------ DIV SKILLS ------------------------------*/
 
@@ -702,7 +756,7 @@
 }
 
 .page .background-page-home-aboutme .AboutMe .skills .skills-box{
-    width: 80vw;
+    width: 70vw;
     height: 75vh;
     margin-bottom: 5.5vh;
 

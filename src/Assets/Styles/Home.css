@@ -210,7 +210,7 @@ footer .change-language .language p:hover{
 
 .page{
     width: 100vw;
-    height: 700vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,7 +234,7 @@ footer .change-language .language p:hover{
 .page .welcome-page .welcome{
     width: 54.4vw;
     height: 85vh;
-    margin: 25vh 0;
+    margin: 35vh 0;
 
     display: flex;
     flex-direction: column;
