@@ -472,7 +472,7 @@ footer .change-language .language p:hover{
     .footerMobile .MenuMobile{
         margin: auto 0 auto auto;
 
-        width: 31vw;
+        width: fit-content;
         height: fit-content;
 
         display: flex;
@@ -487,7 +487,6 @@ footer .change-language .language p:hover{
 
         width: fit-content;
         height: fit-content;
-        margin: auto 2vw 0 auto;
 
         display: flex;
         justify-content: center;
@@ -583,7 +582,7 @@ footer .change-language .language p:hover{
     .footerMobile .MenuMobile ul > li:hover,
     .footerMobile .MenuMobile ul > li:focus,
     .footerMobile .MenuMobile ul > li:active{
-        background-color: #fe2908;
+        background-color: #fe2908!important;
         border-color: #fe2908;
         color: #fff;
     }
