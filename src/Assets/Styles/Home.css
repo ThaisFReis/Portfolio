@@ -403,6 +403,10 @@ footer .change-language .language p:hover{
         display: none!important;
     }
 
+    .page .welcome-page{
+        height: 80vw;
+    }
+
 
     /*------------------------------    HEADER MOBILE    ------------------------------*/
 
@@ -410,14 +414,16 @@ footer .change-language .language p:hover{
         width: 100vw;
         height: 12vw;
 
+        position: fixed!important;
         display: flex;
         flex-direction: row;
         justify-content: left;
         align-items: center;
+
+        z-index: 9!important;
     }
 
     .HeaderMobile .TFR{
-        position: fixed!important;
         top: 2vw;
         bottom: auto;
         left: 2vw;
@@ -445,17 +451,19 @@ footer .change-language .language p:hover{
 
     /*------------------------------    FOOTER MOBILE    ------------------------------*/
     .footerMobile{
-        position: fixed;
         bottom: 0;
         top: auto;
 
         width: 100vw;
         height: fit-content;
 
+        position: fixed;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        z-index: 9;
     }
 
     .footerMobile .MenuMobile{
@@ -484,6 +492,7 @@ footer .change-language .language p:hover{
     }
 
     .footerMobile .MenuMobile ul .navbar{
+        background-color: #161616d5!important;
         border: 1px solid #F1EFD6;
         border-radius: 100%;
         box-shadow: #000 3px 5px 10px;
@@ -498,6 +507,8 @@ footer .change-language .language p:hover{
         text-align: center;
 
         cursor: pointer;
+
+        z-index: 9!important;
     }
     
     .footerMobile .MenuMobile ul .navbar > span{
@@ -519,8 +530,6 @@ footer .change-language .language p:hover{
     }
 
     .footerMobile .MenuMobile ul .navbar.active{
-
-
         transition-delay: 0.4s;
         transform: rotate(45deg);
     }
