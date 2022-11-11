@@ -454,7 +454,7 @@ footer .change-language .language p:hover{
 
     /*------------------------------    FOOTER MOBILE    ------------------------------*/
     .footerMobile{
-        bottom: 0;
+        bottom: 10vh;
         top: auto;
 
         width: 100vw;
