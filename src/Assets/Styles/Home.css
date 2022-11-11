@@ -403,17 +403,12 @@ footer .change-language .language p:hover{
         display: none!important;
     }
 
-    .page{
-        display: none;
-    }
 
     /*------------------------------    HEADER MOBILE    ------------------------------*/
 
     .HeaderMobile{
-        background-color: yellowgreen;
-
         width: 100vw;
-        height: 5vw;
+        height: 12vw;
 
         display: flex;
         flex-direction: row;
@@ -422,11 +417,10 @@ footer .change-language .language p:hover{
     }
 
     .HeaderMobile .TFR{
-        background-color: thistle;
-
         position: fixed!important;
-        top: 0;
+        top: 2vw;
         bottom: auto;
+        left: 2vw;
 
         display: flex;
         flex-direction: row;
@@ -435,16 +429,13 @@ footer .change-language .language p:hover{
         text-align: center;
     
         width: 20vw;
-        height: 5vw;
-        margin-left: 1vw;
-        margin-right: auto;    
+        height: 10vw;
     }
 
     .HeaderMobile .TFR .link p{
-
         color: #F1EFD6;
         font-family: 'TrinidadNeue', sans-serif !important;
-        font-size: 4vw;
+        font-size: 5vw;
 
         text-decoration: none!important;
         letter-spacing: 0.1vw;
