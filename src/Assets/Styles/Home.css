@@ -492,61 +492,6 @@ footer .change-language .language p:hover{
         align-items: center;
     }
 
-    /*.footerMobile .MenuMobile ul .menu{
-        background-color: deeppink;
-
-        width: 30vw;
-        height: 50vw;
-        gap: 2vh;
-
-        position: relative;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footerMobile .MenuMobile ul .menu .toggle{
-        background-color: deepskyblue;
-        position: absolute;
-
-        width: 75px;
-        height: 75px;
-
-        border-radius: 50%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-size: 3rem;
-
-        cursor: pointer;
-
-        transition: 0.5s;
-    }
-
-    .footerMobile .MenuMobile .menu p{
-        background-color: deepskyblue;
-
-        width: fit-content;
-        height: fit-content;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        font-family: 'TrinidadNeue', sans-serif;
-        font-size: 5vw;
-        font-style: normal;
-        font-weight: 300;
-        color: #F1EFD6;
-        text-decoration: none;
-        letter-spacing: 0.1vw;
-    }*/
-
     .footerMobile .MenuMobile ul .navbar{
         border: 1px solid #F1EFD6;
         border-radius: 100%;
@@ -579,13 +524,13 @@ footer .change-language .language p:hover{
     }
 
     .footerMobile .MenuMobile ul .navbar, ul .navbar > span{
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 
     .footerMobile .MenuMobile ul .navbar.active{
 
 
-        transition-delay: 0.7s;
+        transition-delay: 0.4s;
         transform: rotate(45deg);
     }
 
@@ -625,6 +570,10 @@ footer .change-language .language p:hover{
         align-items: center;
 
         font-size: 1.3rem!important;
+
+        transition: all .2s ease-in-out;
+        transition-delay: .1s;
+
     }
     
     .footerMobile .MenuMobile ul > li:hover,
