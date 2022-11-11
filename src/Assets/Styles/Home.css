@@ -573,13 +573,12 @@ footer .change-language .language p:hover{
     
     .footerMobile .MenuMobile ul .navbar > span{
         background-color: #F1EFD6;
+        border-radius: 5px;
 
         display: block;
 
         width: 15vw;
         height: 2px;
-
-        border-radius: 99%;
     }
 
     .footerMobile .MenuMobile ul .navbar > span:not(:last-child){
@@ -622,14 +621,13 @@ footer .change-language .language p:hover{
 
     .footerMobile .MenuMobile ul > li:nth-child(2){
         background-color: rgb(20, 102, 255);
+        border-radius: 100%;
 
         width: 15vw;
         height: 15vw;
-        border-radius: 100%;
         margin-left: 5vw;
 
         position: absolute;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -642,17 +640,16 @@ footer .change-language .language p:hover{
 
     .footerMobile .MenuMobile ul > li:nth-child(3){
         background-color: deeppink;
+        border-radius: 100%;
         
         width: 15vw;
         height: 15vw;
-        border-radius: 100%;
+        margin: 5vw 15vw auto auto;
 
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        margin-right: 15vw;
 
         transform: rotate(calc(-30deg));
         transform-origin: -33vw;
@@ -660,11 +657,17 @@ footer .change-language .language p:hover{
 
     .footerMobile .MenuMobile ul > li:nth-child(4){
         background-color: rgb(0, 163, 35);
+        border-radius: 100%;
 
-        position: absolute;
-
+        width: 15vw;
+        height: 15vw;
         margin-top: 32vw;
         margin-right: 10vw;
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         transform: rotate(calc(-440deg));
         transform-origin: -15vw;
@@ -672,11 +675,18 @@ footer .change-language .language p:hover{
 
     .footerMobile .MenuMobile ul > li:nth-child(5){
         background-color: rgb(187, 0, 0);
+        border-radius: 100%;
 
-        position: absolute;
+        width: 15vw;
+        height: 15vw;
 
         margin-top: 32vw;
         margin-right: -4vw;
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         transform: rotate(calc(-470deg));
         transform-origin: -8vw;
