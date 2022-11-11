@@ -100,7 +100,7 @@ Body .Header p:hover{
 }
 
 /*------------------------------    FOOTER  ------------------------------*/
-.footer > div, p, ion-icon{
+footer > div, p, ion-icon{
     z-index: 9!important;
 }
 
@@ -391,4 +391,282 @@ footer .change-language .language p:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+@media  (width <= 768px){
+    .Header{
+        display: none!important;
+    }
+
+    footer{
+        display: none!important;
+    }
+
+    .page{
+        display: none;
+    }
+
+    /*------------------------------    HEADER MOBILE    ------------------------------*/
+
+    .HeaderMobile{
+        background-color: yellowgreen;
+
+        width: 100vw;
+        height: 5vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .HeaderMobile .TFR{
+        background-color: thistle;
+
+        position: fixed!important;
+        top: 0;
+        bottom: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        width: 20vw;
+        height: 5vw;
+        margin-left: 1vw;
+        margin-right: auto;    
+    }
+
+    .HeaderMobile .TFR .link p{
+
+        color: #F1EFD6;
+        font-family: 'TrinidadNeue', sans-serif !important;
+        font-size: 4vw;
+
+        text-decoration: none!important;
+        letter-spacing: 0.1vw;
+
+        cursor: pointer;
+    }
+
+    /*------------------------------    FOOTER MOBILE    ------------------------------*/
+    .footerMobile{
+        background-color: rgb(0, 0, 0);
+
+        position: fixed;
+        bottom: 0;
+        top: auto;
+
+        width: 100vw;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerMobile .MenuMobile{
+        background-color: mediumslateblue;
+
+        margin-left: auto;
+        margin-right: 0;
+
+        width: 31vw;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerMobile .MenuMobile ul{
+        background-color: springgreen;
+
+        position: relative;
+
+        width: fit-content;
+        height: fit-content;
+        margin: auto 1vw 1vw auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*.footerMobile .MenuMobile ul .menu{
+        background-color: deeppink;
+
+        width: 30vw;
+        height: 50vw;
+        gap: 2vh;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerMobile .MenuMobile ul .menu .toggle{
+        background-color: deepskyblue;
+        position: absolute;
+
+        width: 75px;
+        height: 75px;
+
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 3rem;
+
+        cursor: pointer;
+
+        transition: 0.5s;
+    }
+
+    .footerMobile .MenuMobile .menu p{
+        background-color: deepskyblue;
+
+        width: fit-content;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        font-family: 'TrinidadNeue', sans-serif;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 300;
+        color: #F1EFD6;
+        text-decoration: none;
+        letter-spacing: 0.1vw;
+    }*/
+
+    .footerMobile .MenuMobile ul .navbar{
+        background-color: midnightblue;
+
+        width: 15vw;
+        height: 15vw;
+
+        border-radius: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        cursor: pointer;
+    }
+    
+    .footerMobile .MenuMobile ul .navbar > span{
+        background-color: #F1EFD6;
+
+        display: block;
+
+        width: 8vw;
+        height: 2px;
+
+        border-radius: 9999px;
+    }
+
+    .footerMobile .MenuMobile ul .navbar > span:not(:last-child){
+        margin-bottom: 7px;
+    }
+
+    .footerMobile .MenuMobile ul .navbar, ul .navbar > span{
+        transition: all .3s ease-in-out;
+    }
+
+    .footerMobile .MenuMobile ul .navbar.active{
+        background-color: transparent;
+        box-shadow: 0 0 0 10vw midnightblue;
+
+
+        transition-delay: 0.7s;
+        transform: rotate(45deg);
+    }
+
+    .footerMobile .MenuMobile ul .navbar.active > span{
+        background-color: #fe2908;
+    }
+
+    .footerMobile .MenuMobile ul .navbar.active > span:nth-child(2){
+        width: 0;
+    }
+    
+    .footerMobile .MenuMobile ul .navbar.active > span:nth-child(1),
+    .footerMobile .MenuMobile ul .navbar.active > span:nth-child(3){
+        transition-delay: .3s;
+    }
+
+    .footerMobile .MenuMobile ul .navbar.active > span:nth-child(1){
+        transform: translateY(9px);
+    }
+
+    .footerMobile .MenuMobile ul .navbar.active > span:nth-child(3){
+        transform: translateY(-9px) rotate(90deg);
+    }
+
+    .footerMobile .MenuMobile ul > li:nth-child(2){
+        background-color: rgb(20, 102, 255);
+
+        position: absolute;
+
+        margin-left: 0vw;
+
+        transform: rotate(calc(1deg));
+        transform-origin: 700vw;
+    }
+
+    .footerMobile .MenuMobile ul > li:nth-child(3){
+        background-color: deeppink;
+        list-style: none;
+
+        position: absolute;
+
+        margin-right: 10vw;
+
+        transform: rotate(calc(-400deg));
+        transform-origin: -12vw;
+    }
+
+    .footerMobile .MenuMobile ul > li:nth-child(4){
+        background-color: rgb(0, 163, 35);
+
+        position: absolute;
+
+        margin-top: 32vw;
+        margin-right: -4vw;
+
+        transform: rotate(calc(-440deg));
+        transform-origin: -15vw;
+    }
+
+    .footerMobile .MenuMobile ul > li:nth-child(5){
+        background-color: rgb(187, 0, 0);
+
+        position: absolute;
+
+        margin-top: 32vw;
+        margin-right: -4vw;
+
+        transform: rotate(calc(-470deg));
+        transform-origin: -8vw;
+    }
+
+
+
 }

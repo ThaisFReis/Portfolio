@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -10,20 +10,7 @@ import Projects from "../Projects/Projects";
 import  "../../../Assets/Styles/Home.css";
 
 export default function Home() {
-
-    const homePage = useRef(null);
-    const aboutMePage = useRef(null);
-    const projectsPage = useRef(null);
-    const contactPage = useRef(null);
-    const welcomePage = useRef(null)
-
-    const executeScroll = () => homePage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll2 = () => aboutMePage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll3 = () => projectsPage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll5 = () => welcomePage.current.scrollIntoView({ behavior: 'smooth' })
-
-    const [hover, setHover] = React.useState('')
+    const [hover, setHover] = useState('')
 
     function handleMouseEnter() {
         setHover('hover')
@@ -33,21 +20,60 @@ export default function Home() {
         setHover('')
     }   
 
+    const homePage = useRef(null);
+    const aboutMePage = useRef(null);
+    const projectsPage = useRef(null);
+    const contactPage = useRef(null);
+    const welcomePage = useRef(null);
 
+        
+    const executeScroll = () => homePage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll2 = () => aboutMePage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll3 = () => projectsPage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll5 = () => welcomePage.current.scrollIntoView({ behavior: 'smooth' })
+
+    {/* CONST FOR MENU MOBILE */}
+        const  [toggleMenu, setToggleMenu] = useState(false)
+
+        function handleToggle() {
+            const navBar = document.querySelector('.navbar')
+
+            if (toggleMenu === false) {
+                setToggleMenu(true)
+                navBar.classList.add('active')
+            }
+            else {
+                setToggleMenu(false)
+                navBar.classList.remove('active')
+            }
+        }
+
+    const Menu = () => {
+    
+        const executeScroll = () => homePage.current.scrollIntoView({ behavior: 'smooth' })
+        const executeScroll2 = () => aboutMePage.current.scrollIntoView({ behavior: 'smooth' })
+        const executeScroll3 = () => projectsPage.current.scrollIntoView({ behavior: 'smooth' })
+        const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
+    
+        return (
+            <div className="Menu">
+                <div className="onclick" onClick={executeScroll}> <p>INÍCIO</p></div>
+                <div className="onclick" onClick={executeScroll2}><p>SOBRE MIM</p></div>
+                <div className="onclick" onClick={executeScroll3}><p>PROJETOS</p></div>
+                <div className="onclick" onClick={executeScroll4}><p>CONTATO</p></div>
+            </div>
+        )
+    }
     return (
         <div className="body">
             <>
                 {/* MENU */}
                 <div className="Header">
                     <div className="TFR">
-                        <Link to="/" className="link" onClick={executeScroll5}><p>{"<TFR/>"}</p></Link>
+                        <div className="link" onClick={executeScroll5}><p>{"<TFR/>"}</p></div>
                     </div>
-                    <div className="Menu">
-                        <div className="onclick" onClick={executeScroll}> <p>INÍCIO</p></div>
-                        <div className="onclick" onClick={executeScroll2}><p>SOBRE MIM</p></div>
-                        <div className="onclick" onClick={executeScroll3}><p>PROJETOS</p></div>
-                        <div className="onclick" onClick={executeScroll4}><p>CONTATO</p></div>
-                    </div>
+                    <Menu />
                 </div>
 
                 {/* FOOTER */}
@@ -79,11 +105,43 @@ export default function Home() {
                         </div>
                     </div>
                 </footer>
+
+                {/* MENU MOBILE */}
+                <div className="HeaderMobile">
+                    <div className="TFR">
+                        <div to="/" className="link" onClick={executeScroll5}><p>{"<TFR/>"}</p></div>
+                    </div>
+                </div>
+
+                {/* FOOTER MOBILE */}
+                <div className="footerMobile">
+                    <div className="MenuMobile">
+                        <ul>
+                            <div className="navbar" onClick={handleToggle}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            {
+                                toggleMenu === true ?
+                                    <>
+                                        <li onClick={executeScroll}><ion-icon name="home-outline"></ion-icon></li>
+                                        <li onClick={executeScroll2}><ion-icon name="person-outline"></ion-icon></li>
+                                        <li onClick={executeScroll3}><ion-icon name="easel-outline"></ion-icon></li>
+                                        <li onClick={executeScroll4}><ion-icon name="mail-outline"></ion-icon></li>
+                                    </>
+                                :
+                                     ""
+                            }
+                        </ul>
+                    </div>
+                </div>
+
             </>
             <div className="page">
                 
                 {/* WELCOME PAGE */}
-                <div className="welcome-page">
+                <div className="welcome-page" ref={welcomePage}>
                     <div className="welcome">
                         <Typewriter
                         options={{
@@ -140,5 +198,5 @@ export default function Home() {
                 </div>
             </div>
         </div>
-      )
-  }
+    )
+}
