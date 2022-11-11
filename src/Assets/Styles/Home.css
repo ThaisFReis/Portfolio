@@ -636,7 +636,7 @@ footer .change-language .language p:hover{
     .footerMobile .MenuMobile ul > li:nth-child(2){
         background-color: rgb(20, 102, 255);
 
-        margin: 0 auto 56vw 1vw;
+        margin: 0 auto 57vw 0;
 
         transform: rotate(calc(0deg));
     }
@@ -644,7 +644,7 @@ footer .change-language .language p:hover{
     .footerMobile .MenuMobile ul > li:nth-child(3){
         background-color: deeppink;
 
-        margin: 0 20vw 6vw auto;
+        margin: 0 19vw 7vw auto;
 
         transform: rotate(calc(-30deg));
         transform-origin: -35vw;
@@ -653,16 +653,16 @@ footer .change-language .language p:hover{
     .footerMobile .MenuMobile ul > li:nth-child(4){
         background-color: rgb(0, 163, 35);
 
-        margin: 31vw 20vw auto auto;
+        margin: 34vw 18.5vw auto auto;
 
         transform: rotate(calc(-60deg));
-        transform-origin: -25vw;
+        transform-origin: -27vw;
     }
 
     .footerMobile .MenuMobile ul > li:nth-child(5){
         background-color: rgb(187, 0, 0);
 
-        margin: 40vw 25vw auto auto;
+        margin: 40vw 23.84vw auto auto;
 
         transform: rotate(calc(-90deg));
         transform-origin: -10vw;
