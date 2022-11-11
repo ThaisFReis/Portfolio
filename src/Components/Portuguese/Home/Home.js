@@ -106,13 +106,13 @@ export default function Home() {
                     </div>
                 </footer>
 
-                {/* MENU MOBILE */}
+                {/* HEADER MOBILE 
                 <div className="HeaderMobile">
                     <div className="TFR">
                         <div to="/" className="link" onClick={executeScroll5}><p>{"<TFR/>"}</p></div>
                     </div>
                 </div>
-
+                */}
                 {/* FOOTER MOBILE */}
                 <div className="footerMobile">
                     <div className="MenuMobile">

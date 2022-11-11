@@ -403,8 +403,11 @@ footer .change-language .language p:hover{
         display: none!important;
     }
 
-    .page .welcome-page{
-        height: 80vw;
+    .page .welcome-page,
+    .page .Inicio,
+    .page .background-page-projects,
+    .page .background-page-contact{
+        height: 80vh;
     }
 
 
@@ -612,4 +615,28 @@ footer .change-language .language p:hover{
         transform-origin: -10vw;
     }
 
+
+    /*------------------------------    WELCOME PAGE    ------------------------------*/
+
+    .page .welcome-page{
+        width: 100vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page .welcome-page .welcome{
+        width: 80vw;
+        height: 20vh;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-size: 12vw;
+        font-family: 'TrinidadNeue', sans-serif;
+        text-align: center;
+    }
 }
