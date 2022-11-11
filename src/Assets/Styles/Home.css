@@ -557,8 +557,8 @@ footer .change-language .language p:hover{
     .footerMobile .MenuMobile ul .navbar{
         background-color: midnightblue;
 
-        width: 25vw;
-        height: 25vw;
+        width: 20vw;
+        height: 20vw;
 
         border-radius: 100%;
 
@@ -577,7 +577,7 @@ footer .change-language .language p:hover{
 
         display: block;
 
-        width: 15vw;
+        width: 7vw;
         height: 2px;
     }
 
@@ -591,7 +591,7 @@ footer .change-language .language p:hover{
 
     .footerMobile .MenuMobile ul .navbar.active{
         background-color: transparent;
-        box-shadow: 0 0 0 20vw midnightblue;
+        box-shadow: 0 0 0 25vw midnightblue;
 
 
         transition-delay: 0.7s;
@@ -619,81 +619,55 @@ footer .change-language .language p:hover{
         transform: translateY(-9px) rotate(90deg);
     }
 
-    .footerMobile .MenuMobile ul > li:nth-child(2){
-        background-color: rgb(20, 102, 255);
+    .footerMobile .MenuMobile ul > li{
         border-radius: 100%;
 
-        width: 15vw;
-        height: 15vw;
-        margin-left: 5vw;
+        width: 8vw;
+        height: 8vw;
+        padding: 2.5vw;
 
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        transform: rotate(calc(1deg));
-        transform-origin: 1300vw;
+        font-size: 1.3rem!important;
+    }
 
-        font-size: 5vw!important;
+    .footerMobile .MenuMobile ul > li:nth-child(2){
+        background-color: rgb(20, 102, 255);
+
+        margin-left: 6vw;
+
+        transform: rotate(calc(1deg));
+        transform-origin: 1500vw;
     }
 
     .footerMobile .MenuMobile ul > li:nth-child(3){
         background-color: deeppink;
-        border-radius: 100%;
-        
-        width: 15vw;
-        height: 15vw;
-        margin: 5vw 15vw auto auto;
 
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 3vw 12vw auto auto;
 
         transform: rotate(calc(-30deg));
-        transform-origin: -33vw;
+        transform-origin: -40vw;
     }
 
     .footerMobile .MenuMobile ul > li:nth-child(4){
         background-color: rgb(0, 163, 35);
-        border-radius: 100%;
 
-        width: 15vw;
-        height: 15vw;
-        margin-top: 32vw;
-        margin-right: 10vw;
+        margin: 28vw 10vw auto auto;
 
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        transform: rotate(calc(-440deg));
-        transform-origin: -15vw;
+        transform: rotate(calc(-433deg));
+        transform-origin: -17vw;
     }
 
     .footerMobile .MenuMobile ul > li:nth-child(5){
         background-color: rgb(187, 0, 0);
-        border-radius: 100%;
 
-        width: 15vw;
-        height: 15vw;
+        margin: 35vw -4vw auto auto;
 
-        margin-top: 32vw;
-        margin-right: -4vw;
-
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        transform: rotate(calc(-470deg));
-        transform-origin: -8vw;
-    }
-
-    .footerMobile ion-icon{
-        font-size: 2rem!important;
+        transform: rotate(calc(-490deg));
+        transform-origin: -10vw;
     }
 
 }
