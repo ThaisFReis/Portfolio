@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -10,20 +10,7 @@ import Projects from "../Projects/Projects";
 import  "../../../Assets/Styles/Home.css";
 
 export default function Home() {
-
-    const homePage = useRef(null);
-    const aboutMePage = useRef(null);
-    const projectsPage = useRef(null);
-    const contactPage = useRef(null);
-    const welcomePage = useRef(null)
-
-    const executeScroll = () => homePage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll2 = () => aboutMePage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll3 = () => projectsPage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
-    const executeScroll5 = () => welcomePage.current.scrollIntoView({ behavior: 'smooth' })
-
-    const [hover, setHover] = React.useState('')
+    const [hover, setHover] = useState('')
 
     function handleMouseEnter() {
         setHover('hover')
@@ -33,7 +20,59 @@ export default function Home() {
         setHover('')
     }   
 
+    const homePage = useRef(null);
+    const aboutMePage = useRef(null);
+    const projectsPage = useRef(null);
+    const contactPage = useRef(null);
+    const welcomePage = useRef(null);
 
+        
+    const executeScroll = () => homePage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll2 = () => aboutMePage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll3 = () => projectsPage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
+    const executeScroll5 = () => welcomePage.current.scrollIntoView({ behavior: 'smooth' })
+
+    {/* FUNCTION AND CONST => MOBILE*/}
+
+    {/* CONST FOR MENU MOBILE */}
+        const  [toggleMenu, setToggleMenu] = useState(false)
+        const [toogleLanguage, setToogleLanguage] = useState(false)
+
+        function handleToggle() {
+            const navBar = document.querySelector('.navbar')
+
+            if (toggleMenu === false) {
+                setToggleMenu(true)
+                navBar.classList.add('active')
+            }
+            else {
+                setToggleMenu(false)
+                navBar.classList.remove('active')
+            }
+        }
+
+        const ChangeLanguage = () => {
+            setToogleLanguage(!toogleLanguage)
+        }
+
+
+    const Menu = () => {
+    
+        const executeScroll = () => homePage.current.scrollIntoView({ behavior: 'smooth' })
+        const executeScroll2 = () => aboutMePage.current.scrollIntoView({ behavior: 'smooth' })
+        const executeScroll3 = () => projectsPage.current.scrollIntoView({ behavior: 'smooth' })
+        const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
+    
+        return (
+            <div className="Menu">
+                <div className="onclick" onClick={executeScroll}> <p>INÍCIO</p></div>
+                <div className="onclick" onClick={executeScroll2}><p>SOBRE MIM</p></div>
+                <div className="onclick" onClick={executeScroll3}><p>PROJETOS</p></div>
+                <div className="onclick" onClick={executeScroll4}><p>CONTATO</p></div>
+            </div>
+        )
+    }
     return (
         <div className="body">
             <>
@@ -62,6 +101,8 @@ export default function Home() {
                         </a>
                     </div>
 
+
+
                     {/* MADE WITH */}
                     <div className={`made ${hover}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         { hover === 'hover' ?
@@ -79,11 +120,78 @@ export default function Home() {
                         </div>
                     </div>
                 </footer>
+
+                {/* HEADER MOBILE 
+                <div className="HeaderMobile">
+                    <div className="TFR">
+                        <div to="/" className="link" onClick={executeScroll5}><p>{"<TFR/>"}</p></div>
+                    </div>
+                </div>
+                */}
+                {/* FOOTER MOBILE */}
+                <div className="footerMobile">
+                    <div className="MenuMobile">
+                        {/* MENU MOBILE RADIAL
+                        <ul>
+                            <div className="navbar" onClick={handleToggle}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            {
+                                toggleMenu === true ?
+                                    <>
+                                        <li onClick={executeScroll}><ion-icon name="home-outline"></ion-icon></li>
+                                        <li onClick={executeScroll2}><ion-icon name="person-outline"></ion-icon></li>
+                                        <li onClick={executeScroll3}><ion-icon name="easel-outline"></ion-icon></li>
+                                        <li onClick={executeScroll4}><ion-icon name="mail-outline"></ion-icon></li>
+                                    </>
+                                :
+                                     ""
+                            }
+                        </ul>
+                        */}
+
+                        {/* MENU MOBILE LINEAR*/}
+                        <ul>
+                            {
+                                toggleMenu === true ?
+                                    <>
+                                            {
+                                                toogleLanguage === true ?
+                                                    <>
+                                                        <li><Link to="/"><p style={{cursor: "pointer" }}>PT</p></Link></li>
+                                                        <li onClick={ChangeLanguage} ><ion-icon name="language-outline"></ion-icon></li>
+                                                    </>
+                                                :
+                                                <>
+                                                    <li onClick={executeScroll}><ion-icon name="home-outline"></ion-icon></li>
+                                                    <li onClick={executeScroll2}><ion-icon name="person-outline"></ion-icon></li>
+                                                    <li onClick={executeScroll3}><ion-icon name="easel-outline"></ion-icon></li>
+                                                    <li onClick={executeScroll4}><ion-icon name="mail-outline"></ion-icon></li>
+                                                    <li onClick={ChangeLanguage} ><ion-icon name="language-outline"></ion-icon></li>
+                                                </>
+                                            }
+                                    </>
+                                :
+                                     ""
+                            }
+                            <div className="navbar" onClick={handleToggle}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </ul>
+
+                    </div>
+                </div>
+
             </>
+
             <div className="page">
                 
                 {/* WELCOME PAGE */}
-                <div className="welcome-page">
+                <div className="welcome-page" ref={welcomePage}>
                     <div className="welcome">
                         <Typewriter
                         options={{
@@ -91,7 +199,24 @@ export default function Home() {
                             autoStart: true,
                             loop: true,
                         }}
+                    />
+                    </div>
+
+                    <div className="welcomeMobile">
+                        <div className="welcome">
+                            <Typewriter
+                            options={{
+                                strings: ["WELCOME TO MY PORTFOLIO", "BEM-VINDO AO MEU PORTFÓLIO"],
+                                autoStart: true,
+                                loop: true,
+                            }}
                         />
+                        </div>
+
+                        <div className="welcome-buttons" onClick={executeScroll}>
+                                <p>SCROLL</p>
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                        </div>
                     </div>
                 </div>
 

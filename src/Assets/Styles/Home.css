@@ -464,7 +464,7 @@ footer .change-language .language p:hover{
         right: 0;
         bottom: 0;
 
-        width: 100vw;
+        width: fit-content;
         height: fit-content;
 
         position: fixed;
@@ -477,28 +477,34 @@ footer .change-language .language p:hover{
     }
 
     .footerMobile .MenuMobile{
-        margin: auto 0 auto auto;
-
         width: fit-content;
         height: fit-content;
+        margin: auto 0 auto auto;
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+
+    /*------------------------------    MENU MOBILE - ul    ------------------------------*/
 
     .footerMobile .MenuMobile ul{
         position: relative;
 
         width: fit-content;
         height: fit-content;
+        margin: auto 0 auto auto;
+        gap: 2vw;
 
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
     }
+
+    /*------------------------------    MENU MOBILE - navbar    ------------------------------*/
 
     .footerMobile .MenuMobile ul .navbar{
         background-color: #161616d5!important;
@@ -519,6 +525,8 @@ footer .change-language .language p:hover{
 
         z-index: 9!important;
     }
+
+    /*------------------------------    MENU MOBILE - span    ------------------------------*/
     
     .footerMobile .MenuMobile ul .navbar > span{
         background-color: #F1EFD6;
@@ -539,6 +547,8 @@ footer .change-language .language p:hover{
     }
 
     .footerMobile .MenuMobile ul .navbar.active{
+        box-shadow: #000 5px 1px 10px;
+
         transition-delay: 0.4s;
         transform: rotate(45deg);
     }
@@ -564,6 +574,12 @@ footer .change-language .language p:hover{
         transform: translateY(-9px) rotate(90deg);
     }
 
+    /***************************************************************************************/
+
+    /*------------------------------    MENU MOBILE - li    ------------------------------*/
+
+    /*------------------------------    MENU RADIAL   --------------------------------*/
+/*
     .footerMobile .MenuMobile ul > li{
         background-color: #161616d5!important;
         border: 1px solid #f1efd605;
@@ -622,6 +638,40 @@ footer .change-language .language p:hover{
         transform-origin: -10vw;
     }
 
+*/
+
+    /*------------------------------    MENU MOBILE LINEAR   ------------------------------*/
+    .footerMobile .MenuMobile ul > li{
+        background-color: #161616d5!important;
+        border: 1px solid #f1efd605;
+        border-radius: 100%;
+        box-shadow: #000 3px 5px 10px;
+
+        width: 8vw;
+        height: 8vw;
+        padding: 2.5vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'TrinidadNeue', sans-serif;
+        font-size: 1.3rem!important;
+
+        transition: all .2s ease-in-out;
+        transition-delay: .1s;
+
+    }
+    
+    .footerMobile .MenuMobile ul > li:hover,
+    .footerMobile .MenuMobile ul > li:focus,
+    .footerMobile .MenuMobile ul > li:active{
+        background-color: #fe2908!important;
+        border-color: #fe2908;
+        color: #fff;
+    }
+
+    /**********************************************************************************/
 
     /*------------------------------    WELCOME PAGE    ------------------------------*/
 
@@ -638,29 +688,55 @@ footer .change-language .language p:hover{
     }
 
     .page .welcome-page .welcomeMobile{
-        width: 82vw;
-        height: 21vh;
+        width: 100vw;
+        height: 100vh;
         margin: auto;
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+    }
 
-        font-size: 13vw;
+    .page .welcome-page .welcomeMobile .welcome{
+        width: 84.5vw;
+        height: 11vh;
+        margin: 40vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: top;
+
+        font-size: 10vw;
+        font-family: 'TrinidadNeue', sans-serif;
+        text-align: center;
+        letter-spacing: -0.5vw;
+    }
+
+    .page .welcome-page .welcomeMobile .welcome-buttons{
+        width: fit-content;
+        height: fit-content;
+        padding: 2vw;
+        margin-top: auto;
+        margin-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+    .welcome-buttons p{
+        color: #f1efd61f;
+        font-size: 2.5vw;
         font-family: 'TrinidadNeue', sans-serif;
         text-align: center;
     }
 
-    .page .welcome-page .welcome-buttons{
-        width: fit-content;
-        height: fit-content;
-
-        margin-top: auto;
-        margin-bottom: 0;
-        display: flex;
-    }
-
-    .welcome-button ion-icon{
+    .welcome-buttons ion-icon{
         color: #f1efd61f;
     }
 }

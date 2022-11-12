@@ -33,8 +33,11 @@ export default function Home() {
     const executeScroll4 = () => contactPage.current.scrollIntoView({ behavior: 'smooth' })
     const executeScroll5 = () => welcomePage.current.scrollIntoView({ behavior: 'smooth' })
 
+    {/* FUNCTION AND CONST => MOBILE*/}
+
     {/* CONST FOR MENU MOBILE */}
         const  [toggleMenu, setToggleMenu] = useState(false)
+        const [toogleLanguage, setToogleLanguage] = useState(false)
 
         function handleToggle() {
             const navBar = document.querySelector('.navbar')
@@ -48,6 +51,11 @@ export default function Home() {
                 navBar.classList.remove('active')
             }
         }
+
+        const ChangeLanguage = () => {
+            setToogleLanguage(!toogleLanguage)
+        }
+
 
     const Menu = () => {
     
@@ -116,6 +124,7 @@ export default function Home() {
                 {/* FOOTER MOBILE */}
                 <div className="footerMobile">
                     <div className="MenuMobile">
+                        {/* MENU MOBILE RADIAL
                         <ul>
                             <div className="navbar" onClick={handleToggle}>
                                 <span></span>
@@ -134,6 +143,39 @@ export default function Home() {
                                      ""
                             }
                         </ul>
+                        */}
+
+                        {/* MENU MOBILE LINEAR*/}
+                        <ul>
+                            {
+                                toggleMenu === true ?
+                                    <>
+                                            {
+                                                toogleLanguage === true ?
+                                                    <>
+                                                        <li><Link to="/home"><p style={{cursor: "pointer" }}>EN</p></Link></li>
+                                                        <li onClick={ChangeLanguage} ><ion-icon name="language-outline"></ion-icon></li>
+                                                    </>
+                                                :
+                                                <>
+                                                    <li onClick={executeScroll}><ion-icon name="home-outline"></ion-icon></li>
+                                                    <li onClick={executeScroll2}><ion-icon name="person-outline"></ion-icon></li>
+                                                    <li onClick={executeScroll3}><ion-icon name="easel-outline"></ion-icon></li>
+                                                    <li onClick={executeScroll4}><ion-icon name="mail-outline"></ion-icon></li>
+                                                    <li onClick={ChangeLanguage} ><ion-icon name="language-outline"></ion-icon></li>
+                                                </>
+                                            }
+                                    </>
+                                :
+                                     ""
+                            }
+                            <div className="navbar" onClick={handleToggle}>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </ul>
+
                     </div>
                 </div>
 
@@ -153,17 +195,19 @@ export default function Home() {
                     </div>
 
                     <div className="welcomeMobile">
-                        <Typewriter
+                        <div className="welcome">
+                            <Typewriter
                             options={{
-                                strings: ["CHOOSE A LANGUAGE","ESCOLHA UM IDIOMA"],
+                                strings: ["WELCOME TO MY PORTFOLIO", "BEM-VINDO AO MEU PORTFÓLIO"],
                                 autoStart: true,
                                 loop: true,
                             }}
                         />
-                    </div>
-                    <div className="welcome-buttons">
-                        <div className="welcome-button" onClick={executeScroll}>
-                            <ion-icon name="arrow-down-outline"></ion-icon>
+                        </div>
+
+                        <div className="welcome-buttons" onClick={executeScroll}>
+                                <p>SCROLL</p>
+                                <ion-icon name="caret-down-outline"></ion-icon>
                         </div>
                     </div>
                 </div>
