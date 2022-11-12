@@ -245,6 +245,11 @@ footer .change-language .language p:hover{
     text-align: center;
 }
 
+.page .welcome-page .welcomeMobile,
+.page .welcome-page .welcome-buttons{
+    display: none;
+}
+
 /*------------------------------    BACKGROUND: PAGE HOME  AND PAGE ABOUT ME    ------------------------------*/
 
 .page .background-page-home-aboutme{
@@ -409,7 +414,7 @@ footer .change-language .language p:hover{
     .page .background-page-contact{
         width: 100vw!important;
         overflow-x: hidden;
-        height: 80vh;
+        height: 100vh;
     }
 
 
@@ -497,9 +502,9 @@ footer .change-language .language p:hover{
 
     .footerMobile .MenuMobile ul .navbar{
         background-color: #161616d5!important;
-        border: 1px solid #F1EFD6;
+        border: 1px solid #f1efd605;
         border-radius: 100%;
-        box-shadow: #000 3px 5px 10px;
+        box-shadow: #000 1px 5px 10px;
 
         width: 20vw;
         height: 20vw;
@@ -561,7 +566,7 @@ footer .change-language .language p:hover{
 
     .footerMobile .MenuMobile ul > li{
         background-color: #161616d5!important;
-        border: 1px solid #F1EFD6;
+        border: 1px solid #f1efd605;
         border-radius: 100%;
         box-shadow: #000 3px 5px 10px;
 
@@ -622,23 +627,40 @@ footer .change-language .language p:hover{
 
     .page .welcome-page{
         width: 100vw;
-        height: 85vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .page .welcome-page .welcome{
-        width: 80vw;
-        height: 20vh;
+        display: none;
+    }
+
+    .page .welcome-page .welcomeMobile{
+        width: 82vw;
+        height: 21vh;
         margin: auto;
 
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        font-size: 12vw;
+        font-size: 13vw;
         font-family: 'TrinidadNeue', sans-serif;
         text-align: center;
+    }
+
+    .page .welcome-page .welcome-buttons{
+        width: fit-content;
+        height: fit-content;
+
+        margin-top: auto;
+        margin-bottom: 0;
+        display: flex;
+    }
+
+    .welcome-button ion-icon{
+        color: #f1efd61f;
     }
 }

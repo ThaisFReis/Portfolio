@@ -149,7 +149,22 @@ export default function Home() {
                             autoStart: true,
                             loop: true,
                         }}
+                    />
+                    </div>
+
+                    <div className="welcomeMobile">
+                        <Typewriter
+                            options={{
+                                strings: ["CHOOSE A LANGUAGE","ESCOLHA UM IDIOMA"],
+                                autoStart: true,
+                                loop: true,
+                            }}
                         />
+                    </div>
+                    <div className="welcome-buttons">
+                        <div className="welcome-button" onClick={executeScroll}>
+                            <ion-icon name="arrow-down-outline"></ion-icon>
+                        </div>
                     </div>
                 </div>
 
