@@ -407,6 +407,8 @@ footer .change-language .language p:hover{
     .page .Inicio,
     .page .background-page-projects,
     .page .background-page-contact{
+        width: 100vw!important;
+        overflow-x: hidden;
         height: 80vh;
     }
 
