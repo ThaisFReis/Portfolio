@@ -702,7 +702,6 @@ footer .change-language .language p:hover{
     .page .welcome-page .welcomeMobile .welcome{
         width: 84.5vw;
         height: 11vh;
-        margin: 40vh;
 
         display: flex;
         flex-direction: column;
