@@ -697,7 +697,7 @@ footer .change-language .language p:hover{
         justify-content: space-around!important;
         align-items: center!important;
 
-        background-image: url(../Img/aboutme.png);
+        background-image: url(../Img/lofi1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -707,6 +707,7 @@ footer .change-language .language p:hover{
     .page .welcome-page .welcomeMobile .welcome{
         width: 85vw;
         height: fit-content;
+        position: absolute;
 
         display: flex;
         flex-direction: column;
@@ -732,6 +733,7 @@ footer .change-language .language p:hover{
         height: 5vh;
         left: 0;
         right: auto;
+        margin-top: 1vh!important;
 
         font-size: 9.95vw;
         font-family: 'TrinidadNeue', sans-serif;
@@ -744,6 +746,7 @@ footer .change-language .language p:hover{
         height: 8vh;
         left: 0;
         right: auto;
+        margin-top: 1vh!important;
 
         font-size: 8vw;
         font-family: 'TrinidadNeue', sans-serif;
@@ -755,6 +758,7 @@ footer .change-language .language p:hover{
     }
 
     .page .welcome-page .welcomeMobile .footer-buttons{
+        position: absolute;
         width: fit-content;
         height: fit-content;
         padding: 2vw;
