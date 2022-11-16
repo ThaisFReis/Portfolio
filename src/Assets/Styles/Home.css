@@ -681,6 +681,7 @@ footer .change-language .language p:hover{
         height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
@@ -691,30 +692,69 @@ footer .change-language .language p:hover{
     .page .welcome-page .welcomeMobile{
         width: 100vw;
         height: 100vh;
-        margin: auto;
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around!important;
+        align-items: center!important;
+
+        background-image: url(../Img/aboutme.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     .page .welcome-page .welcomeMobile .welcome{
-        width: 84.5vw;
-        height: 11vh;
+        width: 85vw;
+        height: fit-content;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: top;
-
-        font-size: 10vw;
-        font-family: 'TrinidadNeue', sans-serif;
-        text-align: center;
-        letter-spacing: -0.5vw;
+        justify-content: left!important;
     }
 
-    .page .welcome-page .welcomeMobile .welcome-buttons{
+    .page .welcome-page .welcomeMobile > .welcome > :nth-child(1){
+        width: 85vw;
+        height: 10vh;
+        left: 0;
+        right: auto;
+
+        font-size: 20vw;
+        font-family: 'TrinidadNeue', sans-serif;
+        word-wrap: break-word;
+
+        text-align: justify!important;
+    }
+
+    .page .welcome-page .welcomeMobile > .welcome > :nth-child(2){
+        width: 85vw;
+        height: 5vh;
+        left: 0;
+        right: auto;
+
+        font-size: 9.95vw;
+        font-family: 'TrinidadNeue', sans-serif;
+
+        text-align: justify!important;
+    }
+
+    .page .welcome-page .welcomeMobile > .welcome > :nth-child(3){
+        width: 85vw;
+        height: 8vh;
+        left: 0;
+        right: auto;
+
+        font-size: 8vw;
+        font-family: 'TrinidadNeue', sans-serif;
+        text-align: left!important;
+    }
+
+    .page .welcome-page .welcomeMobile > .welcome :nth-child(2){
+        color:transparent;
+    }
+
+    .page .welcome-page .welcomeMobile .footer-buttons{
         width: fit-content;
         height: fit-content;
         padding: 2vw;
@@ -731,14 +771,14 @@ footer .change-language .language p:hover{
         cursor: pointer;
     }
 
-    .welcome-buttons p{
+    .page .welcome-page .footer-buttons p{
         color: #f1efd61f;
         font-size: 2.5vw;
         font-family: 'TrinidadNeue', sans-serif;
         text-align: center;
     }
 
-    .welcome-buttons ion-icon{
+    .page .welcome-page .footer-buttons ion-icon{
         color: #f1efd61f;
     }
 }

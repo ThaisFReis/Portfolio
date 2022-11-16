@@ -8,6 +8,8 @@ import AboutMe from "../AboutMe/AboutMe";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import  "../../../Assets/Styles/Home.css";
+import Me from "../../../Assets/Img/aboutme.png"
+
 
 export default function Home() {
     const [hover, setHover] = useState('')
@@ -193,19 +195,39 @@ export default function Home() {
                         }}
                     />
                     </div>
-
+{//"OLÁ! EU SOU A THAIS, SEJA BEM-VINDO AO MEU PORTFÓLIO"
+}
                     <div className="welcomeMobile">
                         <div className="welcome">
                             <Typewriter
-                            options={{
-                                strings: ["WELCOME TO MY PORTFOLIO", "BEM-VINDO AO MEU PORTFÓLIO"],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
+                                onInit={(typewriter) =>
+                                    typewriter
+                                    .typeString("OLÁ!")
+                                    .start()
+                                }
+                            />
+
+                            <Typewriter
+                                onInit={(typewriter) =>
+                                    typewriter
+                                    .pauseFor(1000)
+                                    .typeString("EU SOU A THAIS.")
+                                    .start()
+                                }
+                            />
+
+                            <Typewriter
+                                onInit={(typewriter) =>
+                                    typewriter
+                                    .pauseFor(3500)
+                                    .typeString("SEJA BEM-VINDO AO MEU PORTFÓLIO!")
+                                    .start()
+                                }
+                            />
+
                         </div>
 
-                        <div className="welcome-buttons" onClick={executeScroll}>
+                        <div className="footer-buttons" onClick={executeScroll}>
                                 <p>SCROLL</p>
                                 <ion-icon name="caret-down-outline"></ion-icon>
                         </div>
