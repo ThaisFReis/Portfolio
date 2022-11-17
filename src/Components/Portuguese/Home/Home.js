@@ -8,7 +8,16 @@ import AboutMe from "../AboutMe/AboutMe";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import  "../../../Assets/Styles/Home.css";
-import Me from "../../../Assets/Img/aboutme.png"
+
+/* ICONS FOOTER */
+import ArrowUp from "../../../Assets/Img/Menu/arrow-up.png";
+import ArrowDown from "../../../Assets/Img/Menu/arrow-down.png";
+import HomeIcon from "../../../Assets/Img/Menu/Home.png";
+import AboutMeIcon from "../../../Assets/Img/Menu/Profile.png";
+import ProjectsIcon from "../../../Assets/Img/Menu/Work.png";
+import ContactIcon from "../../../Assets/Img/Menu/Message.png";
+import SettingsIcon from "../../../Assets/Img/Menu/Setting.png";
+
 
 
 export default function Home() {
@@ -75,6 +84,16 @@ export default function Home() {
             </div>
         )
     }
+
+    const [toggleMenuMobile, setToggleMenuMobile] = useState(false)
+
+    const MenuMobile = () => {
+        setToggleMenuMobile(!toggleMenuMobile)
+
+        const openMenu = document.querySelector('.footerMobile')
+        openMenu.classList.add(".active")
+    }
+
     return (
         <div className="body">
             <>
@@ -124,7 +143,7 @@ export default function Home() {
                 </div>
                 */}
                 {/* FOOTER MOBILE */}
-                <div className="footerMobile">
+                {/*<div className="footerMobile">
                     <div className="MenuMobile">
                         {/* MENU MOBILE RADIAL
                         <ul>
@@ -145,9 +164,9 @@ export default function Home() {
                                      ""
                             }
                         </ul>
-                        */}
+                        }
 
-                        {/* MENU MOBILE LINEAR*/}
+                        {/* MENU MOBILE LINEAR}
                         <ul>
                             {
                                 toggleMenu === true ?
@@ -179,7 +198,26 @@ export default function Home() {
                         </ul>
 
                     </div>
+                </div>*/}
+
+            {
+                toggleMenuMobile === true ?
+                    <div className="footerMobile active" onClick={MenuMobile}>
+                        <img src={ArrowDown} alt="arrow down" />
+                        <ul>
+                            <li onClick={executeScroll}><img src={HomeIcon} alt="home icon" /></li>
+                            <li onClick={executeScroll2}><img src={AboutMeIcon} alt="about icon" /></li>
+                            <li onClick={executeScroll3}><img src={ProjectsIcon} alt="project icon" /></li>
+                            <li onClick={executeScroll4}><img src={ContactIcon} alt="contact icon" /></li>
+                            <li onClick={ChangeLanguage} ><img src={SettingsIcon} alt="settings icon" /></li>
+                        </ul>
+                    </div>
+                :
+                <div className="footerMobile" onClick={ MenuMobile }>
+                    <img src={ArrowUp} alt="ArrowUp" />
                 </div>
+            }
+
 
             </>
             <div className="page">
@@ -198,39 +236,41 @@ export default function Home() {
 {//"OLÁ! EU SOU A THAIS, SEJA BEM-VINDO AO MEU PORTFÓLIO"
 }
                     <div className="welcomeMobile">
-                        <div className="welcome">
-                            <Typewriter
-                                onInit={(typewriter) =>
-                                    typewriter
-                                    .typeString("OLÁ!")
-                                    .start()
-                                }
-                            />
+                            <div className="welcome">
 
-                            <Typewriter
-                                onInit={(typewriter) =>
-                                    typewriter
-                                    .pauseFor(1000)
-                                    .typeString("EU SOU A THAIS.")
-                                    .start()
-                                }
-                            />
+                                {/*
+                                <Typewriter0
+                                    onInit={(typewriter) =>
+                                        typewriter
+                                        .typeString("OLÁ!")
+                                        .start()
+                                    }
+                                />
 
-                            <Typewriter
-                                onInit={(typewriter) =>
-                                    typewriter
-                                    .pauseFor(3500)
-                                    .typeString("SEJA BEM-VINDO AO MEU PORTFÓLIO!")
-                                    .start()
-                                }
-                            />
+                                <Typewriter
+                                    onInit={(typewriter) =>
+                                        typewriter
+                                        .pauseFor(1000)
+                                        .typeString("EU SOU A THAIS.")
+                                        .start()
+                                    }
+                                />
 
-                        </div>
+                                <Typewriter
+                                    onInit={(typewriter) =>
+                                        typewriter
+                                        .pauseFor(3500)
+                                        .typeString("SEJA BEM-VINDO AO MEU PORTFÓLIO!")
+                                        .start()
+                                    }
+                                />
+                                */}
+                            </div>
 
-                        <div className="footer-buttons" onClick={executeScroll}>
-                                <p>SCROLL</p>
-                                <ion-icon name="caret-down-outline"></ion-icon>
-                        </div>
+                            <div className="footer-buttons" onClick={executeScroll}>
+                                    <p>SCROLL</p>
+                                    <ion-icon name="caret-down-outline"></ion-icon>
+                            </div>
                     </div>
                 </div>
 

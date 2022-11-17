@@ -336,9 +336,9 @@ footer .change-language .language p:hover{
     justify-content: center;
 
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 1px;
     border: #f1efd610 1px solid;
-    box-shadow: #000 1px 5px 10px;
+    box-shadow: #000 1px 1px 10px;
     gap: 0.5vw;
     cursor: pointer;
 }
@@ -460,7 +460,7 @@ footer .change-language .language p:hover{
     }
 
     /*------------------------------    FOOTER MOBILE    ------------------------------*/
-    .footerMobile{
+  /*  .footerMobile{
         right: 0;
         bottom: 0;
 
@@ -491,7 +491,7 @@ footer .change-language .language p:hover{
 
     /*------------------------------    MENU MOBILE - ul    ------------------------------*/
 
-    .footerMobile .MenuMobile ul{
+   /* .footerMobile .MenuMobile ul{
         position: relative;
 
         width: fit-content;
@@ -507,11 +507,11 @@ footer .change-language .language p:hover{
 
     /*------------------------------    MENU MOBILE - navbar    ------------------------------*/
 
-    .footerMobile .MenuMobile ul .navbar{
+   /* .footerMobile .MenuMobile ul .navbar{
         background-color: #161616d5!important;
         border: 1px solid #f1efd605;
         border-radius: 100%;
-        box-shadow: #000 1px 5px 10px;
+        box-shadow: #000 1px 1px 10px;
 
         width: 20vw;
         height: 20vw;
@@ -528,10 +528,10 @@ footer .change-language .language p:hover{
     }
 
     /*------------------------------    MENU MOBILE - span    ------------------------------*/
-    
+    /*
     .footerMobile .MenuMobile ul .navbar > span{
         background-color: #F1EFD6;
-        border-radius: 5px;
+        border-radius: 1px;
 
         display: block;
 
@@ -548,7 +548,7 @@ footer .change-language .language p:hover{
     }
 
     .footerMobile .MenuMobile ul .navbar.active{
-        box-shadow: #000 5px 1px 10px;
+        box-shadow: #000 1px 1px 10px;
 
         transition-delay: 0.4s;
         transform: rotate(45deg);
@@ -585,7 +585,7 @@ footer .change-language .language p:hover{
         background-color: #161616d5!important;
         border: 1px solid #f1efd605;
         border-radius: 100%;
-        box-shadow: #000 3px 5px 10px;
+        box-shadow: #000 3px 1px 10px;
 
         width: 8vw;
         height: 8vw;
@@ -642,11 +642,11 @@ footer .change-language .language p:hover{
 */
 
     /*------------------------------    MENU MOBILE LINEAR   ------------------------------*/
-    .footerMobile .MenuMobile ul > li{
+ /*   .footerMobile .MenuMobile ul > li{
         background-color: #161616d5!important;
         border: 1px solid #f1efd605;
         border-radius: 100%;
-        box-shadow: #000 3px 5px 10px;
+        box-shadow: #000 3px 1px 10px;
 
         width: 8vw;
         height: 8vw;
@@ -671,10 +671,141 @@ footer .change-language .language p:hover{
         border-color: #fe2908;
         color: #fff;
     }
+*/
 
+.footerMobile{
+  background-color: #F1EFD6;
+  width: 90vw;
+  height: 3.5vh;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  z-index: 9;
+}
+
+.footerMobile img{
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  top: 1vh;
+  margin: 0 auto auto auto;
+}
+
+.footerMobile.active{
+  background-color: #F1EFD6;
+  width: 90vw;
+  height: 20vw;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+  z-index: 9;
+}
+
+.footerMobile.active img{
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  top: 0;  top: 1vh;
+  margin: 0 auto auto auto;
+}
+
+.footerMobile ul{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 80%;
+  height: 50%;
+  bottom: 1vh;
+
+  cursor: auto;
+}
+
+.footerMobile ul > li{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 10vw;
+  height: 10vw;
+
+  cursor: pointer;
+}
+
+.footerMobile ul li > img{
+  position: relative;
+  width: 7vw!important;
+  height: 7vw!important;
+  margin: auto;
+}
+
+.footerMobile ul li:hover,
+.footerMobile ul li:focus,
+.footerMobile ul li:active,
+.footerMobile ul li::after{
+  background-color: #fe2908;
+  width: 10vw!important;
+  height: 10vw!important;
+
+  border-radius: 50%;
+}
     /**********************************************************************************/
 
     /*------------------------------    WELCOME PAGE    ------------------------------*/
+
+    /*
+    .page .welcome-page:before{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        content: "";
+        position: absolute;
+        z-index: -1;
+
+        display: block;
+        background-image: url(../Img/black-glitch.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-filter: blur(0.5px);
+        -moz-filter: blur(0.5px);
+        -o-filter: blur(0.5px);
+        -ms-filter: blur(0.5px);
+        filter: blur(0.5px);
+    }
+    */
 
     .page .welcome-page{
         width: 100vw;
@@ -683,6 +814,8 @@ footer .change-language .language p:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        font-style: italic;
     }
 
     .page .welcome-page .welcome{
@@ -694,27 +827,23 @@ footer .change-language .language p:hover{
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around!important;
-        align-items: center!important;
+        justify-content: center;
+        align-items: center;
 
-        background-image: url(../Img/lofi1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        z-index: 0;
     }
 
     .page .welcome-page .welcomeMobile .welcome{
         width: 85vw;
         height: fit-content;
+        /*
         position: absolute;
-
+*/
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: left!important;
+        justify-content: center;
     }
-
     .page .welcome-page .welcomeMobile > .welcome > :nth-child(1){
         width: 85vw;
         height: 10vh;
