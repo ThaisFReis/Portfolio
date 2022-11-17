@@ -1062,10 +1062,10 @@ footer .change-language .language p:hover{
     .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-code{
         position: absolute;
         width: 40vw;
-        height: 17.7vh;
+        height: 33.7vw;
         left: -1vw;
         right: auto;
-        bottom: -3.9vh;
+        bottom: -7.5vw;
 
         display: flex;
         flex-direction: column;
