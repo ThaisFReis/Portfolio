@@ -675,7 +675,7 @@ footer .change-language .language p:hover{
 
 .footerMobile{
   background-color: #F1EFD6;
-  width: 90vw;
+  width: 10vw;
   height: 3.5vh;
   margin: auto;
   bottom: 0;
@@ -690,10 +690,13 @@ footer .change-language .language p:hover{
 
   cursor: pointer;
 
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.562) -0px -5px 5px;
 
   z-index: 9;
+
+  transition: all .2s ease-in-out;
 }
 
 .footerMobile img{
@@ -723,6 +726,8 @@ footer .change-language .language p:hover{
   border-top-right-radius: 50px;
 
   z-index: 9;
+
+  transition: all .2s ease-in-out;
 }
 
 .footerMobile.active img{
