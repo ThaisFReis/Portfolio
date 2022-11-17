@@ -837,6 +837,8 @@ footer .change-language .language p:hover{
         align-items: center;
 
         font-style: italic;
+
+        display: none;
     }
 
     .page .welcome-page .welcome{
@@ -935,4 +937,325 @@ footer .change-language .language p:hover{
     .page .welcome-page .footer-buttons ion-icon{
         color: #f1efd61f;
     }
+
+    /*--------------------------------    HOME PAGE    --------------------------------*/
+    .background-page-home-aboutme .Inicio .principal{
+        display: none!important;
+    }
+
+    .Inicio .home-mobile{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 0;
+    }
+
+    .Inicio .home-mobile .title{
+        position: absolute;
+        width: 90vw;
+        height: 20vh;
+        top: 20vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Inicio .home-mobile .title > h1{
+        width: 90vw;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        font-style: normal;
+        font-family: 'HoneyBunney', sans-serif;
+        font-size: 24vw;
+        color: #fe2a04;
+        letter-spacing: 0vw;
+        z-index: -1!important;
+    }
+
+    .Inicio .home-mobile .title > h2{
+        width: 90vw;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 7.5vw;
+        font-family: 'TrinidadNeue', sans-serif;
+        color: #F1EFD6;
+        letter-spacing:  -0.2vw;
+        z-index: 1!important;
+    }
+
+    .Inicio .home-mobile .title > h2:nth-child(3){
+        position: relative;
+        top: -2.5vh;
+
+        font-size: 5vw;
+    }
+
+    .Inicio .home-mobile .notebook{
+        position: absolute;
+        width: 100vw;
+        height: 40vh;
+        bottom: 16vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 0;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-structure{
+        position: absolute;
+        width: 100vw;
+        height: 40vh;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 0;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-structure > img{
+        width: auto;
+        height: 50vw;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen{
+        position: absolute;
+        width: 40vw;
+        height: fit-content;
+        margin-top: 10vw;
+        margin-right: 8vw;
+        gap: 1vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: left!important;
+        align-items: center;
+
+        z-index: 0;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-code{
+        position: absolute;
+        width: 40vw;
+        height: 17.9vh;
+        left: -1vw;
+        right: auto;
+        bottom: -3.9vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 0;
+        overflow-y: hidden;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-code > img{
+        width: 38vw;
+        height: auto;
+        left: 1vw;
+
+        animation-name: scroll;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+
+        z-index: 0;
+    }
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-code > img:nth-child(1) /*3*/{
+        top: 0vh;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-code > img:nth-child(2) /*2*/{
+        top: 5vh;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-code > img:nth-child(3) /*1*/{
+        top: 12.5vh;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-code > img:nth-child(4) /*4*/{
+        top: 19.5vh;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-window{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        right: 2vw;
+        bottom: 3vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 0;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-window > img{
+        width: 23vw;
+        height: auto;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-window .window-text{
+        position: absolute;
+        width: 20vw;
+        height: 7vh;
+        top: -3vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-window .window-text > :nth-child(1){
+        width: 20vw;
+        height: 5vh;
+        margin: auto;
+        
+        display: flex;
+        justify-content: top center;
+        align-items: top center;
+
+        font-size: 2.75vw;
+        font-family: 'TrinidadNeue', sans-serif;
+        font-weight: 600;
+        color: #f1efd6;
+        margin: auto 1vw auto  1vw;
+        letter-spacing: 0.1vw;
+    }
+
+    .Inicio .home-mobile .notebook .notebook-screen .notebook-screen-window .window-text :nth-child(2){
+        background-color: transparent;
+        color: transparent;
+    }
+
+
+    .Inicio .home-mobile .notebook .cards{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 0;
+    }
+
+    .Inicio .home-mobile .notebook .cards > div,img /*3*/{
+        position: absolute;
+    }
+
+    .Inicio .home-mobile .notebook .cards .card1/*CARD CSS*/{
+        width: auto;
+        height: auto;
+        top: 0;
+
+        animation-name: growUp;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+
+    .Inicio .home-mobile .notebook .cards .card1 > img:nth-child(1){
+        width: 22vw;
+        height: auto;
+
+        bottom: -25vh;
+        left: -48.5vw;
+        z-index: 1;
+        
+    }
+
+    .Inicio .home-mobile .notebook .cards .card2/*CARD REACT*/{
+        width: auto;
+        height: auto;
+        top: 17vh;
+        right: 32vw;
+    }
+
+    .Inicio .home-mobile .notebook .cards .card2 > img:nth-child(1){
+        width: 20vw;
+        height: auto;
+        margin-left: 7vw;
+        margin-right: auto;
+        bottom: -3vh;
+
+        z-index: 1;
+    }
+
+    .Inicio .home-mobile .notebook .cards .card3/*</>*/{
+        width: auto;
+        height: auto;
+        top: 7vh;
+        left: 18vw;
+    }
+
+    .Inicio .home-mobile .notebook .cards .card3 > img:nth-child(1){
+        width: 20vw;
+        height: auto;
+        top: -0.5vh;
+        
+        z-index: 1;
+    }
+
+    .Inicio .home-mobile .notebook .cards .card4 /*CARD HTML*/{
+        width: auto;
+        height: auto;
+        top: 15.5vh;
+        right: 42vw;
+    }
+
+    .Inicio .home-mobile .notebook .cards .card4 > img:nth-child(1){
+        width: 13vw;
+        height: auto;
+        right: -10vw;
+        bottom: -4vh;
+        z-index: 1;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+        
 }

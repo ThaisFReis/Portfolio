@@ -18,6 +18,13 @@ import ProjectsIcon from "../../../Assets/Img/Menu/Work.png";
 import ContactIcon from "../../../Assets/Img/Menu/Message.png";
 import SettingsIcon from "../../../Assets/Img/Menu/Setting.png";
 
+/* NOTEBOOK IMG */
+import Notebook from "../../../Assets/Img/Notebook/estrutura.png";
+import Line1 from "../../../Assets/Img/Notebook/1.png";
+import Line2 from "../../../Assets/Img/Notebook/2.png";
+import Line3 from "../../../Assets/Img/Notebook/3.png";
+import Window from "../../../Assets/Img/Notebook/window.png";
+
 
 
 export default function Home() {
@@ -298,6 +305,38 @@ export default function Home() {
                                             <p>GITHUB</p>
                                         </button>
                                     </a>
+                                </div>
+                            </div>
+
+                            <div className="home-mobile">
+                                <div className="notebook">
+                                    <div className="notebook-structure">
+                                        <img src={Notebook} alt="notebook" />
+                                    </div>
+
+                                    <div className="notebook-screen">
+                                        <div className="notebook-screen-code">
+                                            <img src={Line1} alt="line1" />
+                                            <img src={Line2} alt="line2" />
+                                            <img src={Line3} alt="line3" />
+                                            <img src={Line2} alt="line2" />
+                                        </div>
+                                        <div className="notebook-screen-window">
+                                            <img src={Window} alt="window" />
+                                            <div className="window-text">
+                                                <Typewriter
+                                                    options={{
+                                                        strings: ["BEM-VINDO AO MEU PORTFÓLIO"],
+                                                        autoStart: true,
+                                                        loop: true,
+                                                    }}
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="title">
+                                    <h2> EU SOU </h2> <h1>Thais F. Reis </h1> <h2> DESENVOLVEDORA FRONT-END </h2>
                                 </div>
                             </div>
                         </div>
