@@ -418,46 +418,7 @@ footer .change-language .language p:hover{
     }
 
 
-    /*------------------------------    HEADER MOBILE    ------------------------------*/
-
-    .HeaderMobile{
-        width: 100vw;
-        height: 12vw;
-
-        position: fixed!important;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-
-        z-index: 9!important;
-    }
-
-    .HeaderMobile .TFR{
-        top: 2vw;
-        bottom: auto;
-        left: 2vw;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    
-        width: 20vw;
-        height: 10vw;
-    }
-
-    .HeaderMobile .TFR .link p{
-        color: #F1EFD6;
-        font-family: 'TrinidadNeue', sans-serif !important;
-        font-size: 5vw;
-
-        text-decoration: none!important;
-        letter-spacing: 0.1vw;
-
-        cursor: pointer;
-    }
+    /*------------------------------    LATERAL MENU MOBILE    ------------------------------*/
 
     .lateralMenu{
     background-color: #F1EFD6;
@@ -528,6 +489,8 @@ footer .change-language .language p:hover{
     top: auto;
     bottom: 50%;
     margin: 0 auto auto auto;
+
+    z-index: 9;
     }
 
     .lateralMenu.active ul{
@@ -542,6 +505,11 @@ footer .change-language .language p:hover{
     right: 1vh;
 
     cursor: auto;
+    z-index: 9;
+
+    font-size: 5vw;
+    font-family: 'TrinidadNeue', sans-serif;
+    color: #000!important;
     }
 
     .lateralMenu.active ul > li{
@@ -557,6 +525,7 @@ footer .change-language .language p:hover{
     rotate: 0deg;
 
     cursor: pointer;
+    z-index: 9;
     }
 
     .lateralMenu.active ul li > img{
@@ -571,6 +540,7 @@ footer .change-language .language p:hover{
     margin: auto!important;
 
     rotate: 0deg!important;
+    z-index: 9;
     }
 
     .lateralMenu ul li:hover,
@@ -582,7 +552,10 @@ footer .change-language .language p:hover{
     height: 10vw!important;
 
     border-radius: 50%;
+    z-index: 9;
     }
+
+    /*------------------------------    PAGE WELCOME    ------------------------------*/
     
     .page .welcome-page{
         width: 100vw;
@@ -599,99 +572,6 @@ footer .change-language .language p:hover{
 
     .page .welcome-page .welcome{
         display: none;
-    }
-
-    .page .welcome-page .welcomeMobile{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        z-index: 0;
-    }
-
-    .page .welcome-page .welcomeMobile .welcome{
-        width: 85vw;
-        height: fit-content;
-        /*
-        position: absolute;
-*/
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .page .welcome-page .welcomeMobile > .welcome > :nth-child(1){
-        width: 85vw;
-        height: 10vh;
-        left: 0;
-        right: auto;
-
-        font-size: 20vw;
-        font-family: 'TrinidadNeue', sans-serif;
-        word-wrap: break-word;
-
-        text-align: justify!important;
-    }
-
-    .page .welcome-page .welcomeMobile > .welcome > :nth-child(2){
-        width: 85vw;
-        height: 5vh;
-        left: 0;
-        right: auto;
-        margin-top: 1vh!important;
-
-        font-size: 9.95vw;
-        font-family: 'TrinidadNeue', sans-serif;
-
-        text-align: justify!important;
-    }
-
-    .page .welcome-page .welcomeMobile > .welcome > :nth-child(3){
-        width: 85vw;
-        height: 8vh;
-        left: 0;
-        right: auto;
-        margin-top: 1vh!important;
-
-        font-size: 8vw;
-        font-family: 'TrinidadNeue', sans-serif;
-        text-align: left!important;
-    }
-
-    .page .welcome-page .welcomeMobile > .welcome :nth-child(2){
-        color:transparent;
-    }
-
-    .page .welcome-page .welcomeMobile .footer-buttons{
-        position: absolute;
-        width: fit-content;
-        height: fit-content;
-        padding: 2vw;
-
-        bottom: 0;
-        right: auto;
-        left: auto;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        cursor: pointer;
-    }
-
-    .page .welcome-page .footer-buttons p{
-        color: #f1efd61f;
-        font-size: 2.5vw;
-        font-family: 'TrinidadNeue', sans-serif;
-        text-align: center;
-    }
-
-    .page .welcome-page .footer-buttons ion-icon{
-        color: #f1efd61f;
     }
 
     /*--------------------------------    HOME PAGE    --------------------------------*/

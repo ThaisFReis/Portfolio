@@ -124,81 +124,23 @@ export default function Home() {
                     </div>
                 </footer>
 
-                {/* HEADER MOBILE 
-                <div className="HeaderMobile">
-                    <div className="TFR">
-                        <div to="/" className="link" onClick={executeScroll5}><p>{"<TFR/>"}</p></div>
-                    </div>
-                </div>
-                */}
-                {/* FOOTER MOBILE */}
-                {/*<div className="footerMobile">
-                    <div className="MenuMobile">
-                        {/* MENU MOBILE RADIAL
-                        <ul>
-                            <div className="navbar" onClick={handleToggle}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            {
-                                toggleMenu === true ?
-                                    <>
-                                        <li onClick={executeScroll}><ion-icon name="home-outline"></ion-icon></li>
-                                        <li onClick={executeScroll2}><ion-icon name="person-outline"></ion-icon></li>
-                                        <li onClick={executeScroll3}><ion-icon name="easel-outline"></ion-icon></li>
-                                        <li onClick={executeScroll4}><ion-icon name="mail-outline"></ion-icon></li>
-                                    </>
-                                :
-                                     ""
-                            }
-                        </ul>
-                        }
-
-                        {/* MENU MOBILE LINEAR}
-                        <ul>
-                            {
-                                toggleMenu === true ?
-                                    <>
-                                            {
-                                                toogleLanguage === true ?
-                                                    <>
-                                                        <li><Link to="/home"><p style={{cursor: "pointer" }}>EN</p></Link></li>
-                                                        <li onClick={ChangeLanguage} ><ion-icon name="language-outline"></ion-icon></li>
-                                                    </>
-                                                :
-                                                <>
-                                                    <li onClick={executeScroll}><ion-icon name="home-outline"></ion-icon></li>
-                                                    <li onClick={executeScroll2}><ion-icon name="person-outline"></ion-icon></li>
-                                                    <li onClick={executeScroll3}><ion-icon name="easel-outline"></ion-icon></li>
-                                                    <li onClick={executeScroll4}><ion-icon name="mail-outline"></ion-icon></li>
-                                                    <li onClick={ChangeLanguage} ><ion-icon name="language-outline"></ion-icon></li>
-                                                </>
-                                            }
-                                    </>
-                                :
-                                     ""
-                            }
-                            <div className="navbar" onClick={handleToggle}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </ul>
-
-                    </div>
-                </div>*/}
-
             {
                 toggleMenuMobile === true ?
-                    <div className="lateralMenu active" onClick={handleToggle}>
-                        <img src={ArrowUp} alt="ArrowUp" />
+                    <div className="lateralMenu active">
+                        <img src={ArrowUp} alt="ArrowUp" onClick={handleToggle}/>
                         <ul>
                             <li onClick={executeScroll}><img src={HomeIcon} alt="home icon" /></li>
                             <li onClick={executeScroll2}><img src={AboutMeIcon} alt="about icon" /></li>
                             <li onClick={executeScroll3}><img src={ProjectsIcon} alt="project icon" /></li>
                             <li onClick={executeScroll4}><img src={ContactIcon} alt="contact icon" /></li>
-                            <li onClick={ChangeLanguage} ><img src={SettingsIcon} alt="settings icon" /></li>
+                            <li onClick={ChangeLanguage} >
+                            {
+                                toogleLanguage === true ?
+                                    <Link to="/home"><p style={{cursor: "pointer", color: "#000" }}>EN</p></Link>
+                                :
+                                    <img src={SettingsIcon} alt="settings icon" />
+                            }
+                            </li>
                         </ul>
                     </div>
                 :
@@ -221,45 +163,6 @@ export default function Home() {
                             loop: true,
                         }}
                     />
-                    </div>
-{//"OLÁ! EU SOU A THAIS, SEJA BEM-VINDO AO MEU PORTFÓLIO"
-}
-                    <div className="welcomeMobile">
-                            <div className="welcome">
-
-                                {/*
-                                <Typewriter0
-                                    onInit={(typewriter) =>
-                                        typewriter
-                                        .typeString("OLÁ!")
-                                        .start()
-                                    }
-                                />
-
-                                <Typewriter
-                                    onInit={(typewriter) =>
-                                        typewriter
-                                        .pauseFor(1000)
-                                        .typeString("EU SOU A THAIS.")
-                                        .start()
-                                    }
-                                />
-
-                                <Typewriter
-                                    onInit={(typewriter) =>
-                                        typewriter
-                                        .pauseFor(3500)
-                                        .typeString("SEJA BEM-VINDO AO MEU PORTFÓLIO!")
-                                        .start()
-                                    }
-                                />
-                                */}
-                            </div>
-
-                            <div className="footer-buttons" onClick={executeScroll}>
-                                    <p>SCROLL</p>
-                                    <ion-icon name="caret-down-outline"></ion-icon>
-                            </div>
                     </div>
                 </div>
 

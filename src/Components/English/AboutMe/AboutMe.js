@@ -147,11 +147,11 @@ const AboutMe = () => {
                                     </div>
                                 </div>   
                                 <div className="languages-list">
-
                                     {
                                         languages.map((language, index) => (
                                             <Language key={index} language={language.language} level={language.level}/>
-                                        ))}
+                                        ))
+                                    }
                                 </div>                       
                             </div>
 
