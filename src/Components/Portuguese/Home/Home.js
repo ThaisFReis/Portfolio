@@ -54,20 +54,11 @@ export default function Home() {
     {/* FUNCTION AND CONST => MOBILE*/}
 
     {/* CONST FOR MENU MOBILE */}
-        const  [toggleMenu, setToggleMenu] = useState(false)
+        const  [toggleMenuMobile, setToggleMenuMobile] = useState(false)
         const [toogleLanguage, setToogleLanguage] = useState(false)
 
-        function handleToggle() {
-            const navBar = document.querySelector('.navbar')
-
-            if (toggleMenu === false) {
-                setToggleMenu(true)
-                navBar.classList.add('active')
-            }
-            else {
-                setToggleMenu(false)
-                navBar.classList.remove('active')
-            }
+        const handleToggle = () => {
+            setToggleMenuMobile(!toggleMenuMobile)
         }
 
         const ChangeLanguage = () => {
@@ -90,15 +81,6 @@ export default function Home() {
                 <div className="onclick" onClick={executeScroll4}><p>CONTATO</p></div>
             </div>
         )
-    }
-
-    const [toggleMenuMobile, setToggleMenuMobile] = useState(false)
-
-    const MenuMobile = () => {
-        setToggleMenuMobile(!toggleMenuMobile)
-
-        const openMenu = document.querySelector('.footerMobile')
-        openMenu.classList.add(".active")
     }
 
     return (
@@ -209,8 +191,8 @@ export default function Home() {
 
             {
                 toggleMenuMobile === true ?
-                    <div className="footerMobile active" onClick={MenuMobile}>
-                        <img src={ArrowDown} alt="arrow down" />
+                    <div className="lateralMenu active" onClick={handleToggle}>
+                        <img src={ArrowUp} alt="ArrowUp" />
                         <ul>
                             <li onClick={executeScroll}><img src={HomeIcon} alt="home icon" /></li>
                             <li onClick={executeScroll2}><img src={AboutMeIcon} alt="about icon" /></li>
@@ -220,8 +202,8 @@ export default function Home() {
                         </ul>
                     </div>
                 :
-                <div className="footerMobile" onClick={ MenuMobile }>
-                    <img src={ArrowUp} alt="ArrowUp" />
+                <div className="lateralMenu" onClick={handleToggle}>
+                    <img src={ArrowDown} alt="ArrowDown" />
                 </div>
             }
 
