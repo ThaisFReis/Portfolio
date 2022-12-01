@@ -221,6 +221,10 @@ footer .change-language .language p:hover{
     z-index:  0!important;
 }
 
+.page .warning{
+    z-index: 9!important;
+}
+
 /*------------------------------    WELCOME PAGE    ------------------------------*/
 
 .page .welcome-page{
@@ -376,6 +380,9 @@ footer .change-language .language p:hover{
     text-decoration: none;
 }
 
+.home-mobile{
+    display: none;
+}
 
 
 /*------------------------------    BACKGROUND: PAGE PROJECTS    ------------------------------*/

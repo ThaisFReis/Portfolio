@@ -2,6 +2,9 @@ import { useRef, useState } from "react";
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
+import Box from '@mui/material/Box';
+import Alert from '@mui/material/Alert';
+import Collapse from '@mui/material/Collapse';
 
 
 import AboutMe from "../AboutMe/AboutMe";
@@ -152,6 +155,15 @@ export default function Home() {
 
             </>
             <div className="page">
+                <div className="warning">
+                    <Box sx={{ width: '300px' }} style={{position: "fixed", bottom: "6vw", right: "1vw"}}>
+                        <Collapse in={true}>
+                            <Alert variant="filled" severity="error">
+                            Portfólio em construção!
+                            </Alert>
+                        </Collapse>
+                    </Box>
+                </div>
                 
                 {/* WELCOME PAGE */}
                 <div className="welcome-page" ref={welcomePage}>
