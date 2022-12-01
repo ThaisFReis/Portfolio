@@ -136,7 +136,7 @@ export default function Home() {
                             <li onClick={executeScroll2}><img src={AboutMeIcon} alt="about icon" /></li>
                             <li onClick={executeScroll3}><img src={ProjectsIcon} alt="project icon" /></li>
                             <li onClick={executeScroll4}><img src={ContactIcon} alt="contact icon" /></li>
-                            <li onClick={ChangeLanguage} >
+{  /*                          <li onClick={ChangeLanguage} >
                             {
                                 toogleLanguage === true ?
                                     <Link to="/home"><p style={{cursor: "pointer", color: "#000" }}>EN</p></Link>
@@ -144,6 +144,7 @@ export default function Home() {
                                     <img src={SettingsIcon} alt="settings icon" />
                             }
                             </li>
+*/}
                         </ul>
                     </div>
                 :
